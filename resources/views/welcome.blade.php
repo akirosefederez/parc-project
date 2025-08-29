@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}">
 </head>
 <body>
-    <img class="logo" src="./assets/logo/logo2.png" alt="" />
     <header class="main-header">
         <div class="header-content">
             <p>(02) 8350 6350 | program.director@foundation.com.ph</p>
@@ -19,6 +18,7 @@
     </header>
 
     <nav class="main-nav">
+            <img class="logo" src="./assets/logo/logo2.png" alt="" />
         <ul class="nav-menu">
             <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">About</a></li>

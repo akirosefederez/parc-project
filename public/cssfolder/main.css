@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-    margin-top: -10px;
+    margin-top: -80px; /*-10*/
     position: absolute;
     top: 0;
     left: 0;
