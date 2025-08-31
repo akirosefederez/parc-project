@@ -6,6 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+// New route for original.blade.php
 Route::get('/original', function () {
     return view('original');
 });
