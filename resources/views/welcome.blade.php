@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}">
 </head>
-<body> <!--this is a comment testing--> <!--2nd comment-->  
+<body> <!--this is a comment testing-->
     <header class="main-header">
         <div class="header-content">
             <p>(02) 8350 6350 | program.director@foundation.com.ph</p>
