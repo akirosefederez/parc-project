@@ -1,0 +1,28 @@
+  .logo {
+      height: 60px;
+  }
+
+  .btn-donate {
+      background-color: #f35023;
+      color: #fff;
+      border-radius: 0;
+  }
+
+  .btn-adopt {
+      background-color: #f89b1e;
+      color: #fff;
+      border-radius: 0;
+  }
+
+  .social-icons i {
+      font-size: 18px;
+      color: #f89b1e;
+      margin-left: 10px;
+  }
+
+  .top-bar {
+      background: #000;
+      color: #fff;
+      font-size: 14px;
+      padding: 5px 0;
+  }
