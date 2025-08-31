@@ -1,6 +1,26 @@
-  .logo {
-      height: 100px;
-  }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    body{
+        
+    }
+    .logo {
+        height: 100px;
+        float: left;
+        position: absolute;
+        top: 0;
+        left: auto;
+        z-index: 10;
+    }
+
+    .navbar-relative {
+        position: relative;
+    }
 
   .btn-donate {
       background-color: #f35023;
@@ -12,6 +32,7 @@
       background-color: #f89b1e;
       color: #fff;
       border-radius: 0;
+      margin-right: auto;
   }
 
   .social-icons i {
@@ -26,3 +47,10 @@
       font-size: 14px;
       padding: 5px 0;
   }
+.contactlink {
+      margin-left:auto;
+      padding-right:350px;
+}
+.navbuttons{
+      
+}

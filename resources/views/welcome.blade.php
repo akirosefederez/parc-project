@@ -12,11 +12,18 @@
 </head>
 <body>
 
+<!-- Logo -->
+    <img class="logo" src="./assets/logo/logo2.png" alt="logo" />   
 <!-- Top Bar -->
 <div class="top-bar">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div>(02) 8350 6350 | program.director@foundation.com.ph</div>
-    <div class="d-none d-md-flex">
+  <div class="w-100 d-flex align-items-center justify-content-between px-0">
+    <!-- Left side: Contact info -->
+    <div class="contactlink ps-3">
+      (02) 8350 6350 | program.director@foundation.com.ph
+    </div>
+
+    <!-- Right side: Buttons -->
+    <div class="nav-buttons d-flex">
       <a href="#" class="btn btn-donate px-3">DONATE</a>
       <a href="#" class="btn btn-adopt px-3">ADOPT A SCHOLAR</a>
     </div>
@@ -26,10 +33,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-white shadow-sm">
   <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand" href="https://imgbb.com/">
-      <img class="logo" src="https://i.ibb.co/spzX6bDX/logo2.png" alt="Logo">
-    </a>
+    
+    
 
     <!-- Toggler -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -49,12 +54,12 @@
     </div>
 
     <!-- Social Icons -->
-    <div class="social-icons d-none d-lg-block">
-      <i class="bi bi-facebook"></i>
-      <i class="bi bi-linkedin"></i>
-      <i class="bi bi-youtube"></i>
-      <i class="bi bi-instagram"></i>
-    </div>
+      <div class="social-icons d-none d-lg-flex gap-3 me-3">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-instagram"></i>
+      </div>
   </div>
 </nav>
 
