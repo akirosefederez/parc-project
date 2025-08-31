@@ -39,7 +39,7 @@
     <!-- Menu -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="{{ url('/original') }}" class="nav-link active">Home</a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Causes</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
