@@ -1,56 +1,78 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    .logo { 
+     height: 150px;
+     float: left; 
+     position: absolute; 
+     top: 0; 
+     z-index: 10; 
     }
-    body{
-        
-    }
-    .logo {
-        height: 100px;
-        float: left;
-        position: absolute;
-        top: 0;
-        left: auto;
-        z-index: 10;
-    }
+    .logo1 {
+     height: 65px; /* resized to fit navbar */
 
-    .navbar-relative {
-        position: relative;
     }
-
-  .btn-donate {
+    .btn-donate,
+    .btn-adopt {
+      color: #fff;
+      border-radius: 0;
+      padding: 20px;
+      min-width: 180px;
+      text-align: center;
+    }
+    .btn-donate {
       background-color: #f35023;
-      color: #fff;
-      border-radius: 0;
-  }
-
-  .btn-adopt {
+    }
+    .btn-adopt {
       background-color: #f89b1e;
-      color: #fff;
-      border-radius: 0;
-      margin-right: auto;
-  }
-
-  .social-icons i {
-      font-size: 18px;
+    }
+    .social-icons i {
+      font-size: 25px;
       color: #f89b1e;
       margin-left: 10px;
-  }
-
-  .top-bar {
+      padding: 10px;
+    }
+    .top-bar {
       background: #000;
       color: #fff;
-      font-size: 14px;
-      padding: 5px 0;
-  }
-.contactlink {
-      margin-left:auto;
-      padding-right:350px;
-}
-.navbuttons{
-      
-}
+      font-size: 15px;
+      padding-left: 20px;
+    }
+    .contactlink {
+      font-weight: bold;
+      padding-left: 500px;
+    }
+    .navbar {
+      background-color: rgb(241, 241, 241);
+      padding: 0.5rem 1rem;
+    }
+    .nav-item {
+      font-weight: bold;
+      position: relative;
+      margin: 0 8px;
+    }
+    .nav-link {
+      position: relative;
+      color: #000;
+      transition: all 0.3s ease-in-out;
+      padding: 12px 8px;
+    }
+    /* Orange line effect */
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: #f89b1e;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease-in-out;
+    }
+    .nav-link:hover::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    /* Active page style */
+    .nav-item.active .nav-link {
+      font-weight: bold;
+      color: #f89b1e !important;
+    }
