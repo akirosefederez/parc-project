@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}">
 
 </head>
-<body>
+<body><!--checking-->
 
 <!-- Logo -->
     <img class="logo" src="./assets/logo/logo2.png" alt="logo" />   
