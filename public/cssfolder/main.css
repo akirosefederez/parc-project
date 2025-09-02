@@ -1,78 +1,137 @@
-    .logo { 
-     height: 150px;
-     float: left; 
-     position: absolute; 
-     top: 0; 
-     z-index: 10; 
-    }
-    .logo1 {
-     height: 65px; /* resized to fit navbar */
+/* Logo styles */
+.logo { 
+  height: 150px;
+  float: left; 
+  position: absolute; 
+  top: 0; 
+  z-index: 10; 
+}
+.logo1 {
+  height: 65px; /* resized to fit navbar */
+}
 
-    }
-    .btn-donate,
-    .btn-adopt {
-      color: #fff;
-      border-radius: 0;
-      padding: 20px;
-      min-width: 180px;
-      text-align: center;
-    }
-    .btn-donate {
-      background-color: #f35023;
-    }
-    .btn-adopt {
-      background-color: #f89b1e;
-    }
-    .social-icons i {
-      font-size: 25px;
-      color: #f89b1e;
-      margin-left: 10px;
-      padding: 10px;
-    }
-    .top-bar {
-      background: #000;
-      color: #fff;
-      font-size: 15px;
-      padding-left: 20px;
-    }
-    .contactlink {
-      font-weight: bold;
-      padding-left: 500px;
-    }
-    .navbar {
-      background-color: rgb(241, 241, 241);
-      padding: 0.5rem 1rem;
-    }
-    .nav-item {
-      font-weight: bold;
-      position: relative;
-      margin: 0 8px;
-    }
-    .nav-link {
-      position: relative;
-      color: #000;
-      transition: all 0.3s ease-in-out;
-      padding: 12px 8px;
-    }
-    /* Orange line effect */
-    .nav-link::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 3px;
-      width: 100%;
-      background-color: #f89b1e;
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 0.3s ease-in-out;
-    }
-    .nav-link:hover::before {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
-    /* Active page style */
-    .nav-item.active .nav-link {
-      font-weight: bold;
-      color: #f89b1e !important;
-    }
+/* Buttons */
+.btn-donate,
+.btn-adopt {
+  color: #fff;
+  border-radius: 0;
+  padding: 18.5px;
+  text-align: center;
+  font-weight: bold;
+  flex: 1;               /* ✅ equal width */
+  white-space: nowrap;   /* ✅ prevents double-line text */
+}
+.btn-donate { background-color: #f35023; }
+.btn-adopt { background-color: #f89b1e; }
+
+/* Buttons container (desktop) */
+.mainbuttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  z-index: 2000;
+  width: 400px;   /* ✅ fixed container width */
+  gap: 0; /* no space between buttons */
+}
+
+/* Social icons */
+.social-icons i {
+  font-size: 25px;
+  color: #f89b1e;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+/* Top bar */
+.top-bar {
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.contactlink {
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgb(241, 241, 241);
+  padding: 0.5rem 1rem;
+}
+.nav-item {
+  font-weight: bold;
+  position: relative;
+  margin: 0 8px;
+}
+.nav-link {
+  position: relative;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  padding: 12px 8px;
+}
+
+/* Orange line effect */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #f89b1e;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Active page style */
+.nav-item.active .nav-link {
+  font-weight: bold;
+  color: #f89b1e !important;
+}
+
+/* Responsive for 400x608 and smaller */
+@media (max-width: 400px), (max-height: 608px) {
+  .logo { display: none !important; }
+  .logo1 {
+    height: 90px;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    display: block;
+  }
+  .navbar,
+  .container-fluid {
+    padding-left: 0 !important;
+  }
+  .top-bar { display:none; }
+
+  /* Buttons under navbar */
+  .mainbuttons {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+  }
+  .btn-donate,
+  .btn-adopt {
+    flex: 1;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .navbar-collapse {
+    position: relative;
+    min-height: auto;
+    background-color: #fff !important;
+    padding-bottom: 0;
+  }
+  .navbar { background-color: #fff !important; }
+}

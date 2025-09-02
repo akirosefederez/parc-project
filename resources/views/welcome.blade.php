@@ -14,22 +14,18 @@
 
   <!-- Top Bar -->
   <div class="top-bar">
-    <div class="w-100 d-flex align-items-center justify-content-between" id="topbar">
+    <div class="w-100 d-flex align-items-center justify-content-center" id="topbar">
       <div class="contactlink">(02) 8350 6350  |  program.director@foundation.com.ph</div>
-      <div class="d-none d-md-flex mainbuttons">
-        <a href="#" class="btn btn-donate px-3">DONATE</a>
-        <a href="#" class="btn btn-adopt px-3">ADOPT A SCHOLAR</a>
-      </div>
     </div>
   </div>
 
   <!-- Logo  -->
-    <img class="logo" src="https://i.ibb.co/spzX6bDX/logo2.png" alt="Logo">
+            <img class="logo" src="./assets/logo/logo2.png" alt="" />
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg shadow-sm">
     <div class="container-fluid">
-    <img class="logo1" src="https://i.ibb.co/spzX6bDX/logo2.png" alt="Logo">
+    <img class="logo1" src="./assets/logo/logo2.png" alt="Logo">
 
       <!-- Toggler -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -57,6 +53,12 @@
       </div>
     </div>
   </nav>
+
+  
+      <div class="d-none d-md-flex mainbuttons">
+        <a href="#" class="btn btn-donate px-3">DONATE</a>
+        <a href="#" class="btn btn-adopt px-3">ADOPT A SCHOLAR</a>
+      </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
