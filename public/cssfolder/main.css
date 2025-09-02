@@ -40,7 +40,7 @@
   font-size: 25px;
   color: #f89b1e;
   margin-left: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 
 /* Top bar */
@@ -59,18 +59,41 @@
 /* Navbar */
 .navbar {
   background-color: rgb(241, 241, 241);
-  padding: 0.5rem 1rem;
+  padding: 0;             /* ✅ remove gaps */
+  height: 90px;           /* ✅ fixed navbar height */
+  display: flex;
+  align-items: stretch;   /* ✅ children match navbar height */
 }
+
+/* Navigation items (desktop) */
+.navbar-nav {
+  display: flex;
+  flex: 1;
+  align-items: stretch;   /* ✅ match parent height */
+  justify-content: space-between;
+  margin-left: 180px;     /* ✅ shift slightly right */
+  margin-right: 0;
+  padding: 0;
+}
+
 .nav-item {
   font-weight: bold;
+  padding: 10px;
   position: relative;
-  margin: 0 8px;
+  flex: 1;                /* ✅ equal width */
+  margin: 0;              /* ✅ remove margin */
 }
+
 .nav-link {
-  position: relative;
+  display: flex;
+  align-items: center;    /* ✅ vertically center text */
+  justify-content: center;/* ✅ horizontally center text */
   color: #000;
   transition: all 0.3s ease-in-out;
-  padding: 12px 8px;
+  height: 100%;           /* ✅ fill navbar height */
+  width: 100%;
+  padding: 23px;             /* ✅ no extra gaps */
+  text-align: center;
 }
 
 /* Orange line effect */
@@ -109,6 +132,7 @@
   .navbar,
   .container-fluid {
     padding-left: 0 !important;
+    padding-right: 0 !important;   /* ✅ remove right gap */
   }
   .top-bar { display:none; }
 
@@ -126,12 +150,37 @@
     margin: 0;
     border-radius: 0;
   }
-
+  .navbar-toggler{
+    margin-right: 10px;
+  }
   .navbar-collapse {
     position: relative;
     min-height: auto;
     background-color: #fff !important;
-    padding-bottom: 0;
+    padding: 0 !important;        /* ✅ no padding */
+    margin: 0 !important;         /* ✅ no margin */
+    width: 100% !important;       /* ✅ full width */
   }
+
   .navbar { background-color: #fff !important; }
+
+  /* Mobile nav links */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 !important;         /* ✅ no margin */
+    padding: 0 !important;        /* ✅ no padding */
+    width: 100% !important;       /* ✅ full width */
+  }
+
+  .nav-item {
+    flex: unset;
+  }
+
+  .nav-link {
+    height: auto;
+    padding: 12px 16px;
+    justify-content: flex-start;
+    width: 100% !important;       /* ✅ no side gap */
+  }
 }
