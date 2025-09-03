@@ -92,7 +92,7 @@
   transition: all 0.3s ease-in-out;
   height: 100%;           /* ✅ fill navbar height */
   width: 100%;
-  padding: 23px;             /* ✅ no extra gaps */
+  padding: 23px;          /* ✅ no extra gaps */
   text-align: center;
 }
 
@@ -118,6 +118,13 @@
 .nav-item.active .nav-link {
   font-weight: bold;
   color: #f89b1e !important;
+}
+
+/* ✅ Center dropdown menu */
+.dropdown-menu {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-align: center; 
 }
 
 /* Responsive for 400x608 and smaller */
@@ -167,20 +174,32 @@
   /* Mobile nav links */
   .navbar-nav {
     flex-direction: column;
-    align-items: stretch;
-    margin: 0 !important;         /* ✅ no margin */
-    padding: 0 !important;        /* ✅ no padding */
-    width: 100% !important;       /* ✅ full width */
+    align-items: center;   /* ✅ center links */
+    justify-content: center;
+    margin: 0 !important;  
+    padding: 0 !important; 
+    width: 100% !important;
+    text-align: center;
   }
 
   .nav-item {
     flex: unset;
+    width: 100%;
   }
 
   .nav-link {
     height: auto;
     padding: 12px 16px;
-    justify-content: flex-start;
-    width: 100% !important;       /* ✅ no side gap */
+    justify-content: center;  /* ✅ centered */
+    width: 100% !important;   
+    text-align: center;
+  }
+
+  /* ✅ Center dropdown menu on small screens */
+  .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center;
+    width: auto;
   }
 }
