@@ -71,7 +71,7 @@
   flex: 1;
   align-items: stretch;   /* ✅ match parent height */
   justify-content: space-between;
-  margin-left: 180px;     /* ✅ shift slightly right */
+  margin-left: 195px;     /* ✅ shift slightly right */
   margin-right: 0;
   padding: 0;
 }
