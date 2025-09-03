@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}">
+  <link rel="stylesheet" href="{{ asset('cssfolder/donate.css') }}">
+
 
 </head>
 <body>
@@ -56,9 +58,13 @@
 
   
       <div class="d-none d-md-flex mainbuttons">
-        <a href="{{ url('/donate') }}" class="btn btn-donate px-3">DONATE</a>
+        <a href="#" class="btn btn-donate px-3">DONATE</a>
         <a href="#" class="btn btn-adopt px-3">ADOPT A SCHOLAR</a>
       </div>
+  <!-- Main Content -->
+   <div>
+    <h1 class="text-center my-5">Donate Page</h1>
+    <p class="text-center">This is where the donation information will be displayed.</p>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
