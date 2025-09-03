@@ -6,6 +6,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+// Welcome Page
+Route::get('/welcome', function () {
+    return view('welcome'); // resources/views/welcome.blade.php
+})->name('welcome');
+
 // New route for original.blade.php
 Route::get('/home', function () {
     return view('original');
