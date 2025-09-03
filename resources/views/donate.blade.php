@@ -45,27 +45,27 @@
            <div class="donateform">
 
             <div class="center-btn"> 
-               <button class="btn1">Give Once</button>
-               <button class="btn2">Give Monthly</button>
-            </div>
+   <a href="#" class="btn1">Give Once</a>
+   <a href="#" class="btn2">Give Monthly</a>
+</div>
 
-            <div class="note">
-              <p class="p1">Thank you for making a difference.</p>
-              <p class="p2">Monthly giving is a simple, impactful way to support PARCaralan Scholars</p>
-            </div>  
-            
-            <div class="btn-monthly">
-            <div class="center-btn"> 
-               <button class="btnm1">$10/mo</button>
-               <button class="btnm2">$15/m0</button>
-               <button class="btnm3">$20/mo</button>
-            </div>            
-            <div class="center-btn"> 
-               <button class="btnm4">$25/mo</button>
-               <button class="btnm5">$50/m0</button>
-               <button class="btnm6">$Other/mo</button>
-            </div>  
-            </div>
+<div class="note">
+  <p class="p1">Thank you for making a difference.</p>
+  <p class="p2">Monthly giving is a simple, impactful way to support PARCaralan Scholars</p>
+</div>  
+
+<div class="btn-monthly">
+  <div class="center-btn"> 
+     <a href="#" class="btnm1">$10/mo</a>
+     <a href="#" class="btnm2">$15/m0</a>
+     <a href="#" class="btnm3">$20/mo</a>
+  </div>            
+  <div class="center-btn"> 
+     <a href="#" class="btnm4">$25/mo</a>
+     <a href="#" class="btnm5">$50/m0</a>
+     <a href="#" class="btnm6">$Other/mo</a>
+  </div>  
+</div>
 
            </div>    
     </div>
