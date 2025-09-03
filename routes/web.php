@@ -7,6 +7,7 @@ Route::get('/', function () {
 })->name('home');
 
 // New route for original.blade.php
-Route::get('/original', function () {
+Route::get('/home', function () {
     return view('original');
-});
+})->name('home');
+
