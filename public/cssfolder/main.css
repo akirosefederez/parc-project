@@ -7,7 +7,7 @@
   z-index: 10;
 }
 .logo1 {
-  height: 65px; /* resized to fit navbar */
+  height: 65px;
 }
 
 /* Buttons */
@@ -18,21 +18,21 @@
   padding: 18.5px;
   text-align: center;
   font-weight: bold;
-  flex: 1;               /* ✅ equal width */
-  white-space: nowrap;   /* ✅ prevents double-line text */
+  flex: 1;
+  white-space: nowrap;
 }
 .btn-donate { background-color: #f35023; }
 .btn-adopt { background-color: #f89b1e; }
 
-/* Buttons container (desktop) */
+/* Buttons container */
 .mainbuttons {
   position: absolute;
   top: 0;
   right: 0;
   display: flex;
   z-index: 2000;
-  width: 400px;   /* ✅ fixed container width */
-  gap: 0; /* no space between buttons */
+  width: 400px;
+  gap: 0;
 }
 
 /* Social icons */
@@ -52,47 +52,43 @@
   display: flex;
   align-items: center;
 }
-.contactlink {
-  font-weight: bold;
-}
+.contactlink { font-weight: bold; }
 
 /* Navbar */
 .navbar {
   background-color: rgb(241, 241, 241);
-  padding: 0;             /* ✅ remove gaps */
-  height: 90px;           /* ✅ fixed navbar height */
+  padding: 0;
+  height: 90px;
   display: flex;
-  align-items: stretch;   /* ✅ children match navbar height */
+  align-items: stretch;
 }
 
-/* Navigation items (desktop) */
+/* Navigation items */
 .navbar-nav {
   display: flex;
   flex: 1;
-  align-items: stretch;   /* ✅ match parent height */
+  align-items: stretch;
   justify-content: space-between;
-  margin-left: 195px;     /* ✅ shift slightly right */
+  margin-left: 195px;
   margin-right: 0;
   padding: 0;
 }
-
 .nav-item {
   font-weight: bold;
   padding: 10px;
   position: relative;
-  flex: 1;                /* ✅ equal width */
-  margin: 0;              /* ✅ remove margin */
+  flex: 1;
+  margin: 0;
 }
-
 .nav-link {
   display: flex;
-  align-items: center;    /* ✅ vertically center text */
-  justify-content: center;/* ✅ horizontally center text */
+  align-items: center;
+  justify-content: center;
   color: #000;
   transition: all 0.3s ease-in-out;
-  height: 100%;           /* ✅ fill navbar height */
+  height: 100%;
   width: 100%;
-  padding: 23px;          /* ✅ no extra gaps */
+  padding: 23px;
   text-align: center;
 }
 
@@ -114,20 +110,20 @@
   transform-origin: left;
 }
 
-/* Active page style */
+/* Active page */
 .nav-item.active .nav-link {
   font-weight: bold;
   color: #f89b1e !important;
 }
 
-/* ✅ Center dropdown menu */
+/* Dropdown center */
 .dropdown-menu {
   left: 50% !important;
   transform: translateX(-50%) !important;
   text-align: center; 
 }
 
-/* Responsive for 400x608 and smaller */
+/* Responsive 400x608 */
 @media (max-width: 400px), (max-height: 608px) {
   .logo { display: none !important; }
   .logo1 {
@@ -139,11 +135,10 @@
   .navbar,
   .container-fluid {
     padding-left: 0 !important;
-    padding-right: 0 !important;   /* ✅ remove right gap */
+    padding-right: 0 !important;
   }
   .top-bar { display:none; }
 
-  /* Buttons under navbar */
   .mainbuttons {
     position: static;
     display: flex !important;
@@ -151,34 +146,31 @@
     width: 100%;
     text-align: center;
   }
-  .btn-donate,
-  .btn-adopt {
+  .btn-donate, .btn-adopt {
     flex: 1;
     margin: 0;
     border-radius: 0;
   }
-  .navbar-toggler{
-    margin-right: 10px;
-  }
+  .navbar-toggler { margin-right: 10px; }
+
   .navbar-collapse {
     position: relative;
     min-height: auto;
     background-color: #fff !important;
-    padding: 0 !important;        /* ✅ no padding */
-    margin: 0 !important;         /* ✅ no margin */
-    width: 100% !important;       /* ✅ full width */
-    z-index: 3000;                /* ✅ keep above carousel */
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    z-index: 3000;
   }
 
   .navbar { background-color: #fff !important; }
 
-  /* Mobile nav links */
   .navbar-nav {
     flex-direction: column;
-    align-items: center;   /* ✅ center links */
+    align-items: center;
     justify-content: center;
-    margin: 0 !important;  
-    padding: 0 !important; 
+    margin: 0 !important;
+    padding: 0 !important;
     width: 100% !important;
     text-align: center;
   }
@@ -191,12 +183,11 @@
   .nav-link {
     height: auto;
     padding: 12px 16px;
-    justify-content: center;  /* ✅ centered */
-    width: 100% !important;   
+    justify-content: center;
+    width: 100% !important;
     text-align: center;
   }
 
-  /* ✅ Center dropdown menu on small screens */
   .dropdown-menu {
     left: 50% !important;
     transform: translateX(-50%) !important;
@@ -204,109 +195,128 @@
     width: auto;
   }
 
-  /* ✅ Hide carousel when menu is expanded */
+  /* Hide carousel if nav expanded */
   .navbar-collapse.show ~ .carousel-container {
     display: none !important;
   }
 }
 
-/* carousel starts here */
+/* Carousel */
 .carousel-container {
-    max-width: 100%;
-    margin: 0;
-    background: white;
-    border-radius: 0;
-    box-shadow: none;
-    overflow: hidden;
+  max-width: 100%;
+  margin: 0;
+  background: white;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
 }
-
 .carousel-item img {
-    width: 100%;
-    height: 612px;
-    object-fit: cover;
+  width: 100%;
+  height: 612px;
+  object-fit: cover;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-}
-
+/* Remove default Bootstrap arrows */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 40px;
-    height: 40px;
-    filter: invert(50%);
+  display: none !important;
 }
 
+/* Custom controls positioned middle left/right */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  opacity: 1 !important;
+  z-index: 2000;
+}
+.custom-prev { left: 10px; }
+.custom-next { right: 10px; }
+
+/* Circle button */
+.circle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+.circle-btn:hover {
+  background: #f89b1e;
+  color: #fff;
+}
+
+/* Wrapper */
+.carousel-wrapper { padding-bottom: 0; }
+
+/* Remove gaps */
+.container-fluid { padding-left: 0; padding-right: 0; }
+.carousel { margin: 0; padding: 0; }
+
+/* ✅ Default Carousel indicators hidden (desktop) */
 .carousel-indicators {
-    bottom: 20px;
+  display: none;
 }
 
-.carousel-indicators [data-bs-target] {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin: 0 4px;
-    background-color: #f78e1e;
-    border: none;
-}
-
-.carousel-indicators .active {
-    background-color: #ffffff;
-}
-
-.carousel-wrapper {
-    padding-bottom: 0;
-}
-
-/* Remove container-fluid padding */
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* Remove any remaining gaps */
-.carousel {
-    margin: 0;
-    padding: 0;
-}
-
-/* Responsive adjustments - updated to remove gaps */
-@media (max-width: 1621px) {
-    .carousel-container {
-        max-width: 100%;
-        margin: 0;
-    }
-}
-
-@media (max-width: 1024px) {
-    .carousel-item img {
-        height: 400px;
-    }
-}
-
+/* ✅ Mobile adjustments only */
 @media (max-width: 768px) {
-    .carousel-item img {
-        height: 300px;
-    }
+  /* Adjust carousel height dynamically */
+  .carousel-item img {
+    height: 50vh; /* responsive height */
+    max-height: 400px;
+    min-height: 220px;
+    object-fit: cover;
+  }
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 35px;
-        height: 35px;
-    }
+  /* Hide arrows on mobile */
+  .custom-prev,
+  .custom-next {
+    display: none !important;
+  }
+
+  /* ✅ Mobile Carousel indicators centered */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.25); /* subtle blur */
+    backdrop-filter: blur(6px);
+    border-radius: 30px;
+    z-index: 2100;
+  }
+
+  /* Each dot */
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+
+  /* Active (current) dot */
+  .carousel-indicators .active {
+    background-color: #f89b1e;
+    transform: scale(1.2);
+  }
 }
-
-@media (max-width: 480px) {
-    .carousel-item img {
-        height: 200px;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-/* carousel end here */
