@@ -1,0 +1,79 @@
+body{
+    background-color:blanchedalmond;
+}
+.title{
+    font-size:50px;
+    color:rgb(223, 149, 12);
+}
+.img1{
+    margin-top: 8px;
+}
+.desc1{
+    font-size:20px;
+    word-spacing: normal;
+}
+
+
+.donateform{
+    background-color: white;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.center-btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.btn1, .btn2 {
+    font-weight: bold;
+    width: 250px;
+    height: 60px;
+    /* Adjust as needed */
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    color:rgb(223, 149, 12);
+    background-color: white;
+    border-color:rgb(223, 149, 12);
+}
+.note{
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+    padding: 20px;
+    background-color:blanchedalmond;
+}
+.p1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:rgb(223, 149, 12);
+
+}
+.p2{
+    font-size: 13px;
+    color:rgb(223, 149, 12);
+
+}
+
+.btn-monthly{
+    margin: 10px;
+}
+.btnm1, .btnm2, .btnm3, 
+.btnm4, .btnm5, .btnm6{
+    font-weight: bold;
+    width: 230px;
+    height: 60px;
+    /* Adjust as needed */
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    color:rgb(223, 149, 12);
+    background-color: white;
+    border-color:rgb(223, 149, 12);
+    box-shadow: none !important; 
+    border-width: 0;
+}
