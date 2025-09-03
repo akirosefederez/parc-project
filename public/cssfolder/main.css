@@ -1,10 +1,10 @@
 /* Logo styles */
 .logo { 
-  height: 150px;
+  height: 157px;
   float: left; 
   position: absolute; 
   top: 0; 
-  z-index: 10; 
+  z-index: 10;
 }
 .logo1 {
   height: 65px; /* resized to fit navbar */
