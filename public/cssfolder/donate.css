@@ -139,8 +139,8 @@ body {
 
 .details-list hr {
   border: none;
-  border-top: 1px solid #ddd;
-  margin: 0;
+  border-top: 2px solid #565656;
+  margin: 0 0 0 105px;
 }
 
 /* ✅ MOBILE FIX ONLY (desktop stays the same) */
@@ -250,31 +250,90 @@ body {
 }
 
 /* 📱 EXTRA SMALL DEVICES (≤400px) */
-@media (max-width: 400px) {
+@media (max-width: 400px), (max-height: 608px) {
+  body {
+    background-color: white !important;
+  }
+
   .donateform {
     margin: 15px auto;
     padding: 20px;
     width: 95%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
   }
 
-  .col1 .title {
-    font-size: 24px;
+  .center-btn {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    margin-bottom: 16px;
   }
 
-  .col1 .desc1 {
-    font-size: 14px;
-  }
-
-  .col2 .btn1,
-  .col2 .btn2,
-  .col2 .btn-monthly a {
+  .btn1, .btn2 {
     width: 100%;
     max-width: 260px;
+    height: 50px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    border-radius: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .btnm1, .btnm2, .btnm3, 
-  .btnm4, .btnm5, .btnm6 {
+  .btn2 {
+    background: rgb(255, 162, 0);
+    color: white;
+    border: 2px solid rgb(255, 162, 0);
+  }
+
+  .note {
     width: 100%;
-    max-width: 260px;
+    text-align: center;
+    margin: 12px 0;
+    padding: 16px 8px;
+    background-color: #ffe7c2;
+    color: #f35023;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
+  .btn-monthly {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btnm1, .btnm2, .btnm3, .btnm4, .btnm5, .btnm6 {
+    width: 48%;
+    max-width: 140px;
+    height: 50px;
+    font-size: 16px;
+    margin-bottom: 0;
+    border-radius: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnm1 {
+    background: rgb(255, 162, 0);
+    color: white;
+    border: 2px solid rgb(255, 162, 0);
+  }
+
+  /* Remove extra .center-btn wrappers for mobile */
+  .btn-monthly .center-btn {
+    display: contents;
   }
 }
