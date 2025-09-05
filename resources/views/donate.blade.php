@@ -46,21 +46,31 @@
           <div class="pdt">
             <p>Your support will help PARCaralan:</p>
           </div>
-
-          <div class="wimgdt">
-            <div class="icon-text">
-              <div class="icon-stack">
-                <img src="{{ asset('./assets/icons/Music.png') }}" alt="Music" class="music">
-              </div>
-              <p>
-                Provide free training in music, dance, and theater to artistically gifted children.
-              </p>
+          <div class="details-list">
+            <div class="detail-item">
+              <img src="{{ asset('assets/icons/Music.png') }}" alt="Music" class="music-icon">
+              <p>Provide free training in music, dance, and theater to artistically gifted children.</p>
             </div>
-
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <hr>
+            <div class="detail-item">
+              <img src="{{ asset('assets/icons/Flute.png') }}" alt="Instrument" class="detail-icon">
+              <p>Equip scholars with musical instruments, ensuring they have the tools they need to learn and grow.</p>
+            </div>
+            <hr>
+            <div class="detail-item">
+              <img src="{{ asset('assets/icons/Car.png') }}" alt="Bus" class="detail-icon">
+              <p>Cover transportation costs so scholars can access training and opportunities without barriers.</p>
+            </div>
+            <hr>
+            <div class="detail-item">
+              <img src="{{ asset('assets/icons/Apple.png') }}" alt="Apple" class="detail-icon">
+              <p>Provide meal allowances to keep young minds and bodies nourished.</p>
+            </div>
+            <hr>
+            <div class="detail-item">
+              <img src="{{ asset('assets/icons/Globe.png') }}" alt="Globe" class="detail-icon">
+              <p>Give underserved children the chance to shine, express themselves, and build a brighter future.</p>
+            </div>
           </div>
         </div>
       </div>

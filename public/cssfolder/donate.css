@@ -94,18 +94,81 @@ body{
 }
 
 .icon-text {
-  display: flex;         /* put items side by side */
-  align-items: center;   /* vertically center */
-  gap: 20px;             /* space between image and text */
+  display: flex;
+  flex-direction: column;   /* Stack image and text vertically */
+  align-items: center;      /* Center horizontally */
+  gap: 12px;                /* Space between image and text */
   padding: 20px 50px 50px 50px;
 }
 
-.icon-text p {
-    text-align: left;
-    margin-top: 15px;
-}
 .icon-text img {
-  width: 80px;           /* control image size */
+  width: 80px;
   height: auto;
+}
+
+.icon-text p {
+  text-align: center;       /* Center text under image */
+  margin-top: 0;            /* Remove extra top margin */
+}
+.item {
+  text-align: center;
+  margin-bottom: 20px; /* spacing between items */
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px 50px 50px;
+  gap: 0;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 0;
+}
+
+.detail-icon {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  background: #f89b1e;
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.music-icon {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  background: #f89b1e;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-item img {
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
+  display: block;
+}
+
+.detail-item p {
+  margin: 0;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.details-list hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 0;
 }
 
