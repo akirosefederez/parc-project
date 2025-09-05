@@ -116,7 +116,7 @@
               <a href="#" class="btnm5">$50/mo</a>
               <a href="#" class="btnm6">$Other/mo</a>
             </div>  
-          </div>
+          </div> 
 
         </div>    
       </div>

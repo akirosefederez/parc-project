@@ -311,14 +311,16 @@ body {
     gap: 10px;
     width: 100%;
     justify-content: center;
+    
   }
 
-  .btnm1, .btnm2, .btnm3, .btnm4, .btnm5, .btnm6 {
-    width: 48%;
-    max-width: 140px;
+  .btnm1, .btnm2, .btnm3, 
+  .btnm4, .btnm5, .btnm6 {
+    width: 100%;
+    max-width: 260px;
     height: 50px;
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: 8px;
     border-radius: 0;
     text-align: center;
     display: flex;
@@ -341,4 +343,5 @@ body {
   border-top: 2px solid #565656;
   margin: 0;
   }
+  
 }
