@@ -336,4 +336,9 @@ body {
   .btn-monthly .center-btn {
     display: contents;
   }
+  .details-list hr {
+  border: none;
+  border-top: 2px solid #565656;
+  margin: 0;
+  }
 }
