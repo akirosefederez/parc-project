@@ -114,14 +114,14 @@ body {
 /* 🔵 FIXED CIRCLE ICONS */
 .music-icon,
 .detail-icon {
-  width: 80px;              /* same width */
-  height: 80px;             /* same height (square) */
+  width: 80px;
+  height: 80px;
   background: #f89b1e;
-  border-radius: 50%;       /* makes it a perfect circle */
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;           /* prevents squishing */
+  flex-shrink: 0;
 }
 
 .music-icon img,
@@ -141,4 +141,140 @@ body {
   border: none;
   border-top: 1px solid #ddd;
   margin: 0;
+}
+
+/* ✅ MOBILE FIX ONLY (desktop stays the same) */
+@media (max-width: 768px) {
+  .row.row-cols-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center whole content */
+  }
+
+  .col1 {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .col2 {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+
+  .col1 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col1 .img1 {
+    order: 1;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .col1 .title {
+    order: 2;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .col1 .desc1 {
+    order: 3;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 15px;
+  }
+
+  /* Give Once / Give Monthly side by side but responsive */
+  .col2 .center-btn {
+    order: 4;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col2 .btn1,
+  .col2 .btn2 {
+    width: 45%;
+    min-width: 140px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .col2 .note {
+    order: 5;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .col2 .btn-monthly {
+    order: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .col2 .btn-monthly a {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .details {
+    order: 7;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .pdt {
+    font-size: 20px;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .detail-item p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* 📱 EXTRA SMALL DEVICES (≤400px) */
+@media (max-width: 400px) {
+  .donateform {
+    margin: 15px auto;
+    padding: 20px;
+    width: 95%;
+  }
+
+  .col1 .title {
+    font-size: 24px;
+  }
+
+  .col1 .desc1 {
+    font-size: 14px;
+  }
+
+  .col2 .btn1,
+  .col2 .btn2,
+  .col2 .btn-monthly a {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .btnm1, .btnm2, .btnm3, 
+  .btnm4, .btnm5, .btnm6 {
+    width: 100%;
+    max-width: 260px;
+  }
 }
