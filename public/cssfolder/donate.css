@@ -1,118 +1,100 @@
-body{
-    background-color:blanchedalmond;
-}
-.title{
-    font-size:50px;
-    color:rgb(255, 162, 0);
-}
-.img1{
-    margin-top: 8px;
-    width: 90%;
-}
-.desc1{
-    font-size:20px;
-    word-spacing: normal;
+body {
+  background-color: blanchedalmond;
 }
 
+.title {
+  font-size: 50px;
+  color: rgb(255, 162, 0);
+}
 
-.donateform{
-    background-color: white;
-    margin-top: 50px;
-    padding: 50px;
+.img1 {
+  margin-top: 8px;
+  width: 90%;
+}
+
+.desc1 {
+  font-size: 20px;
+  word-spacing: normal;
+}
+
+.donateform {
+  background-color: white;
+  margin-top: 50px;
+  padding: 50px;
 }
 
 .center-btn {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 16px;
-    margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
 }
 
 .btn1, .btn2 {
-    display: flex;                /* enable flexbox */
-    justify-content: center;      /* center horizontally */
-    align-items: center;          /* center vertically */
-    font-weight: bold;
-    width: 250px;
-    height: 60px;
-    font-size: 18px;
-    color: rgb(255, 162, 0);
-    background-color: white;
-    border: 2px solid rgb(255, 162, 0);
-    text-decoration: none;
-    font-style: normal;
-}
-.note{
-    text-align: center;
-    margin: 10px 10px 20px 10px;
-    padding: 20px;
-    background-color:blanchedalmond;
-}
-.p1{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color:rgb(255, 162, 0);
-
-}
-.p2{
-    font-size: 13px;
-    color:rgb(255, 162, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 250px;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(255, 162, 0);
+  background-color: white;
+  border: 2px solid rgb(255, 162, 0);
+  text-decoration: none;
 }
 
-.btn-monthly{
-    margin: 10px;
+.note {
+  text-align: center;
+  margin: 10px 10px 20px 10px;
+  padding: 20px;
+  background-color: blanchedalmond;
 }
+
+.p1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(255, 162, 0);
+}
+
+.p2 {
+  font-size: 13px;
+  color: rgb(255, 162, 0);
+}
+
+.btn-monthly {
+  margin: 10px;
+}
+
 .btnm1, .btnm2, .btnm3, 
 .btnm4, .btnm5, .btnm6 {
-    display: flex;                /* enable flexbox */
-    justify-content: center;      /* center horizontally */
-    align-items: center;          /* center vertically */
-    font-weight: bold;
-    width: 230px;
-    height: 60px;
-    font-size: 18px;
-    color: rgb(255, 162, 0);
-    background-color: white;
-    border: 2px solid rgb(255, 162, 0);
-    text-decoration: none;
-    font-style: normal;
-}
-
-.details{
-    background-color: white;
-    width: 90%;
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 40px;
-}
-.pdt{
-    color: rgb(255, 162, 0);
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.icon-text {
   display: flex;
-  flex-direction: column;   /* Stack image and text vertically */
-  align-items: center;      /* Center horizontally */
-  gap: 12px;                /* Space between image and text */
-  padding: 20px 50px 50px 50px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 230px;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(255, 162, 0);
+  background-color: white;
+  border: 2px solid rgb(255, 162, 0);
+  text-decoration: none;
 }
 
-.icon-text img {
-  width: 80px;
-  height: auto;
-}
-
-.icon-text p {
-  text-align: center;       /* Center text under image */
-  margin-top: 0;            /* Remove extra top margin */
-}
-.item {
+.details {
+  background-color: white;
+  width: 90%;
   text-align: center;
-  margin-bottom: 20px; /* spacing between items */
+  padding-top: 30px;
+  margin-top: 40px;
+}
+
+.pdt {
+  color: rgb(255, 162, 0);
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .details-list {
@@ -129,35 +111,24 @@ body{
   padding: 16px 0;
 }
 
+/* 🔵 FIXED CIRCLE ICONS */
+.music-icon,
 .detail-icon {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
+  width: 80px;              /* same width */
+  height: 80px;             /* same height (square) */
   background: #f89b1e;
-  border-radius: 50%;
-  padding: 12px;
+  border-radius: 50%;       /* makes it a perfect circle */
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.music-icon {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-  background: #f89b1e;
-  border-radius: 50%;
-  padding: 12px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-shrink: 0;           /* prevents squishing */
 }
 
-.detail-item img {
-  width: 66px;
-  height: 66px;
+.music-icon img,
+.detail-icon img {
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-  display: block;
 }
 
 .detail-item p {
@@ -171,4 +142,3 @@ body{
   border-top: 1px solid #ddd;
   margin: 0;
 }
-

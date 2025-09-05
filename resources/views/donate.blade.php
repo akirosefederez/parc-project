@@ -48,27 +48,37 @@
           </div>
           <div class="details-list">
             <div class="detail-item">
-              <img src="{{ asset('assets/icons/Music.png') }}" alt="Music" class="music-icon">
+              <div class="music-icon">
+                <img src="{{ asset('assets/icons/Music.png') }}" alt="Music">
+              </div>
               <p>Provide free training in music, dance, and theater to artistically gifted children.</p>
             </div>
             <hr>
             <div class="detail-item">
-              <img src="{{ asset('assets/icons/Flute.png') }}" alt="Instrument" class="detail-icon">
+              <div class="detail-icon">
+                <img src="{{ asset('assets/icons/Flute.png') }}" alt="Instrument">
+              </div>
               <p>Equip scholars with musical instruments, ensuring they have the tools they need to learn and grow.</p>
             </div>
             <hr>
             <div class="detail-item">
-              <img src="{{ asset('assets/icons/Car.png') }}" alt="Bus" class="detail-icon">
+              <div class="detail-icon">
+                <img src="{{ asset('assets/icons/Car.png') }}" alt="Bus">
+              </div>
               <p>Cover transportation costs so scholars can access training and opportunities without barriers.</p>
             </div>
             <hr>
             <div class="detail-item">
-              <img src="{{ asset('assets/icons/Apple.png') }}" alt="Apple" class="detail-icon">
+              <div class="detail-icon">
+                <img src="{{ asset('assets/icons/Apple.png') }}" alt="Apple">
+              </div>
               <p>Provide meal allowances to keep young minds and bodies nourished.</p>
             </div>
             <hr>
             <div class="detail-item">
-              <img src="{{ asset('assets/icons/Globe.png') }}" alt="Globe" class="detail-icon">
+              <div class="detail-icon">
+                <img src="{{ asset('assets/icons/Globe.png') }}" alt="Globe">
+              </div>
               <p>Give underserved children the chance to shine, express themselves, and build a brighter future.</p>
             </div>
           </div>
