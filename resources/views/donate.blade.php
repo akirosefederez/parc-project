@@ -46,6 +46,7 @@
           <div class="pdt">
             <p>Your support will help PARCaralan:</p>
           </div>
+
           <div class="details-list">
             <div class="detail-item">
               <div class="music-icon">
@@ -54,6 +55,7 @@
               <p>Provide free training in music, dance, and theater to artistically gifted children.</p>
             </div>
             <hr>
+            
             <div class="detail-item">
               <div class="detail-icon">
                 <img src="{{ asset('assets/icons/Flute.png') }}" alt="Instrument">
@@ -61,6 +63,7 @@
               <p>Equip scholars with musical instruments, ensuring they have the tools they need to learn and grow.</p>
             </div>
             <hr>
+            
             <div class="detail-item">
               <div class="detail-icon">
                 <img src="{{ asset('assets/icons/Car.png') }}" alt="Bus">
@@ -68,6 +71,7 @@
               <p>Cover transportation costs so scholars can access training and opportunities without barriers.</p>
             </div>
             <hr>
+            
             <div class="detail-item">
               <div class="detail-icon">
                 <img src="{{ asset('assets/icons/Apple.png') }}" alt="Apple">
@@ -75,6 +79,7 @@
               <p>Provide meal allowances to keep young minds and bodies nourished.</p>
             </div>
             <hr>
+            
             <div class="detail-item">
               <div class="detail-icon">
                 <img src="{{ asset('assets/icons/Globe.png') }}" alt="Globe">
@@ -117,6 +122,57 @@
               <a href="#" class="btnm6">$Other/mo</a>
             </div>  
           </div> 
+
+          <hr class="break">
+
+          <!-- Personal Info Form -->
+          <div>
+            <h3 class="formtitle">Your Information</h3>
+<form action="/action_page.php" class="personalinfo">
+  <label for="fname">First name</label>
+  <input type="text" id="fname" name="fname">
+
+  <label for="lname">Last name</label>
+  <input type="text" id="lname" name="lname">
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email">
+
+  <label for="country">Country</label>
+  <input type="text" id="country" name="country">
+
+  <label for="street">Street Address</label>
+  <input type="text" id="street" name="street">
+
+  <label for="city">City</label>
+  <input type="text" id="city" name="city">
+
+  <label for="postal">Postal</label>
+  <input type="text" id="postal" name="postal">
+
+              <p class="p1form">BE PART OF OUR COMMUNITY</p>
+            <p class="p2from"> Stay updated on how you can help empower youth through music. From inspiring stories to events and ways to give - we'll keep you in the loop. You can unsubscribe at any time.</p>
+          
+            <b><p> I would like to get email updates: </p></b>
+        <fieldset class="g-radio">
+        <input class="form-check-input" type="radio" name="updaterad1" id="updaterad1" value="option1">
+        <label class="form-check-label" for="updaterad1">
+          Yes
+        </label>
+
+        <input class="form-check-input" type="radio" name="updaterad2" id="updaterad2" value="option2">
+        <label class="form-check-label" for="updaterad2">
+          No
+        </label>
+        </fieldset> <!--g-radio end-->
+        
+  <input type="submit" value="DONATE">
+
+</form>
+
+
+
+          </div>
 
         </div>    
       </div>

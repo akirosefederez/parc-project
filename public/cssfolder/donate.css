@@ -56,12 +56,12 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
-  color: rgb(255, 162, 0);
+  color: rgb(241, 118, 10);
 }
 
 .p2 {
   font-size: 13px;
-  color: rgb(255, 162, 0);
+  color: rgb(241, 118, 10);
 }
 
 .btn-monthly {
@@ -142,6 +142,64 @@ body {
   border-top: 2px solid #565656;
   margin: 0 0 0 105px;
 }
+
+
+
+
+.break {
+    border: none;
+    border-top: 2px solid #565656;
+    margin: 40px 0;
+}
+.formtitle{
+    color: rgb(255, 162, 0);
+}
+  .personalinfo {
+    max-width: 530px; /* Centered box width */
+  }
+
+  .personalinfo label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+
+  .personalinfo input[type="text"],
+  .personalinfo input[type="email"] {
+    width: 100%;       /* Makes all textboxes same width */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  .personalinfo input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background: #ff9c00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .personalinfo input[type="submit"]:hover {
+    background: #e68900;
+  }
+  .p1form{
+    color: rgb(255, 162, 0);
+    margin-top: 15px;
+    font-weight: 800;
+  }
+  .g-radio{
+    gap: 8px;
+  }
+
+
+
 
 /* ✅ MOBILE FIX ONLY (desktop stays the same) */
 @media (max-width: 768px) {
