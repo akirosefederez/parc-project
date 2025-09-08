@@ -57,6 +57,33 @@
   </div>
   <!-- carousel ends here -->
 
+  <!-- PARCaralan starts here -->
+    <div class="container parcaralan">
+        <h1 class="title partitle">PARCaralan</h1>
+        <p class="paragraph parcdetails">
+            We harness the power of performing arts to transform the lives of 
+            underprivileged children & youth through our flagship program.
+        </p>
+        <button class="cta-button">Learn More</button>
+    </div>
+  <!-- PARCaralan ends here -->
+
+<div class="main-flex">
+  <div class="image-container">
+    <img src="assets\image\PARC SOG Event-1896 1.png" alt="Orchestra" class="main-image">
+    <img src="assets\image\sing.png" alt="Singers" class="small-image">
+  </div>
+  <div class="info-section">
+    <h2>Who we serve?</h2>
+    <ul>
+      <li><span class="emoji">🧑‍🎤</span> <span class="info-title">Who We Help:</span> Artistically gifted children (ages 7-12) from underserved communities, accepted as scholars.</li>
+      <li><span class="emoji">📚</span> <span class="info-title">What They Receive:</span> Free training in music, dance, and theater, plus school supplies, transportation, and meal allowances.</li>
+      <li><span class="emoji">🌱</span> <span class="info-title">Beyond the Arts:</span> Values formation, character-building, and cultural immersions to nurture ambition and appreciation for the arts.</li>
+      <li><span class="emoji">🚀</span> <span class="info-title">Future-Ready:</span> By age 17, we connect them with top art schools, mentors, and career opportunities—on stage, behind the scenes, or in other fields where they can apply their skills.</li>
+    </ul>
+  </div>
+</div>
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
