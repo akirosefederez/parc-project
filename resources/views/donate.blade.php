@@ -119,7 +119,7 @@
             <div class="center-btn"> 
               <a href="#" class="btnm4">$25/mo</a>
               <a href="#" class="btnm5">$50/mo</a>
-              <a href="#" class="btnm6">$Other/mo</a>
+              <a href="#" class="btnm6"><b class="dollar">$</b>Other/mo</a>
             </div>  
           </div> 
 
@@ -153,18 +153,25 @@
               <p class="p1form">BE PART OF OUR COMMUNITY</p>
             <p class="p2from"> Stay updated on how you can help empower youth through music. From inspiring stories to events and ways to give - we'll keep you in the loop. You can unsubscribe at any time.</p>
           
-            <b><p> I would like to get email updates: </p></b>
-        <fieldset class="g-radio">
-        <input class="form-check-input" type="radio" name="updaterad1" id="updaterad1" value="option1">
-        <label class="form-check-label" for="updaterad1">
-          Yes
-        </label>
+<b><p>I would like to get email updates:</p></b>
 
-        <input class="form-check-input" type="radio" name="updaterad2" id="updaterad2" value="option2">
-        <label class="form-check-label" for="updaterad2">
-          No
-        </label>
-        </fieldset> <!--g-radio end-->
+<fieldset class="radio-group">
+  <input class="form-check-input" type="radio" name="updaterad" id="updateradYes" value="yes">
+  <label class="form-check-label" for="updateradYes">Yes</label>
+
+  <input class="form-check-input" type="radio" name="updaterad" id="updateradNo" value="no">
+  <label class="form-check-label" for="updateradNo">No</label>
+</fieldset> <!--g-radio end-->
+
+<b><p>I would like to get PARC text messages:</p></b>
+
+<fieldset class="radio-group">
+  <input class="form-check-input" type="radio" name="updaterad" id="updateradYes" value="yes">
+  <label class="form-check-label" for="updateradYes">Yes</label>
+
+  <input class="form-check-input" type="radio" name="updaterad" id="updateradNo" value="no">
+  <label class="form-check-label" for="updateradNo">No</label>
+</fieldset> <!--g-radio end-->
         
   <input type="submit" value="DONATE">
 
