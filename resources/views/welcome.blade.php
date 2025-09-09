@@ -70,8 +70,7 @@
 
 <div class="main-flex">
   <div class="image-container">
-    <img src="assets\image\PARC SOG Event-1896 1.png" alt="Orchestra" class="main-image">
-    <img src="assets\image\sing.png" alt="Singers" class="small-image">
+    <img src="assets\image\groupphoto.png" alt="Orchestra" class="main-image">
   </div>
   <div class="info-section">
     <h2>Who we serve?</h2>
