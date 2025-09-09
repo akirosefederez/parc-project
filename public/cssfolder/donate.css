@@ -20,17 +20,41 @@ body {
 .donateform {
   background-color: white;
   margin-top: 50px;
+  margin-bottom: 50px;
   padding: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
+
 
 .center-btn {
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 16px;
+  gap: 50px;
   margin-bottom: 20px;
 }
-
+.pay-btn {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 45px;
+  margin-bottom: 20px;
+}
+.bankcard{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.last{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
 .btn1, .btn2 {
   display: flex;
   justify-content: center;
@@ -45,13 +69,18 @@ body {
   text-decoration: none;
 }
 
-.note {
+.note1 {
   text-align: center;
   margin: 10px 10px 20px 10px;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   background-color: blanchedalmond;
 }
-
+.note2 {
+  text-align: center;
+  margin: 10px 10px 20px 10px;
+  padding: 20px 20px 10px 20px;
+  background-color: rgb(233, 233, 233);
+}
 .p1 {
   font-size: 20px;
   font-weight: bold;
@@ -63,13 +92,24 @@ body {
   font-size: 13px;
   color: rgb(241, 118, 10);
 }
+.p3 {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+
+}
 
 .btn-monthly {
-  margin: 10px;
+  margin: 0;
+}
+.dollar{
+    color: rgb(255, 162, 0);
+}
+.privacy{
+    color: rgb(255, 162, 0);
 }
 
 .btnm1, .btnm2, .btnm3, 
-.btnm4, .btnm5, .btnm6 {
+.btnm4, .btnm5 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,13 +122,56 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
-
+.btnm6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 230px;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border: 2px solid rgb(255, 162, 0);
+  text-decoration: none;
+}
+.btnm7, .btnm8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 250px;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border: 2px solid rgb(255, 162, 0);
+  text-decoration: none;
+}
+.btnm9{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  max-width: 100%;
+  height: 60px;
+  font-size: 18px;
+  color: rgb(255, 162, 0);
+  background-color: white;
+  border: 2px solid rgb(255, 162, 0);
+  text-decoration: none;
+}
+#exp, #cvv {
+  width: 48%;
+}
 .details {
   background-color: white;
   width: 90%;
   text-align: center;
   padding-top: 30px;
   margin-top: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
+
 }
 
 .pdt {
@@ -176,12 +259,12 @@ body {
 
   .personalinfo input[type="submit"] {
     margin-top: 20px;
-    padding: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
     width: 100%;
     background: #ff9c00;
     color: white;
     border: none;
-    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
   }
@@ -194,9 +277,32 @@ body {
     margin-top: 15px;
     font-weight: 800;
   }
-  .g-radio{
-    gap: 8px;
+  .radio-group {
+    display: flex;
+    gap: 40px; /* space between Yes and No */
+    margin-top: 5px;
   }
+
+  .radio-group label {
+    font-weight: 500;
+    margin-top: 0;
+    cursor: pointer;
+  }
+
+  .radio-group input[type="radio"] {
+    margin-right: 6px;
+    border:#565656 solid 1px;
+    margin-bottom: 20px;
+  }
+
+ .last input[type="checkbox"] {
+  width: 35px;              /* Optional: customize width */
+  height: 35px;             /* Optional: customize height */
+  transform: scale(1.3);    /* Make it about 30% larger */
+  accent-color: #565656;    /* Optional: changes checkbox color */
+  cursor: pointer;
+  border-radius: none;
+}
 
 
 
