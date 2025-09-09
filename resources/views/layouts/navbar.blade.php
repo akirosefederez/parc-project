@@ -43,5 +43,5 @@
   
       <div class="d-none d-md-flex mainbuttons">
         <a href="{{ url('/donate') }}" class="btn btn-donate px-3">DONATE</a>
-        <a href="#" class="btn btn-adopt px-3">ADOPT A SCHOLAR</a>
+        <a href="{{ url('/adopt') }}" class="btn btn-adopt px-3">ADOPT A SCHOLAR</a>
       </div>
