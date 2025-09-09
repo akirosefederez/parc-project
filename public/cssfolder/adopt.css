@@ -35,7 +35,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 50px;
+  gap: 10px;
   margin-bottom: 20px;
 }
 .pay-btn {
@@ -76,9 +76,9 @@ body {
 
 .note1 {
   text-align: center;
-  margin: 10px 0 20px 0;
-  padding: 20px 20px 10px 20px;
-  background-color: blanchedalmond;
+  margin: 10px -50px 20px -50px;
+  padding: 20px 60px 10px 60px;
+  background-color: rgb(223, 223, 223);
 }
 .note2 {
   text-align: center;
@@ -87,23 +87,20 @@ body {
   background-color: rgb(233, 233, 233);
 }
 .p1 {
-  font-size: 20px;
+  text-align: left;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 5px;
-  color: rgb(241, 118, 10);
-}
-
-.p2 {
-  font-size: 13px;
-  color: rgb(241, 118, 10);
-}
-.p3 {
-  font-size: 15px;
   color: rgb(0, 0, 0);
-
 }
 
-.btn-monthly {
+.p2, .p3, .p4, .p5{
+    text-align: left;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.btn-packages {
   margin: 0;
 }
 .dollar{
@@ -113,13 +110,12 @@ body {
     color: rgb(255, 162, 0);
 }
 
-.btnm1, .btnm2, .btnm3, 
-.btnm4, .btnm5 {
+.btnm1, .btnm2, .btnm3 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  width: 230px;
+  width: 250px;
   height: 60px;
   font-size: 18px;
   color: rgb(255, 162, 0);
@@ -385,7 +381,7 @@ body {
     padding: 15px;
   }
 
-  .col2 .btn-monthly {
+  .col2 .btn-packages {
     order: 6;
     display: flex;
     flex-direction: column;
@@ -393,7 +389,7 @@ body {
     gap: 10px;
   }
 
-  .col2 .btn-monthly a {
+  .col2 .btn-packages a {
     width: 100%;
     max-width: 300px;
     height: 50px;
@@ -478,7 +474,7 @@ body {
     border-radius: 4px;
   }
 
-  .btn-monthly {
+  .btn-packages {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -508,7 +504,7 @@ body {
   }
 
   /* Remove extra .center-btn wrappers for mobile */
-  .btn-monthly .center-btn {
+  .btn-packages .center-btn {
     display: contents;
   }
   .details-list hr {

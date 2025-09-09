@@ -93,7 +93,7 @@
 
         <h2 class="maintitle">ADOPTION PACKAGES</h2>
           <!-- Monthly Options -->
-          <div class="btn-monthly">
+          <div class="btn-packages">
             <div class="center-btn">
               <a href="#" class="btnm1">Patron</a>
               <a href="#" class="btnm2">Silver</a>
@@ -108,13 +108,14 @@
 
           <!-- Note -->
           <div class="note1">
-            <p class="p1">Thank you for making a difference.</p>
-            <p class="p2">
-              Monthly giving is a simple, impactful way to support PARCaralan Scholars
-            </p>
+            <p class="p1">SILVER</p><hr>
+            <p class="p2">Training expenses for intermediate skill development workshops, Mentor’s fee, collaterals, and etc.</p><hr>
+            <p class="p3">Recognition on the PARC Foundation website.</p><hr>
+            <p class="p4">Quarterly progress update.</p><hr>
+            <p class="p5">Invitation to the annual scholar showcase event.</p>
           </div>
 
-          </div> <!-- End of btn-monthly -->
+          </div> <!-- End of btn-packages -->
 
 
           <!-- Personal Info Form -->
