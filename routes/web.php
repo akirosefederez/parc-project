@@ -20,3 +20,8 @@ Route::get('/home', function () {
 Route::get('/donate', function () {
     return view('donate'); // make sure donate.blade.php exists in resources/views
 })->name('donate');
+
+// Simple route returning a view
+Route::get('/adopt', function () {
+    return view('adopt'); // make sure adopt.blade.php exists in resources/views
+})->name('adopt');
