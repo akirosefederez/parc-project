@@ -18,7 +18,7 @@
   <div class="container-fluid">
     <div class="carousel-container">
       <div class="carousel-wrapper">
-        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500">
           
           <!-- Slides -->
           <div class="carousel-inner">
