@@ -17,7 +17,7 @@
   <!-- Include Navbar -->
   @include('layouts.navbar')
 
-  <!-- Adopt Main Content -->
+  <!-- Donate Main Content -->
   <div class="container adoptsection">
     <div class="row row-cols-2">
       
@@ -89,11 +89,12 @@
 
       <!-- Right Column -->
       <div class="col col2">
-        <div class="adoptform">
+        <div class="donateform">
 
         <h2 class="maintitle">ADOPTION PACKAGES</h2>
+
           <!-- Monthly Options -->
-          <div class="btn-monthly">
+          <div class="btn-packages">
             <div class="center-btn">
               <a href="#" class="btnm1">Patron</a>
               <a href="#" class="btnm2">Silver</a>
@@ -113,9 +114,6 @@
               Monthly giving is a simple, impactful way to support PARCaralan Scholars
             </p>
           </div>
-
-          </div> <!-- End of btn-monthly -->
-
 
           <!-- Personal Info Form -->
           <div>
