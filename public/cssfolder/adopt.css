@@ -388,11 +388,23 @@ body {
     order: 1;
     width: 100%;
     text-align: center;
+
+    /* ✅ Remove border & shadow for col1 in mobile view */
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
   }
+
+  /* Right column content */
   .col2 {
     order: 2;
     width: 100%;
     text-align: center;
+
+    /* ✅ Remove border & shadow for col2 in mobile view */
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
   /* Stack items in col1 */
@@ -404,33 +416,58 @@ body {
 
   /* Image adjustments */
   .col1 .img1 {
-    order: 1;
+    order: 1; /* Image first */
     width: 100%;
     max-width: 400px;
   }
 
-  /* Title adjustments */
+  /* Description under image */
+  .col1 .desc1 {
+    order: 2; /* ✅ Put desc1 below image */
+    text-align: center;
+    font-size: 14px;
+    padding: 0 15px;
+    color: black; /* Black text for readability */
+    margin-top: 10px;
+  }
+
+  /* ✅ Packages (btn-monthly) go under desc1 */
+  .col1 .btn-monthly {
+    order: 3;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .col1 .btn-monthly a {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  /* Title moved further down */
   .col1 .title {
-    order: 2;
+    order: 4; /* ✅ Title after packages */
     margin-top: 20px;
     text-align: center;
     font-size: 28px;
   }
 
-  /* Description text smaller + black color */
-  .col1 .desc1 {
-    order: 3;
-    text-align: center;
-    font-size: 14px;
-    padding: 0 15px;
-    color: black; /* ✅ Black text for mobile view */;
+  /* 🚫 Hide main title on mobile */
+  .maintitle {
+    display: none !important;
   }
-  br{
+
+  /* Remove line breaks in mobile */
+  br {
     display: none;
   }
+
   /* Buttons side by side */
   .col2 .center-btn {
-    order: 4;
+    order: 5;
     flex-direction: row;
     gap: 8px;
     flex-wrap: wrap;
@@ -448,24 +485,9 @@ body {
 
   /* Note text */
   .col2 .note {
-    order: 5;
+    order: 6;
     font-size: 14px;
     padding: 15px;
-  }
-
-  .col2 .btn-monthly {
-    order: 6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .col2 .btn-monthly a {
-    width: 100%;
-    max-width: 300px;
-    height: 50px;
-    font-size: 15px;
   }
 
   /* 🚫 Hide details on mobile */
