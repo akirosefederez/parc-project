@@ -6,7 +6,7 @@ body {
 /* Title styling */
 .title {
   font-size: 50px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); /* White title text */
 }
 
 /* Image styling (main image) */
@@ -19,7 +19,7 @@ body {
 .desc1 {
   font-size: 20px;
   word-spacing: normal;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); /* White by default */
 }
 
 /* Form container (adopt form box) */
@@ -46,7 +46,7 @@ body {
   gap: 10px;
   margin-bottom: 20px;
 }
-.lowerbtn{
+.lowerbtn {
   align-items: center;
   display: flex;
   gap: 10px;
@@ -95,7 +95,7 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
- .btn2 {
+.btn2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +107,7 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
+
 /* Note blocks (highlighted info) */
 .note1 {
   text-align: left;
@@ -130,7 +131,7 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.p2, .p3, .p4, .p5{
+.p2, .p3, .p4, .p5 {
   font-size: 15px;
   color: rgb(0, 0, 0);
 }
@@ -147,6 +148,7 @@ body {
   color: rgb(255, 162, 0);
 }
 
+/* Monthly buttons */
 .btnm1, .btnm2, .btnm3 {
   display: flex;
   justify-content: center;
@@ -415,12 +417,13 @@ body {
     font-size: 28px;
   }
 
-  /* Description text smaller */
+  /* Description text smaller + black color */
   .col1 .desc1 {
     order: 3;
     text-align: center;
     font-size: 15px;
     padding: 0 15px;
+    color: black; /* ✅ Black text for mobile view */
   }
 
   /* Buttons side by side */
@@ -463,25 +466,9 @@ body {
     font-size: 15px;
   }
 
-  /* Details box */
+  /* 🚫 Hide details on mobile */
   .details {
-    order: 7;
-    width: 100%;
-    padding: 20px;
-  }
-  .pdt {
-    font-size: 20px;
-  }
-
-  /* Detail items stacked */
-  .detail-item {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-  }
-  .detail-item p {
-    text-align: center;
-    font-size: 14px;
+    display: none !important;
   }
 }
 
@@ -551,7 +538,7 @@ body {
     width: 100%;
     justify-content: center;
   }
-  .btnm1, .btnm2, .btnm3{
+  .btnm1, .btnm2, .btnm3 {
     width: 100%;
     max-width: 260px;
     height: 50px;
@@ -580,5 +567,10 @@ body {
     border: none;
     border-top: 2px solid #565656;
     margin: 0;
+  }
+
+  /* 🚫 Hide details on extra small devices */
+  .details {
+    display: none !important;
   }
 }
