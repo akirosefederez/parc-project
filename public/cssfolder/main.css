@@ -325,7 +325,7 @@
 .parcaralan {
   position: relative;
   z-index: 100;
-  background: hsl(120, 12%, 92%);
+  background: hsl(0, 0%, 95%);
   border-radius: 16px;
   width: 100%;
   max-width: 942px;
