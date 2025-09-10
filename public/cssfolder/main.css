@@ -325,7 +325,7 @@
 .parcaralan {
   position: relative;
   z-index: 100;
-  background: hsl(120, 12%, 92%);
+  background: hsl(120, 4%, 95%);
   border-radius: 16px;
   width: 100%;
   max-width: 942px;
@@ -337,10 +337,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 30px;
+  padding: 20px 10px;
   box-sizing: border-box;
-  margin: -80px auto 0;
+  margin: -80px auto -50px;
   margin-top: -125px;
+}
+.parcdetails{
+  font-size: 20px;
 }
 
 /* ✅ Mobile adjustment: move under carousel & remove border radius */
@@ -354,21 +357,12 @@
 
   /* ✅ Move image-container under parcaralan */
   .image-container {
-    position: static !important;
     margin: 20px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     top: auto !important;
     left: auto !important;
-  }
-
-  .small-image {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    margin-top: 20px;
-    width: 80%;
   }
 }
 
@@ -426,6 +420,7 @@
 .main-image {
   max-width: 100%;
   height: auto;
+  margin: 50px;
 }
 
 .small-image {
@@ -446,15 +441,17 @@
 .main-flex {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
-  margin-top: 40px;
+  gap: 10px;
+  margin: 0 50px 50px 50px;
   justify-content: center;
 }
 
 .info-section {
-  padding: 40px 36px 40px 36px;
+  padding: 150px 36px 40px 36px;
   line-height: 1.8;
   border-radius: 16px;
+  margin: 50px;
+
 }
 
 .info-section h2 {
@@ -485,25 +482,20 @@
 }
 
 .emoji {
-  font-size: 1.4em;
-  margin-right: 8px;
-  flex-shrink: 0;
+  color: #f78f1e;
+  font-size: 1.5em;
   line-height: 1.2;
 }
 
 .info-title {
-  color: #f78f1e;
-  font-weight: 700;
-  font-size: 1.1em;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
-  margin-right: 2px;
 }
 
 @media (max-width: 1024px) {
   .main-flex {
     flex-direction: column;
     align-items: center;
-    gap: 24px;
   }
 
   .info-section {
@@ -512,4 +504,8 @@
     width: 95%;
     margin-top: 0;
   }
+  .main-image {
+  margin: 0;
+  padding-top: 100px;
+}
 }

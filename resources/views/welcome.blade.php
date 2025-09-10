@@ -61,7 +61,7 @@
     <div class="container parcaralan">
         <h1 class="title partitle">PARCaralan</h1>
         <p class="paragraph parcdetails">
-            We harness the power of performing arts to transform the lives of 
+            We harness the power of performing arts to transform the lives of<br>
             underprivileged children & youth through our flagship program.
         </p>
         <button class="cta-button">Learn More</button>
@@ -74,12 +74,10 @@
   </div>
   <div class="info-section">
     <h2>Who we serve?</h2>
-    <ul>
-      <li><span class="emoji">🧑‍🎤</span> <span class="info-title">Who We Help:</span> Artistically gifted children (ages 7-12) from underserved communities, accepted as scholars.</li>
-      <li><span class="emoji">📚</span> <span class="info-title">What They Receive:</span> Free training in music, dance, and theater, plus school supplies, transportation, and meal allowances.</li>
-      <li><span class="emoji">🌱</span> <span class="info-title">Beyond the Arts:</span> Values formation, character-building, and cultural immersions to nurture ambition and appreciation for the arts.</li>
-      <li><span class="emoji">🚀</span> <span class="info-title">Future-Ready:</span> By age 17, we connect them with top art schools, mentors, and career opportunities—on stage, behind the scenes, or in other fields where they can apply their skills.</li>
-    </ul>
+    <p class="info-title"><b class="emoji">🧑‍🎤Who We Help:</b> Artistically gifted children (ages 7-12) from<br> underserved communities, accepted as scholars.</p>
+    <p class="info-title"><b class="emoji">📚What They Receive:</b> Free training in music, dance, and theater, plus<br> school supplies, transportation, and meal allowances.</p>
+    <p class="info-title"><b class="emoji">🌱Beyond the Arts:</b> Values formation, character-building, and cultural<br> immersions to nurture ambition and appreciation for the arts.</p>
+    <p class="info-title"><b class="emoji">🚀Future-Ready:</b> By age 17, we connect them with top art schools,<br> mentors, and career opportunities—on stage, behind the scenes, or in<br> other fields where they can apply their skills.</p>
   </div>
 </div>
 
