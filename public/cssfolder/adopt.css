@@ -540,7 +540,4 @@ body {
   .personalinfo{
     text-align: left;
   }
-  .p1form, .p2form, .p3form, .p4form, .radio-group{
-    display: none !important;
-  }
 }
