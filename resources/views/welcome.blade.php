@@ -85,12 +85,27 @@
 <div class="row justify-content-center">
   <div class="col-auto">
     <img src="assets/image/PARC SOG Event-6879 1.png" alt="img1" class="img1">
+    <div class="sectitle">
+    <p class="p1">STORY</p>
+    <p class="p2">Changing the Tune of Tomorrow</p>
+    <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
+    </div>
   </div>
   <div class="col-auto">
-    <img src="assets/image/PARC SOG Event-6879 1.png" alt="img2" class="img2">
+    <img src="assets/image/PARC SOG Event-6879 2.png" alt="img2" class="img2">
+    <div class="sectitle">
+    <p class="p1">FEATURE</p>
+    <p class="p2">Where Impact comes to Life</p>
+    <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
+    </div>
   </div>
   <div class="col-auto">
-    <img src="assets/image/PARC SOG Event-6879 1.png" alt="img3" class="img3">
+    <img src="assets/image/PARC SOG Event-6879 3.png" alt="img3" class="img3">
+        <div class="sectitle">
+    <p class="p1">EXPLORE</p>
+    <p class="p2">Changing Lives, One Note at a Time</p>
+    <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
+    </div>
   </div>
 </div>
 </div>

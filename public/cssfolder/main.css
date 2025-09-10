@@ -451,7 +451,7 @@
   align-items: flex-start;
   gap: 10px;
   margin: 0 50px 50px 50px;
-  padding-bottom: 300px;
+  padding-bottom: 250px;
   justify-content: center;
 }
 
@@ -520,6 +520,16 @@
   top: -130px;  /* moves it upward */
   z-index: 10; /* ensures it appears above */
 }
+.sectitle{
+  color: white;
+  text-align: left;
+  margin-top: -50px;
+
+}
+.p1, .p2{
+  font-weight: 700;
+}
+
 @media (max-width: 1024px) {
   .main-flex {
     flex-direction: column;
@@ -532,8 +542,7 @@
     width: 100%;
     margin: 50px 0 0 0;
     padding: 0;
-    font-size: 5px;
-    
+    font-size: 5px;    
   }
   .emoji{
     font-size: 15px;
@@ -547,5 +556,12 @@
   .main-image {
   margin: 0;
   padding-top: 100px;
+}
+.second-section .row{
+  padding: 50px;
+}
+.second-section .row img {
+  top: -200px;  /* moves it upward */
+
 }
 }
