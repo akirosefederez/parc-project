@@ -1,23 +1,28 @@
+/* 🌟 GLOBAL STYLES */
 body {
-  background-color: rgb(246, 150, 6);
+  background-color: rgb(246, 150, 6); /* Default background color */
 }
 
+/* Title styling */
 .title {
   font-size: 50px;
   color: rgb(255, 255, 255);
 }
 
+/* Image styling (main image) */
 .img1 {
   margin-top: 8px;
   width: 90%;
 }
 
+/* Description text */
 .desc1 {
   font-size: 20px;
   word-spacing: normal;
   color: rgb(255, 255, 255);
 }
 
+/* Form container (adopt form box) */
 .adoptform {
   background-color: white;
   margin-top: 50px;
@@ -26,18 +31,23 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 
-.maintitle{
-    color: rgb(255, 162, 0);
-    text-align: center;
-    margin-bottom: 30px;
+/* Main title inside forms/sections */
+.maintitle {
+  color: rgb(255, 162, 0);
+  text-align: center;
+  margin-bottom: 30px;
 }
+
+/* Button groups (center aligned with spacing) */
 .center-btn {
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 50px;
-  margin-bottom: 20px;
+  gap: 5px;
+  margin-bottom: 8px;
 }
+
+/* Payment button group */
 .pay-btn {
   justify-content: center;
   align-items: center;
@@ -45,14 +55,18 @@ body {
   gap: 45px;
   margin-bottom: 20px;
 }
-.bankcard{
+
+/* Bank card input group */
+.bankcard {
   justify-content: center;
   align-items: center;
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
-.last{
+
+/* Last row container (checkboxes, etc.) */
+.last {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -60,6 +74,8 @@ body {
   margin-left: 40px;
   margin-bottom: 20px;
 }
+
+/* Primary button styles (Give Once / Give Monthly) */
 .btn1, .btn2 {
   display: flex;
   justify-content: center;
@@ -74,6 +90,7 @@ body {
   text-decoration: none;
 }
 
+/* Note blocks (highlighted info) */
 .note1 {
   text-align: center;
   margin: 10px 0 20px 0;
@@ -86,13 +103,14 @@ body {
   padding: 20px 20px 10px 20px;
   background-color: rgb(233, 233, 233);
 }
+
+/* Paragraphs inside notes */
 .p1 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
   color: rgb(241, 118, 10);
 }
-
 .p2 {
   font-size: 13px;
   color: rgb(241, 118, 10);
@@ -100,19 +118,22 @@ body {
 .p3 {
   font-size: 15px;
   color: rgb(0, 0, 0);
-
 }
 
+/* Monthly donation button wrapper */
 .btn-monthly {
   margin: 0;
 }
-.dollar{
-    color: rgb(255, 162, 0);
+
+/* Text highlights */
+.dollar {
+  color: rgb(255, 162, 0);
 }
-.privacy{
-    color: rgb(255, 162, 0);
+.privacy {
+  color: rgb(255, 162, 0);
 }
 
+/* Monthly plan buttons */
 .btnm1, .btnm2, .btnm3, 
 .btnm4, .btnm5 {
   display: flex;
@@ -127,7 +148,9 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
-.btnm6{
+
+/* Special monthly button (highlight) */
+.btnm6 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,6 +163,8 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
+
+/* Wider monthly buttons */
 .btnm7, .btnm8 {
   display: flex;
   justify-content: center;
@@ -153,7 +178,9 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
-.btnm9{
+
+/* Flexible button */
+.btnm9 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,25 +193,30 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
+
+/* Credit card fields */
 #exp, #cvv {
   width: 48%;
 }
+
+/* Details section (extra info) */
 .details {
   background-color: white;
   width: 90%;
   text-align: center;
   padding-top: 30px;
   margin-top: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
-
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Details title */
 .pdt {
   color: rgb(0, 0, 0);
   font-size: 25px;
   font-weight: bold;
 }
 
+/* Details list container */
 .details-list {
   display: flex;
   flex-direction: column;
@@ -192,6 +224,7 @@ body {
   gap: 0;
 }
 
+/* Each detail item row */
 .detail-item {
   display: flex;
   align-items: center;
@@ -199,7 +232,7 @@ body {
   padding: 16px 0;
 }
 
-/* 🔵 FIXED CIRCLE ICONS */
+/* Icons inside circle (music/detail) */
 .music-icon,
 .detail-icon {
   width: 80px;
@@ -211,7 +244,6 @@ body {
   justify-content: center;
   flex-shrink: 0;
 }
-
 .music-icon img,
 .detail-icon img {
   width: 40px;
@@ -219,135 +251,151 @@ body {
   object-fit: contain;
 }
 
+/* Detail text */
 .detail-item p {
   margin: 0;
   text-align: left;
   font-size: 1.1rem;
 }
 
+/* Divider between detail items */
 .details-list hr {
   border: none;
   border-top: 2px solid #565656;
   margin: 0 0 0 105px;
 }
 
-
-
-
+/* General section break line */
 .break {
-    border: none;
-    border-top: 2px solid #565656;
-    margin: 40px 0;
+  border: none;
+  border-top: 2px solid #565656;
+  margin: 40px 0;
 }
-.formtitle{
-    color: rgb(255, 162, 0);
+
+/* Form title */
+.formtitle {
+  color: rgb(255, 162, 0);
 }
-  .personalinfo {
-    max-width: 530px; /* Centered box width */
-  }
 
-  .personalinfo label {
-    display: block;
-    margin-top: 12px;
-    font-weight: 600;
-  }
+/* Personal info form (center box) */
+.personalinfo {
+  max-width: 530px;
+}
 
-  .personalinfo input[type="text"],
-  .personalinfo input[type="email"] {
-    width: 100%;       /* Makes all textboxes same width */
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-  }
+/* Labels in form */
+.personalinfo label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
 
-  .personalinfo input[type="submit"] {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 20px;
-    width: 100%;
-    background: #ff9c00;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-  }
+/* Text & email fields */
+.personalinfo input[type="text"],
+.personalinfo input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
 
-  .personalinfo input[type="submit"]:hover {
-    background: #e68900;
-  }
-  .p1form{
-    color: rgb(255, 162, 0);
-    margin-top: 15px;
-    font-weight: 800;
-  }
-  .radio-group {
-    display: flex;
-    gap: 40px; /* space between Yes and No */
-    margin-top: 5px;
-  }
-
-  .radio-group label {
-    font-weight: 500;
-    margin-top: 0;
-    cursor: pointer;
-  }
-
-  .radio-group input[type="radio"] {
-    margin-right: 6px;
-    border:#565656 solid 1px;
-    margin-bottom: 20px;
-  }
-
- .last input[type="checkbox"] {
-  width: 35px;              /* Optional: customize width */
-  height: 35px;             /* Optional: customize height */
-  transform: scale(1.3);    /* Make it about 30% larger */
-  accent-color: #565656;    /* Optional: changes checkbox color */
+/* Submit button */
+.personalinfo input[type="submit"] {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 100%;
+  background: #ff9c00;
+  color: white;
+  border: none;
   cursor: pointer;
-  border-radius: none;
+  font-weight: bold;
 }
-.footer{
+.personalinfo input[type="submit"]:hover {
+  background: #e68900;
+}
+
+/* Form paragraph title */
+.p1form {
+  color: rgb(255, 162, 0);
+  margin-top: 15px;
+  font-weight: 800;
+}
+
+/* Radio button group */
+.radio-group {
+  display: flex;
+  gap: 40px;
+  margin-top: 5px;
+}
+.radio-group label {
+  font-weight: 500;
+  margin-top: 0;
+  cursor: pointer;
+}
+.radio-group input[type="radio"] {
+  margin-right: 6px;
+  border: #565656 solid 1px;
+  margin-bottom: 20px;
+}
+
+/* Large checkboxes in last row */
+.last input[type="checkbox"] {
+  width: 35px;
+  height: 35px;
+  transform: scale(1.3);
+  accent-color: #565656;
+  cursor: pointer;
+}
+
+/* Footer text */
+.footer {
   text-align: center;
   padding: 50px;
   font-size: 16px;
 }
 
+/* ===========================
+   📱 MOBILE RESPONSIVE FIXES
+   =========================== */
 
-
-/* ✅ MOBILE FIX ONLY (desktop stays the same) */
+/* Tablet & mobile (≤768px) */
 @media (max-width: 768px) {
+  /* Stack columns */
   .row.row-cols-2 {
     display: flex;
     flex-direction: column;
-    align-items: center; /* center whole content */
+    align-items: center;
   }
 
+  /* Left column content */
   .col1 {
     order: 1;
     width: 100%;
     text-align: center;
   }
-
   .col2 {
     order: 2;
     width: 100%;
     text-align: center;
   }
 
+  /* Stack items in col1 */
   .col1 > div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  /* Image adjustments */
   .col1 .img1 {
     order: 1;
     width: 100%;
     max-width: 400px;
   }
 
+  /* Title adjustments */
   .col1 .title {
     order: 2;
     margin-top: 20px;
@@ -355,6 +403,7 @@ body {
     font-size: 28px;
   }
 
+  /* Description text smaller */
   .col1 .desc1 {
     order: 3;
     text-align: center;
@@ -362,7 +411,7 @@ body {
     padding: 0 15px;
   }
 
-  /* Give Once / Give Monthly side by side but responsive */
+  /* Buttons side by side */
   .col2 .center-btn {
     order: 4;
     flex-direction: row;
@@ -371,6 +420,7 @@ body {
     justify-content: center;
   }
 
+  /* Smaller give buttons */
   .col2 .btn1,
   .col2 .btn2 {
     width: 45%;
@@ -379,12 +429,14 @@ body {
     font-size: 15px;
   }
 
+  /* Note text */
   .col2 .note {
     order: 5;
     font-size: 14px;
     padding: 15px;
   }
 
+  /* Monthly buttons stacked */
   .col2 .btn-monthly {
     order: 6;
     display: flex;
@@ -392,7 +444,6 @@ body {
     align-items: center;
     gap: 10px;
   }
-
   .col2 .btn-monthly a {
     width: 100%;
     max-width: 300px;
@@ -400,34 +451,35 @@ body {
     font-size: 15px;
   }
 
+  /* Details box */
   .details {
     order: 7;
     width: 100%;
     padding: 20px;
   }
-
   .pdt {
     font-size: 20px;
   }
 
+  /* Detail items stacked */
   .detail-item {
     flex-direction: column;
     text-align: center;
     gap: 12px;
   }
-
   .detail-item p {
     text-align: center;
     font-size: 14px;
   }
 }
 
-/* 📱 EXTRA SMALL DEVICES (≤400px) */
+/* Extra small devices (≤400px) or small height */
 @media (max-width: 400px), (max-height: 608px) {
   body {
     background-color: white !important;
   }
 
+  /* Form box smaller */
   .adoptform {
     margin: 15px auto;
     padding: 20px;
@@ -440,13 +492,13 @@ body {
     box-shadow: 0 2px 16px rgba(0,0,0,0.06);
   }
 
+  /* Buttons stacked */
   .center-btn {
     flex-direction: column;
     gap: 0;
     width: 100%;
     margin-bottom: 16px;
   }
-
   .btn1, .btn2 {
     width: 100%;
     max-width: 260px;
@@ -460,12 +512,14 @@ body {
     justify-content: center;
   }
 
+  /* Highlight Give Monthly */
   .btn2 {
     background: rgb(255, 162, 0);
     color: white;
     border: 2px solid rgb(255, 162, 0);
   }
 
+  /* Notes on mobile */
   .note {
     width: 100%;
     text-align: center;
@@ -478,15 +532,14 @@ body {
     border-radius: 4px;
   }
 
+  /* Monthly buttons stacked */
   .btn-monthly {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     justify-content: center;
-    
   }
-
   .btnm1, .btnm2, .btnm3, 
   .btnm4, .btnm5, .btnm6 {
     width: 100%;
@@ -494,27 +547,28 @@ body {
     height: 50px;
     font-size: 16px;
     margin-bottom: 8px;
-    border-radius: 0;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  /* Highlight first button */
   .btnm1 {
     background: rgb(255, 162, 0);
     color: white;
     border: 2px solid rgb(255, 162, 0);
   }
 
-  /* Remove extra .center-btn wrappers for mobile */
+  /* Remove nested flex wrapper */
   .btn-monthly .center-btn {
     display: contents;
   }
+
+  /* Fix divider alignment */
   .details-list hr {
-  border: none;
-  border-top: 2px solid #565656;
-  margin: 0;
+    border: none;
+    border-top: 2px solid #565656;
+    margin: 0;
   }
-  
 }
