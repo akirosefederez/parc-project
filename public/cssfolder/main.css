@@ -562,6 +562,15 @@
 }
 .second-section .row img {
   top: -200px;  /* moves it upward */
-
 }
+.sectitle{
+  margin-top: -150px;
+  margin-bottom: 100px;
+}
+hr {
+  height: 4px;               /* thickness */
+  background-color: #fff;    /* line color */
+  border: none;              /* remove default border */
+}
+
 }

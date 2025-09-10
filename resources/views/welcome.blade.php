@@ -87,7 +87,7 @@
     <img src="assets/image/PARC SOG Event-6879 1.png" alt="img1" class="img1">
     <div class="sectitle">
     <p class="p1">STORY</p>
-    <p class="p2">Changing the Tune of Tomorrow</p>
+    <p class="p2">Changing the Tune of Tomorrow</p><hr>
     <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
     </div>
   </div>
@@ -95,7 +95,7 @@
     <img src="assets/image/PARC SOG Event-6879 2.png" alt="img2" class="img2">
     <div class="sectitle">
     <p class="p1">FEATURE</p>
-    <p class="p2">Where Impact comes to Life</p>
+    <p class="p2">Where Impact comes to Life</p><hr>
     <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
     </div>
   </div>
@@ -103,7 +103,7 @@
     <img src="assets/image/PARC SOG Event-6879 3.png" alt="img3" class="img3">
         <div class="sectitle">
     <p class="p1">EXPLORE</p>
-    <p class="p2">Changing Lives, One Note at a Time</p>
+    <p class="p2">Changing Lives, One Note at a Time</p><hr>
     <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
     </div>
   </div>
