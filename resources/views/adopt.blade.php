@@ -101,7 +101,7 @@
             </div>
 
           <!-- One-time / Monthly -->
-          <div class="center-btn">
+          <div class="center-btn lower-btn">
             <a href="#" class="btn1">Platinum</a>
             <a href="#" class="btn2">Share what you can</a>
           </div>
