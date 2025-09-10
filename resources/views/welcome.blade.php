@@ -18,7 +18,7 @@
   <div class="container-fluid">
     <div class="carousel-container">
       <div class="carousel-wrapper">
-        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500">
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
           
           <!-- Slides -->
           <div class="carousel-inner">
@@ -61,7 +61,7 @@
     <div class="container parcaralan">
         <h1 class="title partitle">PARCaralan</h1>
         <p class="paragraph parcdetails">
-            We harness the power of performing arts to transform the lives of<br>
+            We harness the power of performing arts to transform the lives of
             underprivileged children & youth through our flagship program.
         </p>
         <button class="cta-button">Learn More</button>
