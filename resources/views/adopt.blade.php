@@ -101,14 +101,14 @@
             </div>
 
           <!-- One-time / Monthly -->
-          <div class="lowerbtn">
+          <div class="center-btn">
             <a href="#" class="btn1">Platinum</a>
             <a href="#" class="btn2">Share what you can</a>
           </div>
 
           <!-- Note -->
           <div class="note1">
-            <p class="p1">SILVER</p>
+            <p class="p1">SILVER</p><hr>
             <p class="p2">Training expenses for intermediate skill development workshops, Mentor’s fee, collaterals, and etc.</p><hr>
             <p class="p3">Recognition on the PARC Foundation website.</p><hr>
             <p class="p4">Quarterly progress update.</p><hr>
@@ -143,29 +143,6 @@
               <label for="postal">Postal</label>
               <input type="text" id="postal" name="postal" />
 
-              <p class="p1form">BE PART OF OUR COMMUNITY</p>
-              <p class="p2from">
-                Stay updated on how you can help empower youth through music. From inspiring stories to events and ways to give - we'll keep you in the loop. You can unsubscribe at any time.
-              </p>
-
-            <!-- Radio Buttons -->
-              <b><p>I would like to get email updates:</p></b>
-              <fieldset class="radio-group">
-                <input class="form-check-input" type="radio" name="emailUpdates" id="emailYes" value="yes" />
-                <label class="form-check-label" for="emailYes">Yes</label>
-
-                <input class="form-check-input" type="radio" name="emailUpdates" id="emailNo" value="no" />
-                <label class="form-check-label" for="emailNo">No</label>
-              </fieldset>
-
-              <b><p>I would like to get PARC text messages:</p></b>
-              <fieldset class="radio-group">
-                <input class="form-check-input" type="radio" name="textUpdates" id="textYes" value="yes" />
-                <label class="form-check-label" for="textYes">Yes</label>
-
-                <input class="form-check-input" type="radio" name="textUpdates" id="textNo" value="no" />
-                <label class="form-check-label" for="textNo">No</label>
-              </fieldset>
 
           <!-- Note -->
           <div class="note2">
