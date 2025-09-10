@@ -101,14 +101,14 @@
             </div>
 
           <!-- One-time / Monthly -->
-          <div class="center-btn">
+          <div class="center-btn lowerbtn">
             <a href="#" class="btn1">Platinum</a>
             <a href="#" class="btn2">Share what you can</a>
           </div>
 
           <!-- Note -->
           <div class="note1">
-            <p class="p1">SILVER</p><hr>
+            <p class="p1">SILVER</p>
             <p class="p2">Training expenses for intermediate skill development workshops, Mentor’s fee, collaterals, and etc.</p><hr>
             <p class="p3">Recognition on the PARC Foundation website.</p><hr>
             <p class="p4">Quarterly progress update.</p><hr>
