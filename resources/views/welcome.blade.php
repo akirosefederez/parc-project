@@ -81,6 +81,20 @@
   </div>
 </div>
 
+<div class="second-section">
+<div class="row justify-content-center">
+  <div class="col-auto">
+    <img src="assets/image/PARC SOG Event-6879 1.png" alt="img1" class="img1">
+  </div>
+  <div class="col-auto">
+    <img src="assets/image/PARC SOG Event-6879 1.png" alt="img2" class="img2">
+  </div>
+  <div class="col-auto">
+    <img src="assets/image/PARC SOG Event-6879 1.png" alt="img3" class="img3">
+  </div>
+</div>
+</div>
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

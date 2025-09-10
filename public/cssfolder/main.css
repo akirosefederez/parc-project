@@ -451,6 +451,7 @@
   align-items: flex-start;
   gap: 10px;
   margin: 0 50px 50px 50px;
+  padding-bottom: 300px;
   justify-content: center;
 }
 
@@ -499,7 +500,26 @@
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
+.second-section .row{
+  background-color: #f78f1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;  
+  gap: 200px;
 
+}
+.second-section .row img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  top: -130px;  /* moves it upward */
+  z-index: 10; /* ensures it appears above */
+}
 @media (max-width: 1024px) {
   .main-flex {
     flex-direction: column;
