@@ -40,7 +40,6 @@ body {
 
 /* Button groups (center aligned with spacing) */
 .center-btn {
-  justify-content: center;
   align-items: center;
   display: flex;
   gap: 10px;
@@ -136,10 +135,6 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.btn-monthly {
-  margin: 0;
-}
-
 /* Text highlights */
 .dollar {
   color: rgb(255, 162, 0);
@@ -158,21 +153,6 @@ body {
   height: 60px;
   font-size: 18px;
   color: rgb(255, 162, 0);
-  background-color: white;
-  border: 2px solid rgb(255, 162, 0);
-  text-decoration: none;
-}
-
-/* Special monthly button (highlight) */
-.btnm6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  width: 230px;
-  height: 60px;
-  font-size: 18px;
-  color: rgb(0, 0, 0);
   background-color: white;
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
@@ -431,22 +411,6 @@ body {
     margin-top: 10px;
   }
 
-  /* ✅ Packages (btn-monthly) go under desc1 */
-  .col1 .btn-monthly {
-    order: 3;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .col1 .btn-monthly a {
-    width: 100%;
-    max-width: 300px;
-    height: 50px;
-    font-size: 15px;
-  }
-
   /* Title moved further down */
   .col1 .title {
     order: 4; /* ✅ Title after packages */
@@ -465,29 +429,31 @@ body {
     display: none;
   }
 
-  /* Buttons side by side */
+  /* ✅ Keep center-btn row layout (not stacked) */
   .col2 .center-btn {
     order: 5;
     flex-direction: row;
     gap: 8px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
-  /* Smaller give buttons */
+  /* ✅ Keep lowerbtn row layout under center-btn */
+  .col2 .lowerbtn {
+    order: 6;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons shrink to fit small screens */
   .col2 .btn1,
   .col2 .btn2 {
     width: 45%;
-    min-width: 140px;
+    min-width: 120px;
     height: 50px;
-    font-size: 15px;
-  }
-
-  /* Note text */
-  .col2 .note {
-    order: 6;
     font-size: 14px;
-    padding: 15px;
   }
 
   /* 🚫 Hide details on mobile */
@@ -512,34 +478,21 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    box-shadow: none;
   }
 
-  /* Buttons stacked */
-  .center-btn {
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-    margin-bottom: 16px;
-  }
+  /* ✅ Keep buttons in row layout but smaller */
+
+
   .btn1, .btn2 {
     width: 100%;
     max-width: 260px;
-    height: 50px;
-    font-size: 16px;
-    margin-bottom: 8px;
+    height: 45px;
+    font-size: 13px;
     border-radius: 0;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-
-  /* Highlight Give Monthly */
-  .btn2 {
-    background: rgb(255, 162, 0);
-    color: white;
-    border: 2px solid rgb(255, 162, 0);
   }
 
   /* Notes on mobile */
@@ -555,35 +508,22 @@ body {
     border-radius: 4px;
   }
 
-  .btn-monthly {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 100%;
-    justify-content: center;
-  }
   .btnm1, .btnm2, .btnm3 {
     width: 100%;
-    max-width: 260px;
+    max-width:90px;
     height: 50px;
     font-size: 16px;
     margin-bottom: 8px;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   /* Highlight first button */
-  .btnm1 {
+  .btnm2 {
     background: rgb(255, 162, 0);
     color: white;
     border: 2px solid rgb(255, 162, 0);
-  }
-
-  /* Remove extra .center-btn wrappers for mobile */
-  .btn-monthly .center-btn {
-    display: contents;
   }
 
   /* Fix divider alignment */
@@ -595,6 +535,12 @@ body {
 
   /* 🚫 Hide details on extra small devices */
   .details {
+    display: none !important;
+  }
+  .personalinfo{
+    text-align: left;
+  }
+  .p1form, .p2form, .p3form, .p4form, .radio-group{
     display: none !important;
   }
 }
