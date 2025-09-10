@@ -26,10 +26,9 @@ body {
 }
 
 .center-btn {
-  justify-content: center;
   align-items: center;
   display: flex;
-  gap: 50px;
+  gap: 10px;
   margin-bottom: 20px;
 }
 .pay-btn {
@@ -59,7 +58,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  width: 250px;
+  width: 270px;
   height: 60px;
   font-size: 18px;
   color: rgb(255, 162, 0);
@@ -382,8 +381,14 @@ body {
 
   .col2 .btn-monthly a {
     width: 100%;
-    max-width: 300px;
+    max-width: 190px;
     height: 50px;
+    font-size: 15px;
+  }
+    .col2 .pay-btn a {
+    width: 100%;
+    max-width: 380px;
+    height: 63px;
     font-size: 15px;
   }
 
@@ -470,15 +475,13 @@ body {
   .btnm1, .btnm2, .btnm3, 
   .btnm4, .btnm5, .btnm6 {
     width: 100%;
-    max-width: 160px;
+    max-width:50px;
     height: 50px;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 8px;
-    border-radius: 0;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   .btnm1 {
@@ -493,6 +496,22 @@ body {
     max-width: 800px;
   }
 
+  .btnm7{
+    background-color: #f78f1e;
+  }
+  .btnm8{
+    margin-bottom: -5px;
+  }
+ .btnm9 {
+  max-width: 380px;        /* Limit button width */
+  text-align: center;      /* Center text inside */
+  display: flex;           /* Use flexbox */
+  align-items: center;     /* Vertically center */
+  justify-content: center; /* Horizontally center content */
+  margin: 0 auto;          /* Center the whole button block */
+}
+
+
   .details-list hr {
     border: none;
     border-top: 2px solid #565656;
@@ -502,6 +521,9 @@ body {
   /* 🚫 Hide details on very small devices too */
   .details {
     display: none !important;
+  }
+    .personalinfo{
+    text-align: left;
   }
 }
 

@@ -114,9 +114,6 @@
               <a href="#" class="btnm1">$10/mo</a>
               <a href="#" class="btnm2">$15/mo</a>
               <a href="#" class="btnm3">$20/mo</a>
-            </div>
-
-            <div class="center-btn">
               <a href="#" class="btnm4">$25/mo</a>
               <a href="#" class="btnm5">$50/mo</a>
               <a href="#" class="btnm6"><b class="dollar">$</b>Other/mo</a>

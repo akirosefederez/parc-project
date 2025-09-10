@@ -317,23 +317,6 @@ body {
   font-weight: 800;
 }
 
-/* Radio button group */
-.radio-group {
-  display: flex;
-  gap: 40px;
-  margin-top: 5px;
-}
-.radio-group label {
-  font-weight: 500;
-  margin-top: 0;
-  cursor: pointer;
-}
-.radio-group input[type="radio"] {
-  margin-right: 6px;
-  border: #565656 solid 1px;
-  margin-bottom: 20px;
-}
-
 /* Large checkboxes in last row */
 .last input[type="checkbox"] {
   width: 35px;
