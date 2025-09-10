@@ -421,11 +421,13 @@ body {
   .col1 .desc1 {
     order: 3;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     padding: 0 15px;
-    color: black; /* ✅ Black text for mobile view */
+    color: black; /* ✅ Black text for mobile view */;
   }
-
+  br{
+    display: none;
+  }
   /* Buttons side by side */
   .col2 .center-btn {
     order: 4;
