@@ -320,7 +320,7 @@ body {
 }
 
 /* 📱 EXTRA SMALL DEVICES (≤400px) */
-@media (max-width: 600px), (max-height: 808px) {
+@media (max-width: 400px), (max-height: 608px) {
   body {
     background-color: white !important;
   }
