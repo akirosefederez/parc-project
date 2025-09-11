@@ -517,6 +517,26 @@ body {
     border: 2px solid rgb(255, 162, 0);
   }
 
+    /* Keep btnm7–btnm9 full width */
+  .btnm7, .btnm8, .btnm9 {
+    grid-column: span 2;
+    max-width: 800px;
+  }
+
+  .btnm7{
+    background-color: #f78f1e;
+  }
+  .btnm8{
+    margin-bottom: -5px;
+  }
+ .btnm9 {
+  max-width: 380px;        /* Limit button width */
+  text-align: center;      /* Center text inside */
+  display: flex;           /* Use flexbox */
+  align-items: center;     /* Vertically center */
+  justify-content: center; /* Horizontally center content */
+  margin: 0 auto;          /* Center the whole button block */
+}
   /* Fix divider alignment */
   .details-list hr {
     border: none;
