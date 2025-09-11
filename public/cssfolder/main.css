@@ -124,7 +124,7 @@
 }
 
 /* Responsive 400x608 */
-@media (max-width: 800px), (max-height: 608px) {
+@media (max-width: 414px), (max-height: 896px) {
   .logo { display: none !important; }
   .logo1 {
     height: 90px;
@@ -268,58 +268,6 @@
   display: none;
 }
 
-/* ✅ Mobile adjustments only */
-@media (max-width: 768px) {
-  /* Adjust carousel height dynamically */
-  .carousel-item img {
-    height: 50vh; /* responsive height */
-    max-height: 400px;
-    min-height: 220px;
-    object-fit: cover;
-  }
-
-  /* Hide arrows on mobile */
-  .custom-prev,
-  .custom-next {
-    display: none !important;
-  }
-
-  /* ✅ Mobile Carousel indicators centered */
-  .carousel-indicators {
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: fit-content;
-    padding: 6px 12px;
-    background: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(6px);
-    border-radius: 30px;
-    z-index: 2100;
-  }
-
-  /* Each dot */
-  .carousel-indicators [data-bs-target] {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: none;
-    transition: all 0.3s ease;
-    opacity: 1;
-  }
-
-  /* Active (current) dot */
-  .carousel-indicators .active {
-    background-color: #f89b1e;
-    transform: scale(1.2);
-  }
-}
 
 /* ✅ Parcaralan */
 .parcaralan {
@@ -345,30 +293,6 @@
 .parcdetails{
   font-size: 20px;
   padding: 0 150px 0 150px;
-}
-
-/* ✅ Mobile adjustment: move under carousel & remove border radius */
-@media (max-width: 768px) {
-  .parcaralan {
-    margin-top: 0px !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-  .parcdetails{
-    font-size: 16px;
-    padding: 0;
-
-  }
-
-  /* ✅ Move image-container under parcaralan */
-  .image-container {
-    margin: 20px auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: auto !important;
-    left: auto !important;
-  }
 }
 
 .partitle {
@@ -530,8 +454,86 @@
   font-weight: 700;
 }
 
-@media (max-width: 1024px) {
-  .main-flex {
+@media (max-width: 414px), (max-height: 896px) {
+    /* Adjust carousel height dynamically */
+  .carousel-item img {
+    height: 50vh; /* responsive height */
+    max-height: 400px;
+    min-height: 220px;
+    object-fit: cover;
+  }
+
+  /* Hide arrows on mobile */
+  .custom-prev,
+  .custom-next {
+    display: none !important;
+  }
+
+  /* ✅ Mobile Carousel indicators centered */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    border-radius: 30px;
+    z-index: 2100;
+  }
+
+  /* Each dot */
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+
+  /* Active (current) dot */
+  .carousel-indicators .active {
+    background-color: #f89b1e;
+    transform: scale(1.2);
+  }
+
+
+
+
+    .parcaralan {
+    margin-top: 0px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .parcdetails{
+    font-size: 16px;
+    padding: 0;
+
+  }
+
+  /* ✅ Move image-container under parcaralan */
+  .image-container {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: auto !important;
+    left: auto !important;
+  }
+
+
+
+
+
+    .main-flex {
     flex-direction: column;
     align-items: center;
   }
