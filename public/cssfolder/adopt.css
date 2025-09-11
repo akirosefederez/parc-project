@@ -456,6 +456,7 @@ body {
     order: 1; /* Image first */
     width: 100%;
     max-width: 400px;
+    margin-top: -95px;
     visibility:visible;
   }
   /* Description under image */
