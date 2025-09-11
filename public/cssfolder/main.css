@@ -124,7 +124,7 @@
 }
 
 /* Responsive 400x608 */
-@media (max-width: 400px), (max-height: 608px) {
+@media (max-width: 850px), (max-height: 608px) {
   .logo { display: none !important; }
   .logo1 {
     height: 90px;
