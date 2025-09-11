@@ -14,9 +14,24 @@ body {
   margin-top: 8px;
   width: 90%;
 }
+.img2 {
+    width: 100%;
+    max-width: 400px;
+    visibility:hidden;
 
+  }
+.intro{
+
+}
 /* Description text */
-.desc1 {
+.desc1{
+  font-size: 20px;
+  word-spacing: normal;
+  color: rgb(255, 255, 255); /* White by default */
+  margin-top: -210px;
+  padding-bottom: 20px;
+}
+.desc2{
   font-size: 20px;
   word-spacing: normal;
   color: rgb(255, 255, 255); /* White by default */
@@ -434,8 +449,15 @@ body {
     order: 1; /* Image first */
     width: 100%;
     max-width: 400px;
-  }
+    display: none;
 
+  }
+    .col1 .img2 {
+    order: 1; /* Image first */
+    width: 100%;
+    max-width: 400px;
+    visibility:visible;
+  }
   /* Description under image */
   .col1 .desc1 {
     order: 2; /* ✅ Put desc1 below image */
