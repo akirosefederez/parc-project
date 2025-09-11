@@ -57,6 +57,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-weight: bold;
   width: 270px;
   height: 60px;
@@ -98,6 +99,22 @@ body {
 .btn-monthly {
   margin: 0;
 }
+.btn-monthly .center-btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* default: 3 per row */
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-monthly .center-btn a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 0;
+}
+
 .dollar {
   color: rgb(255, 162, 0);
 }
@@ -111,7 +128,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  width: 230px;
+  width: 165px;
   height: 60px;
   font-size: 18px;
   color: rgb(255, 162, 0);
@@ -124,7 +141,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  width: 230px;
+  width: 165px;
   height: 60px;
   font-size: 18px;
   color: rgb(0, 0, 0);
@@ -302,115 +319,8 @@ body {
   font-size: 16px;
 }
 
-/* ✅ MOBILE FIX ONLY (desktop stays the same) */
-@media (max-width: 768px) {
-  .row.row-cols-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* center whole content */
-  }
-
-  .col1 {
-    order: 1;
-    width: 100%;
-    text-align: center;
-  }
-
-  .col2 {
-    order: 2;
-    width: 100%;
-    text-align: center;
-  }
-
-  .col1 > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .col1 .img1 {
-    order: 1;
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .col1 .title {
-    order: 2;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 28px;
-  }
-
-  .col1 .desc1 {
-    order: 3;
-    text-align: center;
-    font-size: 15px;
-    padding: 0 15px;
-  }
-
-  /* Give Once / Give Monthly side by side but responsive */
-  .col2 .center-btn {
-    order: 4;
-    flex-direction: row;
-    gap: 8px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .col2 .btn1,
-  .col2 .btn2 {
-    width: 45%;
-    min-width: 140px;
-    height: 50px;
-    font-size: 15px;
-  }
-
-  .col2 .note {
-    order: 5;
-    font-size: 14px;
-    padding: 15px;
-  }
-
-  .col2 .btn-monthly {
-    order: 6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .col2 .btn-monthly a {
-    width: 100%;
-    max-width: 190px;
-    height: 50px;
-    font-size: 15px;
-  }
-    .col2 .pay-btn a {
-    width: 100%;
-    max-width: 380px;
-    height: 63px;
-    font-size: 15px;
-  }
-
-  /* 🚫 Hide details on mobile */
-  .details {
-    display: none;
-  }
-
-  /* 🔥 MAKE COL2 FULL WIDTH & REMOVE BOX STYLES */
-  .donateform {
-    margin: 0;
-    padding: 20px 0;
-    width: 100%;
-    max-width: 100%;
-    background: transparent;
-    box-shadow: none;
-    border-radius: 0;
-  }
-}
-
 /* 📱 EXTRA SMALL DEVICES (≤400px) */
-@media (max-width: 400px), (max-height: 608px) {
+@media (max-width: 500px), (max-height: 808px) {
   body {
     background-color: white !important;
   }
@@ -462,6 +372,118 @@ body {
     font-weight: bold;
     border-radius: 4px;
   }
+  
+
+
+
+    .row.row-cols-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center whole content */
+  }
+
+  .col1 {
+    order: 1;
+    width: 90%;
+    text-align: center;
+  }
+
+  .col2 {
+    order: 2;
+    width: 90%;
+    text-align: center;
+  }
+
+  .col1 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col1 .img1 {
+    order: 1;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 0;
+  }
+
+  .col1 .title {
+    order: 2;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .col1 .desc1 {
+    order: 3;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 15px;
+  }
+
+  /* Give Once / Give Monthly side by side but responsive */
+  .col2 .center-btn {
+    order: 4;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col2 .btn1,
+  .col2 .btn2 {
+    width: 45%;
+    min-width: 160px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .col2 .note {
+    order: 5;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .col2 .btn-monthly {
+    order: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .col2 .btn-monthly a {
+    width: 100%;
+    max-width: 170px;
+    height: 50px;
+    font-size: 15px;
+  }
+    .col2 .pay-btn a {
+    width: 100%;
+    max-width: 380px;
+    height: 63px;
+    font-size: 15px;
+  }
+
+  /* 🚫 Hide details on mobile */
+  .details {
+    display: none;
+  }
+
+  /* 🔥 MAKE COL2 FULL WIDTH & REMOVE BOX STYLES */
+  .donateform {
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+
+
+
 
   /* ✅ MAKE btnm1–btnm6 into 2 columns */
   .btn-monthly {
