@@ -396,10 +396,7 @@ body {
 
   /* Title moved further down */
   .col1 .title {
-    order: 4; /* ✅ Title after packages */
-    margin-top: 20px;
-    text-align: center;
-    font-size: 28px;
+    display: none;
   }
 
   /* 🚫 Hide main title on mobile */
@@ -419,6 +416,7 @@ body {
     gap: 8px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 5px;
   }
 
   /* ✅ Keep lowerbtn row layout under center-btn */
@@ -426,19 +424,24 @@ body {
     order: 6;
     flex-direction: row;
     gap: 8px;
-    justify-content: center;
     flex-wrap: wrap;
   }
 
   /* Buttons shrink to fit small screens */
-  .col2 .btn1,
-  .col2 .btn2 {
-    width: 45%;
-    min-width: 120px;
+  .col2 .btn1
+  {
+    width: 80px;
+    min-width: 90px;
     height: 50px;
     font-size: 14px;
   }
 
+  .col2 .btn2 {
+    width: 80px;
+    min-width: 189px;
+    height: 50px;
+    font-size: 14px;
+  }
   /* 🚫 Hide details on mobile */
   .details {
     display: none !important;
@@ -467,7 +470,17 @@ body {
   /* ✅ Keep buttons in row layout but smaller */
 
 
-  .btn1, .btn2 {
+  .btn1 {
+    width: 0%;
+    max-width: 280px;
+    height: 45px;
+    font-size: 13px;
+    border-radius: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+   .btn2 {
     width: 100%;
     max-width: 280px;
     height: 45px;
@@ -477,7 +490,6 @@ body {
     display: flex;
     align-items: center;
   }
-
   /* Notes on mobile */
   .note {
     width: 100%;
