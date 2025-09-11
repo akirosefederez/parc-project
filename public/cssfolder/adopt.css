@@ -339,7 +339,7 @@ body {
 
 
 /* Extra small devices (≤400px) or small height */
-@media (max-width: 400px), (max-height: 608px) {
+@media (max-width: 414px), (max-height: 896px) {
   body {
     background-color: white !important;
   }
