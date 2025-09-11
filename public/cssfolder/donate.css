@@ -320,7 +320,7 @@ body {
 }
 
 /* 📱 EXTRA SMALL DEVICES (≤400px) */
-@media (max-width: 500px), (max-height: 808px) {
+@media (max-width: 1170px), (max-height: 808px) {
   body {
     background-color: white !important;
   }
@@ -399,7 +399,12 @@ body {
     flex-direction: column;
     align-items: center;
   }
-
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .col1 .img1 {
     order: 1;
     width: 100%;
@@ -407,18 +412,20 @@ body {
     margin-bottom: 0;
   }
 
-  .col1 .title {
-    order: 2;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 28px;
-  }
+.col1 .title {
+  order: 2;
+  margin: 0;          /* removes any margin */
+  padding: 0 !important;         /* removes any padding */
+  text-align: center;
+  font-size: 28px;
+}
+
 
   .col1 .desc1 {
     order: 3;
     text-align: center;
     font-size: 15px;
-    padding: 0 15px;
+    padding: 0px;
   }
 
   /* Give Once / Give Monthly side by side but responsive */
@@ -546,6 +553,9 @@ body {
   }
     .personalinfo{
     text-align: left;
+    max-width: 100%;          /* shrink form on tablets */
+    padding: 15px;
   }
+  
 }
 
