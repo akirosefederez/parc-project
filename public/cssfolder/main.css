@@ -42,6 +42,15 @@
   margin-left: 10px;
   padding: 5px;
 }
+.wholenavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5000;
+}
+
+
 
 /* Top bar */
 .top-bar {
@@ -204,7 +213,7 @@
 /* Carousel */
 .carousel-container {
   max-width: 100%;
-  margin: 0;
+  margin: 150px 0px 0px 0px;
   background: white;
   border-radius: 0;
   box-shadow: none;

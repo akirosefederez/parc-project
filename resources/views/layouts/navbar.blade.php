@@ -1,3 +1,4 @@
+<div class="wholenavbar">
 <!-- Top Bar -->
   <div class="top-bar">
     <div class="w-100 d-flex align-items-center justify-content-center" id="topbar">
@@ -45,3 +46,5 @@
         <a href="{{ url('/donate') }}" class="btn btn-donate px-3">DONATE</a>
         <a href="{{ url('/adopt') }}" class="btn btn-adopt px-3">ADOPT A SCHOLAR</a>
       </div>
+
+</div>

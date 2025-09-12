@@ -36,7 +36,9 @@ body {
   word-spacing: normal;
   color: rgb(255, 255, 255); /* White by default */
 }
-
+.adoptsection {
+  margin-top: 150px;
+}
 /* Form container (adopt form box) */
 .adoptform {
   background-color: white;
@@ -125,7 +127,7 @@ body {
 /* Note blocks (highlighted info) */
 .note1 {
   text-align: left;
-  margin: 10px -50px 20px -50px;
+  margin: 10px -40px 20px -50px;
   padding: 20px 60px 10px 60px;
   background-color: rgb(223, 223, 223);
 }
@@ -416,9 +418,9 @@ body {
   /* Left column content */
   .col1 {
     order: 1;
-    width: 100%;
+    width: 90%;
     text-align: center;
-
+    margin-top: -95px;
     /* ✅ Remove border & shadow for col1 in mobile view */
     border: none !important;
     background: transparent !important;
@@ -428,7 +430,7 @@ body {
   /* Right column content */
   .col2 {
     order: 2;
-    width: 100%;
+    width: 90%;
     text-align: center;
 
     /* ✅ Remove border & shadow for col2 in mobile view */

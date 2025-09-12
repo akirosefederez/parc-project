@@ -26,7 +26,7 @@
         <div class="intro">
           <h1 class="text-left my-5 title">Adopt a Scholar</h1>
           <img src="{{ asset('./assets/image/groupsing.png') }}" alt="Donate Image" class="img-fluid mb-4 img1" />
-          <img src="{{ asset('./assets/image/AdoptImageMobile.png') }}" alt="Donate Image Mobile" class="img-fluid mb-4 img2" />
+          <img src="{{ asset('./assets/image/AdoptImageMobile.jpg') }}" alt="Donate Image Mobile" class="img-fluid mb-4 img2" />
   
           <p class="text-left desc1">
           The program invites individuals and organizations to <br>
