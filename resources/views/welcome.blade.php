@@ -81,6 +81,7 @@
   </div>
 </div>
 
+<!-- second section starts here -->
 <div class="second-section">
 <div class="row justify-content-center">
   <div class="col-auto">
@@ -101,7 +102,7 @@
   </div>
   <div class="col-auto">
     <img src="assets/image/PARC SOG Event-6879 3.png" alt="img3" class="img3">
-        <div class="sectitle">
+    <div class="sectitle">
     <p class="p1">EXPLORE</p>
     <p class="p2">Changing Lives, One Note at a Time</p><hr>
     <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
@@ -109,6 +110,12 @@
   </div>
 </div>
 </div>
+
+<!-- second section ends here -->
+
+<!-- third section starts here -->
+
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
