@@ -15,30 +15,33 @@ body {
   width: 90%;
 }
 .img2 {
-    width: 100%;
-    max-width: 400px;
-    visibility:hidden;
-
-  }
-.intro{
-
+  width: 100%;
+  max-width: 400px;
+  visibility: hidden; /* Hidden by default */
 }
+
+/* Intro section (empty for now but reserved) */
+.intro {}
+
 /* Description text */
-.desc1{
+.desc1 {
   font-size: 20px;
   word-spacing: normal;
   color: rgb(255, 255, 255); /* White by default */
-  margin-top: -210px;
+  margin-top: -250px;
   padding-bottom: 20px;
 }
-.desc2{
+.desc2 {
   font-size: 20px;
   word-spacing: normal;
   color: rgb(255, 255, 255); /* White by default */
 }
+
+/* 🐾 Adopt Section (Desktop defaults) */
 .adoptsection {
-  margin-top: 150px;
+  margin-top: 150px; /* More space for desktop */
 }
+
 /* Form container (adopt form box) */
 .adoptform {
   background-color: white;
@@ -146,7 +149,6 @@ body {
   margin-bottom: 10px;
   color: rgb(0, 0, 0);
 }
-
 .p2, .p3, .p4, .p5 {
   font-size: 15px;
   color: rgb(0, 0, 0);
@@ -354,11 +356,20 @@ body {
    📱 MOBILE RESPONSIVE FIXES
    =========================== */
 
-
-/* Extra small devices (≤400px) or small height */
 @media (max-width: 414px), (max-height: 896px) {
   body {
     background-color: white !important;
+  }
+
+  /* 🐾 Adopt section on mobile */
+  .adoptsection {
+    margin-top: 233px; /* Less margin on mobile */
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center;    /* Center content */
+    text-align: center;     /* Center text */
   }
 
   /* Form box smaller */
@@ -374,9 +385,7 @@ body {
     box-shadow: none;
   }
 
-  /* ✅ Keep buttons in row layout but smaller */
-
-
+  /* Buttons (small size) */
   .btn1 {
     width: 0%;
     max-width: 280px;
@@ -387,7 +396,7 @@ body {
     display: flex;
     align-items: center;
   }
-   .btn2 {
+  .btn2 {
     width: 100%;
     max-width: 280px;
     height: 45px;
@@ -397,6 +406,7 @@ body {
     display: flex;
     align-items: center;
   }
+
   /* Notes on mobile */
   .note {
     width: 100%;
@@ -409,7 +419,8 @@ body {
     font-weight: bold;
     border-radius: 4px;
   }
-    .row.row-cols-2 {
+
+  .row.row-cols-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,7 +432,6 @@ body {
     width: 90%;
     text-align: center;
     margin-top: -95px;
-    /* ✅ Remove border & shadow for col1 in mobile view */
     border: none !important;
     background: transparent !important;
     box-shadow: none !important;
@@ -432,8 +442,6 @@ body {
     order: 2;
     width: 90%;
     text-align: center;
-
-    /* ✅ Remove border & shadow for col2 in mobile view */
     border: none !important;
     background: transparent !important;
     box-shadow: none !important;
@@ -448,35 +456,33 @@ body {
 
   /* Image adjustments */
   .col1 .img1 {
-    order: 1; /* Image first */
+    order: 1;
     width: 100%;
     max-width: 400px;
-    display: none;
-
+    display: none; /* Hide main img */
   }
-    .col1 .img2 {
-    order: 1; /* Image first */
+  .col1 .img2 {
+    order: 1;
     width: 100%;
     max-width: 400px;
     margin-top: -95px;
-    visibility:visible;
+    visibility: visible; /* Show alternate img */
   }
+
   /* Description under image */
   .col1 .desc1 {
-    order: 2; /* ✅ Put desc1 below image */
+    order: 2;
     text-align: center;
     font-size: 14px;
     padding: 0 15px;
-    color: black; /* Black text for readability */
+    color: black;
     margin-top: 10px;
   }
 
-  /* Title moved further down */
+  /* Hide main title */
   .col1 .title {
     display: none;
   }
-
-  /* 🚫 Hide main title on mobile */
   .maintitle {
     display: none !important;
   }
@@ -486,7 +492,7 @@ body {
     display: none;
   }
 
-  /* ✅ Keep center-btn row layout (not stacked) */
+  /* Keep button rows */
   .col2 .center-btn {
     order: 4;
     flex-direction: row;
@@ -495,8 +501,6 @@ body {
     flex-wrap: wrap;
     margin-bottom: 5px;
   }
-
-  /* ✅ Keep lowerbtn row layout under center-btn */
   .col2 .lowerbtn {
     order: 6;
     flex-direction: row;
@@ -504,29 +508,29 @@ body {
     flex-wrap: wrap;
   }
 
-  /* Buttons shrink to fit small screens */
-  .col2 .btn1
-  {
+  /* Small buttons */
+  .col2 .btn1 {
     width: 80px;
     min-width: 90px;
     height: 50px;
     font-size: 14px;
   }
-
   .col2 .btn2 {
     width: 80px;
     min-width: 189px;
     height: 50px;
     font-size: 14px;
   }
-  /* 🚫 Hide details on mobile */
+
+  /* Hide details */
   .details {
     display: none !important;
   }
 
+  /* Monthly buttons on mobile */
   .btnm1, .btnm2, .btnm3 {
     width: 100%;
-    max-width:90px;
+    max-width: 90px;
     height: 50px;
     font-size: 16px;
     margin-bottom: 8px;
@@ -534,34 +538,32 @@ body {
     display: flex;
     align-items: center;
   }
-
-  /* Highlight first button */
   .btnm2 {
     background: rgb(255, 162, 0);
     color: white;
     border: 2px solid rgb(255, 162, 0);
   }
 
-    /* Keep btnm7–btnm9 full width */
+  /* Full width monthly buttons */
   .btnm7, .btnm8, .btnm9 {
     grid-column: span 2;
     max-width: 800px;
   }
-
-  .btnm7{
+  .btnm7 {
     background-color: #f78f1e;
   }
-  .btnm8{
+  .btnm8 {
     margin-bottom: -5px;
   }
- .btnm9 {
-  max-width: 380px;        /* Limit button width */
-  text-align: center;      /* Center text inside */
-  display: flex;           /* Use flexbox */
-  align-items: center;     /* Vertically center */
-  justify-content: center; /* Horizontally center content */
-  margin: 0 auto;          /* Center the whole button block */
-}
+  .btnm9 {
+    max-width: 380px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
   /* Fix divider alignment */
   .details-list hr {
     border: none;
@@ -569,11 +571,7 @@ body {
     margin: 0;
   }
 
-  /* 🚫 Hide details on extra small devices */
-  .details {
-    display: none !important;
-  }
-  .personalinfo{
+  .personalinfo {
     text-align: left;
   }
 }
