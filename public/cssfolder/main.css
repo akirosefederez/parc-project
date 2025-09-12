@@ -463,6 +463,43 @@
   font-weight: 700;
 }
 
+.third-section .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0; 
+  max-width: 100%;
+  text-align: left;
+
+}
+.third-section .col1, .col2{
+  height: 200px;
+  /*border: blue 5px solid;*/
+}
+.third-section h1{
+  color: #f78f1e;
+}
+.center-btn {
+  align-items: center;
+  display: flex;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+.btn1, .btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-weight: 500;
+  width: 180px;
+  height: 40px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgb(255, 162, 0);
+  color: white;
+  text-decoration: none;
+}
 @media (max-width: 414px), (max-height: 896px) {
     /* Adjust carousel height dynamically */
   .carousel-item img {

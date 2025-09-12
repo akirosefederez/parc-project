@@ -114,8 +114,24 @@
 <!-- second section ends here -->
 
 <!-- third section starts here -->
+<div class="container">
+  <div class="row third-section">
+    <div class="col col1">
+      <h1>Beyond the Arts</h1>
+      <p class="tpg">We empower underprivileged children and youth through<br>
+      PARCaralan, our flagship program blending the performing arts<br> 
+      with education and career development.</p>
 
-
+          <div class="center-btn">
+            <a href="#" class="btn1">Donate now&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;></a>
+            <a href="#" class="btn2">Moreways you can help</a>
+          </div>
+  </div>
+    <div class=" col col2">
+      <p>.col-6 .col-sm-3</p>
+    </div>
+  </div>
+</div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
