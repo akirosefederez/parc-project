@@ -232,7 +232,6 @@
   padding: 0px 0px 50px 0px;
   margin-left: 0;
   margin-right: 0;  
-  margin-bottom: 50px;
   gap: 200px;
 
 }
@@ -260,27 +259,17 @@ hr {
   background-color: #fff;    /* line color */
   border: none;              /* remove default border */
 }
-.main-tsection{
-  width: 100%;
-  margin: 10px 10px 10px 10px;
-    border: #f7581e 5px solid;
-
-
+.main-tsection {
+  max-width: 90%; /* prevent Bootstrap limits */
+  padding: 0;
 }
+
 .third-section .row{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 !important;
-  margin-left: -50px;
-  margin-right: -50px; 
-  max-width: 100%;
   text-align: left;
 }
 .third-section .col1,.col2{
-  height: 200px;
-  margin: 0;
-/*border: blue 5px solid;*/
+  border: #f7581e 5px solid;
+  padding: 40px;
 }
 .third-section h1{
   color: #f78f1e;
