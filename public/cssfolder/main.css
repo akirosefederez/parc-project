@@ -289,12 +289,13 @@ hr {
 }
 .tpg{
   font-size: 20px;
+  margin-top: 20px;
 }
 .center-btn {
   align-items: center;
   display: flex;
   gap: 60px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 .btn1{
@@ -389,7 +390,7 @@ hr {
 
 
 
-    .parcaralan {
+  .parcaralan {
     margin-top: 0px !important;
     border-radius: 0 !important;
     box-shadow: none !important;
@@ -409,10 +410,6 @@ hr {
     top: auto !important;
     left: auto !important;
   }
-
-
-
-
 
     .main-flex {
     flex-direction: column;
@@ -450,5 +447,25 @@ hr {
   margin-top: -150px;
   margin-bottom: 100px;
 }
+.main-tsection{
+  text-align: center;
+}
+.tpg{
+  font-size: 15px;
+}
+.col1 .center-btn {
+    order: 4;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+.col2{
+  margin-top: -30px;
+}
+.pbody{
+    padding: 0 20px 20px 20px;
 
+}
 }

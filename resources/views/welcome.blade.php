@@ -117,8 +117,8 @@
 
 <!-- third section starts here -->
 <div class="container-fluid main-tsection">
-  <div class="row third-section">
-    <div class="col-7 col1">
+  <div class="row third-section flex-column flex-md-row">
+    <div class="col-md-7 col1">
       <h1>Beyond the Arts</h1>
       <p class="tpg">We empower underprivileged children and youth through<br>
       PARCaralan, our flagship program blending the performing arts<br> 
@@ -130,7 +130,7 @@
       </div>
     </div>
 
-    <div class="col-5 col2">
+    <div class="col-md-5 col2">
       <p class="ttitle">80+</p>
       <p class="pbody">Scholars trained and supported</p><hr class="hrtitle">
       <p class="ttitle">30+</p>
@@ -138,6 +138,8 @@
     </div>
   </div>
 </div>
+
+<div
 
 
   <!-- Bootstrap JS -->
