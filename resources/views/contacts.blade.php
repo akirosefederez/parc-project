@@ -66,12 +66,16 @@
           </p>
 
           <p>I would like to get email updates:</p>
-          <label><input type="radio" name="email-updates" value="yes"> Yes</label>
-          <label><input type="radio" name="email-updates" value="no"> No</label>
+          <div class="radio-group">
+            <label><input type="radio" name="email-updates" value="yes"> Yes</label>
+            <label><input type="radio" name="email-updates" value="no"> No</label>
+          </div>
 
           <p>I would like to get PARC text messages:</p>
-          <label><input type="radio" name="text-updates" value="yes"> Yes</label>
-          <label><input type="radio" name="text-updates" value="no"> No</label>
+          <div class="radio-group">
+            <label><input type="radio" name="text-updates" value="yes"> Yes</label>
+            <label><input type="radio" name="text-updates" value="no"> No</label>
+          </div>
 
           <button type="submit" class="btn">Sign Up</button>
         </form>
