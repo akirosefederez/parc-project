@@ -24,7 +24,7 @@
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item active"><a href="{{ url('/welcome') }}" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Causes</a></li>
+          <li class="nav-item"><a href="{{ url('/contacts') }}" class="nav-link">Causes</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
           <li class="nav-item"><a href="#" class="nav-link">News</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>

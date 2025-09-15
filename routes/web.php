@@ -25,3 +25,8 @@ Route::get('/donate', function () {
 Route::get('/adopt', function () {
     return view('adopt'); // make sure adopt.blade.php exists in resources/views
 })->name('adopt');
+
+// Simple route returning a view
+Route::get('/contacts', function () {
+    return view('contacts'); // make sure contacts.blade.php exists in resources/views
+})->name('contacts');
