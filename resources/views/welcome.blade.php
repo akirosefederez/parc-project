@@ -88,7 +88,7 @@
     <img src="assets/image/PARC SOG Event-6879 1.png" alt="img1" class="img1">
     <div class="sectitle">
     <p class="p1">STORY</p>
-    <p class="p2">Changing the Tune of Tomorrow</p><hr>
+    <p class="p2">Changing the Tune of Tomorrow</p><hr class>
     <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
     </div>
   </div>
@@ -114,7 +114,7 @@
 <!-- second section ends here -->
 
 <!-- third section starts here -->
-<div class="container">
+<div class="container main-tsection">
   <div class="row third-section">
     <div class="col col1">
       <h1>Beyond the Arts</h1>
