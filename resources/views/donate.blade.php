@@ -28,15 +28,15 @@
           <img src="{{ asset('./assets/image/dimg1.png') }}" alt="Donate Image" class="img-fluid mb-4 img1" />
           
           <p class="text-left desc1">
-            By pledging donors will provide essential <br />
+            By pledging, donors will provide essential <br />
             financial support for training expenses, allowing <br />
             these aspiring artist to refine their skills and <br />
-            pursue thier dreams in the arts.
+            pursue their dreams in the arts.
           </p>
 
           <p class="text-left desc1">
             Make your donation to PARCaralan today and <br />
-            empower the next genaration pf artist through <br />
+            empower the next genaration of artist through <br />
             training and resources.
           </p>
         </div>
@@ -52,7 +52,9 @@
               <div class="music-icon">
                 <img src="{{ asset('assets/icons/Music.png') }}" alt="Music" />
               </div>
-              <p>Provide free training in music, dance, and theater to artistically gifted children.</p>
+              <p>Provide free training in music, <br/>
+              dance, and theater to artistically gifted <br/>
+              children.</p>
             </div>
             <hr />
 
@@ -60,7 +62,9 @@
               <div class="detail-icon">
                 <img src="{{ asset('assets/icons/Flute.png') }}" alt="Instrument" />
               </div>
-              <p>Equip scholars with musical instruments, ensuring they have the tools they need to learn and grow.</p>
+              <p>Equip scholars with musical <br/>
+              instruments, ensuring they have the <br/>
+              tools they need to learn and grow.</p>
             </div>
             <hr />
 
@@ -68,7 +72,9 @@
               <div class="detail-icon">
                 <img src="{{ asset('assets/icons/Car.png') }}" alt="Bus" />
               </div>
-              <p>Cover transportation costs so scholars can access training and opportunities without barriers.</p>
+              <p>Cover transportation costs so scholars <br/>
+              can access training and opportunities <br/>
+              without barriers.</p>
             </div>
             <hr />
 
@@ -76,7 +82,8 @@
               <div class="detail-icon">
                 <img src="{{ asset('assets/icons/Apple.png') }}" alt="Apple" />
               </div>
-              <p>Provide meal allowances to keep young minds and bodies nourished.</p>
+              <p>Provide meal allowances to keep <br/>
+              young minds and bodies nourished.</p>
             </div>
             <hr />
 
@@ -84,7 +91,9 @@
               <div class="detail-icon">
                 <img src="{{ asset('assets/icons/Globe.png') }}" alt="Globe" />
               </div>
-              <p>Give underserved children the chance to shine, express themselves, and build a brighter future.</p>
+              <p>Give underserved children the chance <br/>
+              to shine, express themselves, and build <br/>
+              a brighter future.</p>
             </div>
           </div>
         </div>
