@@ -505,9 +505,9 @@ body {
 
   .btnm1, .btnm2, .btnm3, 
   .btnm4, .btnm5, .btnm6 {
-    width: 100%;
+    width: 250px;
     max-width:50px;
-    height: 50px;
+    height: 65px;
     font-size: 16px;
     margin-bottom: 8px;
     text-align: center;
