@@ -116,7 +116,7 @@
 <!-- third section starts here -->
 <div class="container main-tsection">
   <div class="row third-section">
-    <div class="col col1">
+    <div class="col-6">
       <h1>Beyond the Arts</h1>
       <p class="tpg">We empower underprivileged children and youth through<br>
       PARCaralan, our flagship program blending the performing arts<br> 
@@ -127,7 +127,7 @@
             <a href="#" class="btn2">Moreways you can help</a>
           </div>
   </div>
-    <div class=" col col2">
+    <div class="col-6">
       <p>.col-6 .col-sm-3</p>
     </div>
   </div>

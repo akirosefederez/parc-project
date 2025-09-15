@@ -471,6 +471,9 @@ hr {
   border: none;              /* remove default border */
 }
 .main-tsection{
+  width: 100%;
+  margin: 10px 10px 10px 10px;
+    border: #f7581e 5px solid;
 
 
 }
@@ -483,12 +486,10 @@ hr {
   margin-right: -50px; 
   max-width: 100%;
   text-align: left;
-
 }
-.third-section .col1, .col2{
+.third-section .col1,.col2{
   height: 200px;
-    border: #f7581e 5px solid;
-    margin: 0;
+  margin: 0;
 /*border: blue 5px solid;*/
 }
 .third-section h1{
