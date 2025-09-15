@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}" />
+  <link rel="stylesheet" href="{{ asset('cssfolder/mainnavbar.css') }}" />
   <link rel="stylesheet" href="{{ asset('cssfolder/donate.css') }}" />
 </head>
 <body>
