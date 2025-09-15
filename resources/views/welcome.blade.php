@@ -118,20 +118,23 @@
 <!-- third section starts here -->
 <div class="container-fluid main-tsection">
   <div class="row third-section">
-    <div class="col-6 col1">
+    <div class="col-7 col1">
       <h1>Beyond the Arts</h1>
       <p class="tpg">We empower underprivileged children and youth through<br>
       PARCaralan, our flagship program blending the performing arts<br> 
       with education and career development.</p>
 
       <div class="center-btn">
-        <a href="#" class="btn1">Donate now&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;></a>
+        <a href="#" class="btn1">Donate now&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<p class="arrow">›</p></a>
         <a href="#" class="btn2">More ways you can help</a>
       </div>
     </div>
 
-    <div class="col-6 col2">
-      <p>.col-6 .col-sm-3</p>
+    <div class="col-5 col2">
+      <p class="ttitle">80+</p>
+      <p class="pbody">Scholars trained and supported</p><hr class="hrtitle">
+      <p class="ttitle">30+</p>
+      <p class="pbody">Community outreach program conducted</p>
     </div>
   </div>
 </div>
