@@ -134,7 +134,7 @@
       <p class="ttitle">80+</p>
       <p class="pbody">Scholars trained and supported</p><hr class="hrtitle">
       <p class="ttitle">30+</p>
-      <p class="pbody">Community outreach program conducted</p>
+      <p class="pbody">Community outreach program<br> conducted</p>
     </div>
   </div>
 </div>
