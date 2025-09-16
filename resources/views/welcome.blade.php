@@ -154,8 +154,55 @@
 <!-- fourth section ends here -->
 
 <!-- fifth section starts here -->
-<div>
+<div class="container-fluid py-5 fifth-section text-center">
+  <h2 class="fw-bold mb-2 ft1">Get Involved</h2>
+  <p class="mb-5 ft2">Ways to support the PARC Foundation</p>
 
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-3 d-flex">
+        <div class="card shadow-sm h-100 border-0">
+          <div class="card-body">
+            <div class="icon-circle mb-3 mx-auto">
+              <img src="assets/icons/Heart.png" alt="Adopt a Scholar" class="icon-img">
+            </div>
+            <h5 class="fw-bold text-orange">Adopt a Scholar</h5>
+            <hr class="divider">
+            <p class="mb-0">Support a scholar’s journey as their benefactor</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3 d-flex">
+        <div class="card shadow-sm h-100 border-0">
+          <div class="card-body">
+            <div class="icon-circle mb-3 mx-auto">
+              <img src="assets/icons/Care.png" alt="Volunteer" class="icon-img">
+            </div>
+            <h5 class="fw-bold text-orange">Volunteer</h5>
+            <hr class="divider">
+            <p class="mb-0">Share your expertise, mentor scholars, or assist in events</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3 d-flex">
+        <div class="card shadow-sm h-100 border-0">
+          <div class="card-body">
+            <div class="icon-circle mb-3 mx-auto">
+              <img src="assets/icons/Social.png" alt="Be a PARCner" class="icon-img">
+            </div>
+            <h5 class="fw-bold text-orange">Be a PARCner</h5>
+            <hr class="divider">
+            <p class="mb-0">Collaborate through sponsorships or corporate social responsibility initiatives</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 

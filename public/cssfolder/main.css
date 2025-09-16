@@ -378,6 +378,61 @@ hr {
 }
 
 
+
+
+
+.ft1{
+  font-size: 40px;
+  color: #f78f1e;
+}
+.ft2{
+  font-size: 25px;
+}
+/* Custom orange color */
+.text-orange {
+  color: #f78f1e;
+}
+
+/* Circle container */
+.icon-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #f78f1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* ensures image stays inside */
+}
+
+/* Image size inside circle */
+.icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Divider line */
+.divider {
+  width: 60px;
+  margin: 0.5rem auto;
+  border: 1px solid #424141;
+}
+
+.fifth-section {
+  background-color: #f1f1f1 !important;
+}
+
+.fifth-section .row {
+  justify-content: center; /* centers all cards */
+  gap: 30px; /* gap between cards */
+}
+
+.card {
+  padding: 50px 30px 30px 30px;
+  background-color: #fff; /* card bg white */
+}
+
 @media (max-width: 414px), (max-height: 896px) {
     /* Adjust carousel height dynamically */
   .carousel-item img {
