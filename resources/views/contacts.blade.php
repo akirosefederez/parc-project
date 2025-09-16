@@ -77,15 +77,17 @@
             <label><input type="radio" name="text-updates" value="no"> No</label>
           </div>
 
-          <button type="submit" class="btn">Sign Up</button>
-        </form>
-
         <p class="small-text">
           We will keep your information safe and secure. Please see our Privacy Policy for details of how we use your information.
         </p>
         <p class="small-text">
           This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
         </p>
+
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+
       </div>
     </div>
   </footer>
