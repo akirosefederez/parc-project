@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PARC Foundation</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ asset('cssfolder/mainnavbar.css') }}" />
-  <link rel="stylesheet" href="{{ asset('cssfolder/contacts.css') }}" />
-</head>
-<body>
-  <footer class="footer">
+  <footer class="footercon">
     <div class="footer-container">
       <!-- Left Links Section -->
       <div class="footer-links">
@@ -84,15 +68,10 @@
           This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
         </p>
 
-          <button type="submit" class="btn">Sign Up</button>
+          <button type="submit" class="btncontact">Sign Up</button>
         </form>
 
 
       </div>
     </div>
   </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>

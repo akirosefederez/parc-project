@@ -6,16 +6,13 @@
 }
 
 /* 🌟 BODY STYLING */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #111; /* Dark background */
-  color: #fff;            /* White text */
-}
 
 /* 🌟 FOOTER CONTAINER */
-.footer {
-  background-color: #111; /* Same as body */
+.footercon {
+  background-color: #232323; /* Same as body */
   padding: 40px;
+  font-family: Arial, sans-serif;
+  color: #fff;            /* White text */
 }
 
 .footer-container {
@@ -135,7 +132,7 @@ body {
 }
 
 /* 🌟 BUTTON */
-.btn {
+.btncontact {
   display: inline-block;
   width: 100%;
   padding: 12px;

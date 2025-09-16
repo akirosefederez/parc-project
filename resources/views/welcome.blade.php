@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}">
   <link rel="stylesheet" href="{{ asset('cssfolder/mainnavbar.css') }}">
+  <link rel="stylesheet" href="{{ asset('cssfolder/contacts.css') }}" />
+
 
 </head>
 <body>
@@ -205,6 +207,11 @@
   </div>
 </div>
 
+  <!-- Include Navbar -->
+  @include('layouts.contacts')
+
+    <!-- Include Footer -->
+  @include('layouts.footer')
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
