@@ -138,8 +138,25 @@
     </div>
   </div>
 </div>
+<!-- third section ends here -->
 
-<div
+<!-- fourth section starts here -->
+<div class="frsection">
+  <img src="assets/image/1 (1) 2.png" alt="img4" class="img4">
+
+  <!-- Orange Text Box -->
+  <div class="text-overlay">
+    <h2>What you need to know about<br>our scholars  ›</h2>
+    <p>A flagship scholarship program offering free training<br>
+       in music, dance, and theater.</p>
+  </div>
+</div>
+<!-- fourth section ends here -->
+
+<!-- fifth section starts here -->
+<div>
+
+</div>
 
 
   <!-- Bootstrap JS -->
