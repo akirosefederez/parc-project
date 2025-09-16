@@ -82,8 +82,14 @@ body {
 
 /* Highlighted Orange Titles */
 .footer-form .highlight {
-  color: #f7941d;
+  color: #f7941d; /* Orange highlight */
   text-transform: uppercase;
+}
+
+/* 🌟 Required Field Label Text */
+.required {
+  color: #f7941d; /* Match the orange color */
+  font-style: italic; /* Optional: makes it stand out */
 }
 
 /* Form Labels */
@@ -103,9 +109,22 @@ body {
   border-radius: 3px;
 }
 
-/* Radio Buttons */
-.footer-form input[type="radio"] {
-  margin-right: 5px;
+/* 🌟 RADIO BUTTONS (YES / NO SIDE BY SIDE) */
+.radio-group {
+  display: flex;          /* Arrange Yes/No side by side */
+  gap: 20px;              /* Space between Yes and No */
+  margin-top: 8px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px; /* Space between circle and text */
 }
 
 /* Paragraph inside form */
@@ -159,5 +178,9 @@ body {
 
   .footer-form {
     width: 100%; /* Full width form */
+  }
+
+  .radio-group {
+    gap: 15px; /* Smaller spacing on mobile */
   }
 }
