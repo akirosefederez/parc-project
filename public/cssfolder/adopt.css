@@ -203,6 +203,7 @@ body {
 }
 .btnm9 {
   color: rgb(255, 162, 0); /* Orange text for distinction */
+  width: 530px;
 }
 
 /* Credit card fields */
