@@ -130,10 +130,50 @@ body {
 /* Note blocks (highlighted info) */
 .note1 {
   text-align: left;
-  margin: 10px -40px 20px -50px;
+  margin: 10px -50px 20px -50px;
   padding: 20px 60px 10px 60px;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(234, 232, 232);
 }
+
+/* Header container for SILVER + badge + price */
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SILVER title */
+.p1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Orange badge */
+.badge-duration {
+  background-color: #f78f1e;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+/* Orange price text */
+.price-tag {
+  color: #f78f1e;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.price-tag .small {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .note2 {
   text-align: center;
   margin: 10px 0 20px 0;

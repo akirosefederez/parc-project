@@ -108,13 +108,18 @@
           </div>
 
           <!-- Note -->
-          <div class="note1">
-            <p class="p1">SILVER</p>
-            <p class="p3">Training expenses for intermediate skill development workshops, Mentor’s fee, collaterals, and etc.</p><hr>
-            <p class="p3">Recognition on the PARC Foundation website.</p><hr>
-            <p class="p4">Quarterly progress update.</p><hr>
-            <p class="p5">Invitation to the annual scholar showcase event.</p>
-          </div>
+<div class="note1">
+  <div class="note-header">
+    <p class="p1">SILVER <span class="badge-duration">3-MONTHS DURATION</span></p>
+    <p class="price-tag">₱15,000 <span class="small">/ Scholar</span></p>
+  </div>
+
+  <p class="p3">Training expenses for intermediate skill development workshops, Mentor’s fee, collaterals, and etc.</p><hr>
+  <p class="p3">Recognition on the PARC Foundation website.</p><hr>
+  <p class="p4">Quarterly progress update.</p><hr>
+  <p class="p5">Invitation to the annual scholar showcase event.</p>
+</div>
+
 
           </div> <!-- End of btn-packages -->
 
