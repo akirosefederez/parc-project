@@ -386,13 +386,13 @@ body {
 
   .col1 {
     order: 1;
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 
   .col2 {
     order: 2;
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 
