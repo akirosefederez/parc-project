@@ -127,6 +127,21 @@ body {
   text-decoration: none;
 }
 
+
+
+/* Note blocks (highlighted info) */
+.notepatron {
+  text-align: left;
+  margin: 30px -50px 30px -50px;
+  padding: 20px 60px 10px 60px;
+  background-color: rgb(234, 232, 232);
+  display: none; /* ensure the note is hidden by default and can be shown via JS */
+}
+/* JS will toggle this class to show the note */
+.notepatron.show {
+  display: block;
+}
+
 /* Note blocks (highlighted info) */
 .notesilver {
   text-align: left;
@@ -139,6 +154,37 @@ body {
 .notesilver.show {
   display: block;
 }
+
+/* Note blocks (highlighted info) */
+.notegold {
+  text-align: left;
+  margin: 30px -50px 30px -50px;
+  padding: 20px 60px 10px 60px;
+  background-color: rgb(234, 232, 232);
+  display: none; /* ensure the note is hidden by default and can be shown via JS */
+}
+/* JS will toggle this class to show the note */
+.notegold.show {
+  display: block;
+}
+
+/* Note blocks (highlighted info) */
+.noteplatunum {
+  text-align: left;
+  margin: 30px -50px 30px -50px;
+  padding: 20px 60px 10px 60px;
+  background-color: rgb(234, 232, 232);
+  display: none; /* ensure the note is hidden by default and can be shown via JS */
+}
+/* JS will toggle this class to show the note */
+.noteplatinum.show {
+  display: block;
+}
+
+
+
+
+
 
 
 /* Header container for SILVER + badge + price */
