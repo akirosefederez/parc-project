@@ -144,8 +144,7 @@
               <p class="p4">Quarterly progress update.</p>
               <hr>
               <p class="p5">Invitation to the annual scholar showcase event.</p>
-            </div>
-          </div>--> 
+            </div>--> 
 
             <!-- Silver Note -->
             <div class="notesilver">
@@ -167,7 +166,7 @@
               <p class="p5">Invitation to the annual scholar showcase event.</p>
             </div>
 
-            <!-- Gold Note 
+            <!-- Gold Note --> 
             <div class="notegold">
               <div class="note-header">
                 <p class="p1">
@@ -186,7 +185,9 @@
               <hr>
               <p class="p5">Invitation to the annual scholar showcase event.</p>
             </div>
-          </div>--> 
+
+
+          </div> <!--end-->
 
             <!-- Platinum Note 
             <div class="noteplatinum">
@@ -206,8 +207,7 @@
               <p class="p4">Quarterly progress update.</p>
               <hr>
               <p class="p5">Invitation to the annual scholar showcase event.</p>
-            </div>
-          </div>--> 
+            </div>--> 
           
           <!-- End of btn-packages -->
 
