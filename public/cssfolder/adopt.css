@@ -463,9 +463,10 @@ body {
     font-weight: bold;
     border-radius: 4px;
   }
- .note1 {
+ .notesilver {
   text-align: center;
-  padding: 20px 50px 10px 50px;
+  padding: 20px 20px 10px 20px;
+  margin: 30px -35px 0 -35px;
 }
 
 /* Header container for SILVER + badge + price */
@@ -509,6 +510,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .formtitle{
+    margin-top: 30px;
   }
 
   /* Left column content */
