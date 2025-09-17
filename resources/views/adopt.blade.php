@@ -126,7 +126,7 @@
               <a href="#" class="btn2">Share what you can</a>
             </div>
 
-            <!-- Patron Note 
+            <!-- Patron Note -->
             <div class="notepatron">
               <div class="note-header">
                 <p class="p1">
@@ -144,7 +144,7 @@
               <p class="p4">Quarterly progress update.</p>
               <hr>
               <p class="p5">Invitation to the annual scholar showcase event.</p>
-            </div>--> 
+            </div> 
 
             <!-- Silver Note -->
             <div class="notesilver">
@@ -186,10 +186,7 @@
               <p class="p5">Invitation to the annual scholar showcase event.</p>
             </div>
 
-
-          </div> <!--end-->
-
-            <!-- Platinum Note 
+            <!-- Platinum Note -->
             <div class="noteplatinum">
               <div class="note-header">
                 <p class="p1">
@@ -207,7 +204,9 @@
               <p class="p4">Quarterly progress update.</p>
               <hr>
               <p class="p5">Invitation to the annual scholar showcase event.</p>
-            </div>--> 
+            </div> 
+
+            </div> <!--end-->
           
           <!-- End of btn-packages -->
 

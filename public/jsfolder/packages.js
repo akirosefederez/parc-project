@@ -1,4 +1,45 @@
-// public/js/packages.js
+// public/js/packages.js 
+
+//Note Patron
+(function () {
+  "use strict";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const patronBtn = document.querySelector(".btnm1");
+    const patronNote = document.querySelector(".notepatron");
+
+    console.log("packages.js: script loaded");
+
+    if (!patronBtn) {
+      console.warn("packages.js: .btnm1 (Patron button) not found in DOM.");
+      return;
+    }
+
+    if (!patronNote) {
+      console.warn("packages.js: .notepatron (Patron note) not found in DOM.");
+      return;
+    }
+
+    // Make sure note is hidden initially (class-based)
+    patronNote.classList.remove("show");
+
+    patronBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const isVisible = getComputedStyle(patronNote).display !== "none";
+      if (isVisible) {
+        patronNote.classList.remove("show");
+      } else {
+        patronNote.classList.add("show");
+        // optional: smooth-scroll the note into view
+        Note.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    });
+  });
+})();
+
+//Note Silver
+
 (function () {
   "use strict";
 
@@ -36,6 +77,8 @@
   });
 })();
 
+//Note Gold
+
 (function () {
   "use strict";
 
@@ -66,6 +109,45 @@
         goldNote.classList.remove("show");
       } else {
         goldNote.classList.add("show");
+        // optional: smooth-scroll the note into view
+        Note.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    });
+  });
+})();
+
+//Note Platinum
+
+(function () {
+  "use strict";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const platinumBtn = document.querySelector(".btn1");
+    const platinumNote = document.querySelector(".noteplatinum");
+
+    console.log("packages.js: script loaded");
+
+    if (!platinumBtn) {
+      console.warn("packages.js: .btn1 (Platinum button) not found in DOM.");
+      return;
+    }
+
+    if (!platinumNote) {
+      console.warn("packages.js: .noteplatinum (Platinum note) not found in DOM.");
+      return;
+    }
+
+    // Make sure note is hidden initially (class-based)
+    platinumNote.classList.remove("show");
+
+    platinumBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const isVisible = getComputedStyle(platinumNote).display !== "none";
+      if (isVisible) {
+        platinumNote.classList.remove("show");
+      } else {
+        platinumNote.classList.add("show");
         // optional: smooth-scroll the note into view
         Note.scrollIntoView({ behavior: "smooth", block: "nearest" });
       }
