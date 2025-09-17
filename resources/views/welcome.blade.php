@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="{{ asset('cssfolder/contacts.css') }}" />
   <link rel="stylesheet" href="{{ asset('cssfolder/carousel.css') }}" />
 
+
 </head>
 <body>
 
@@ -20,7 +21,7 @@
   
   <!-- Include Carousel -->
   @include('layouts.carousel')
-
+ 
 
   <!-- PARCaralan starts here -->
     <div class="container parcaralan">
