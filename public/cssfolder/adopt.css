@@ -128,12 +128,18 @@ body {
 }
 
 /* Note blocks (highlighted info) */
-.note1 {
+.notesilver {
   text-align: left;
   margin: 30px -50px 30px -50px;
   padding: 20px 60px 10px 60px;
   background-color: rgb(234, 232, 232);
+  display: none; /* ensure the note is hidden by default and can be shown via JS */
 }
+/* JS will toggle this class to show the note */
+.notesilver.show {
+  display: block;
+}
+
 
 /* Header container for SILVER + badge + price */
 .note-header {
