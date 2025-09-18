@@ -127,65 +127,24 @@ body {
   text-decoration: none;
 }
 
-
-
 /* Note blocks (highlighted info) */
-.notepatron {
-  text-align: left;
-  margin: 30px -50px 30px -50px;
-  padding: 20px 60px 10px 60px;
-  background-color: rgb(234, 232, 232);
-  display: none; /* ensure the note is hidden by default and can be shown via JS */
-}
-/* JS will toggle this class to show the note */
-.notepatron.show {
-  display: block;
-}
-
-/* Note blocks (highlighted info) */
-.notesilver {
-  text-align: left;
-  margin: 30px -50px 30px -50px;
-  padding: 20px 60px 10px 60px;
-  background-color: rgb(234, 232, 232);
-  display: none; /* ensure the note is hidden by default and can be shown via JS */
-}
-/* JS will toggle this class to show the note */
-.notesilver.show {
-  display: block;
-}
-
-/* Note blocks (highlighted info) */
-.notegold {
-  text-align: left;
-  margin: 30px -50px 30px -50px;
-  padding: 20px 60px 10px 60px;
-  background-color: rgb(234, 232, 232);
-  display: none; /* ensure the note is hidden by default and can be shown via JS */
-}
-/* JS will toggle this class to show the note */
-.notegold.show {
-  display: block;
-}
-
-/* Note blocks (highlighted info) */
+.notepatron,
+.notesilver,
+.notegold,
 .noteplatinum {
   text-align: left;
   margin: 30px -50px 30px -50px;
   padding: 20px 60px 10px 60px;
   background-color: rgb(234, 232, 232);
-  display: none; /* ensure the note is hidden by default and can be shown via JS */
+  display: none; /* hidden by default */
 }
 /* JS will toggle this class to show the note */
+.notepatron.show,
+.notesilver.show,
+.notegold.show,
 .noteplatinum.show {
   display: block;
 }
-
-
-
-
-
-
 
 /* Header container for SILVER + badge + price */
 .note-header {
@@ -247,9 +206,7 @@ body {
 }
 
 /* Text highlights */
-.dollar {
-  color: rgb(255, 162, 0);
-}
+.dollar,
 .privacy {
   color: rgb(255, 162, 0);
 }
@@ -402,6 +359,14 @@ body {
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* ✅ Orange border when focused */
+.personalinfo input[type="text"]:focus,
+.personalinfo input[type="email"]:focus {
+  border: 2px solid rgb(255, 162, 0);
+  outline: none;
 }
 
 /* Submit button */
@@ -509,56 +474,57 @@ body {
     font-weight: bold;
     border-radius: 4px;
   }
- .notesilver {
-  text-align: center;
-  padding: 20px 20px 10px 20px;
-  margin: 30px -35px 0 -35px;
-}
+  .notesilver {
+    text-align: center;
+    padding: 20px 20px 10px 20px;
+    margin: 30px -35px 0 -35px;
+  }
 
-/* Header container for SILVER + badge + price */
-.note-header {
-  margin-bottom: 20px;
+  /* Header container for SILVER + badge + price */
+  .note-header {
+    margin-bottom: 20px;
+  }
 
-}
+  /* SILVER title */
+  .p1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
 
-/* SILVER title */
-.p1 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
+  /* Orange badge */
+  .badge-duration {
+    font-size: 8px;
+    padding: 4px 9px;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
 
-/* Orange badge */
-.badge-duration {
-  font-size: 8px;
-  padding: 4px 9px;
-  border-radius: 20px;
-  margin-left: 10px;
-}
+  /* Orange price text */
+  .price-tag {
+    color: #f78f1e;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+  }
 
-/* Orange price text */
-.price-tag {
-  color: #f78f1e;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 0;
-  white-space: nowrap;
-}
+  .price-tag .small {
+    font-size: 15px;
+    font-weight: bold;
+  }
 
-.price-tag .small {
-  font-size: 15px;
-  font-weight: bold;
-}
-.p2, .p3, .p4, .p5 {
-  font-size: 12px;
-}
+  .p2, .p3, .p4, .p5 {
+    font-size: 12px;
+  }
+
   .row.row-cols-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .formtitle{
+  .formtitle {
     margin-top: 30px;
   }
 
@@ -696,6 +662,18 @@ body {
     border: none;
     border-top: 2px solid #565656;
     margin: 0;
+  }
+
+  /* ✅ Orange border highlight still applies on mobile */
+  .personalinfo input[type="text"],
+  .personalinfo input[type="email"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .personalinfo input[type="text"]:focus,
+  .personalinfo input[type="email"]:focus {
+    border: 2px solid rgb(255, 162, 0);
+    outline: none;
   }
 
   .personalinfo {

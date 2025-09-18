@@ -1,38 +1,48 @@
+/* 🌟 BODY STYLING */
 body {
-  background-color: blanchedalmond;
+  background-color: blanchedalmond; /* Light beige background */
 }
 
+/* 🌟 MAIN TITLE */
 .title {
-  font-size: 50px;
-  color: rgb(255, 162, 0);
+  font-size: 50px; /* Large headline */
+  color: rgb(255, 162, 0); /* Orange */
 }
 
+/* 🌟 MAIN IMAGE */
 .img1 {
-  margin-top: 8px;
-  width: 90%;
+  margin-top: 8px; /* Small gap from top */
+  width: 90%; /* Responsive width */
 }
 
+/* 🌟 DESCRIPTION */
 .desc1 {
   font-size: 20px;
   word-spacing: normal;
 }
+
+/* 🌟 DONATE SECTION */
 .donatesection {
-  margin-top: 150px;
+  margin-top: 150px; /* Spacing from top */
 }
+
+/* 🌟 DONATION FORM CONTAINER */
 .donateform {
   background-color: white;
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 50px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+/* 🌟 BUTTON CONTAINERS */
 .center-btn {
   align-items: center;
   display: flex;
-  gap: 10px;
+  gap: 10px; /* Spacing between buttons */
   margin-bottom: 20px;
 }
+
 .pay-btn {
   justify-content: center;
   align-items: center;
@@ -40,6 +50,7 @@ body {
   gap: 45px;
   margin-bottom: 20px;
 }
+
 .bankcard {
   justify-content: center;
   align-items: center;
@@ -47,6 +58,7 @@ body {
   gap: 10px;
   margin-bottom: 20px;
 }
+
 .last {
   justify-content: center;
   align-items: center;
@@ -55,6 +67,8 @@ body {
   margin-left: 40px;
   margin-bottom: 20px;
 }
+
+/* 🌟 PRIMARY DONATE BUTTONS */
 .btn1, .btn2 {
   display: flex;
   justify-content: center;
@@ -64,24 +78,28 @@ body {
   width: 270px;
   height: 60px;
   font-size: 18px;
-  color: rgb(255, 162, 0);
+  color: rgb(255, 162, 0); /* Orange text */
   background-color: white;
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
 
+/* 🌟 NOTE BOXES */
 .note1 {
   text-align: center;
   margin: 10px 0 20px 0;
   padding: 20px 20px 10px 20px;
   background-color: blanchedalmond;
 }
+
 .note2 {
   text-align: center;
   margin: 10px 0 20px 0;
   padding: 20px 20px 10px 20px;
   background-color: rgb(233, 233, 233);
 }
+
+/* 🌟 NOTE TEXT */
 .p1 {
   font-size: 20px;
   font-weight: bold;
@@ -93,17 +111,21 @@ body {
   font-size: 13px;
   color: rgb(241, 118, 10);
 }
+
 .p3 {
   font-size: 15px;
   color: rgb(0, 0, 0);
 }
 
+/* 🌟 GIVE MONTHLY SECTION */
 .btn-monthly {
   margin: 0;
 }
+
+/* Monthly button grid */
 .btn-monthly .center-btn {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* default: 3 per row */
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
   gap: 15px;
   max-width: 600px;
   margin: 0 auto;
@@ -117,13 +139,12 @@ body {
   border-radius: 0;
 }
 
-.dollar {
-  color: rgb(255, 162, 0);
-}
-.privacy {
-  color: rgb(255, 162, 0);
+/* Highlighted text colors */
+.dollar, .privacy {
+  color: rgb(255, 162, 0); /* Orange */
 }
 
+/* 🌟 MONTHLY BUTTONS */
 .btnm1, .btnm2, .btnm3, 
 .btnm4, .btnm5 {
   display: flex;
@@ -138,6 +159,7 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
+
 .btnm6 {
   display: flex;
   justify-content: center;
@@ -146,11 +168,12 @@ body {
   width: 165px;
   height: 60px;
   font-size: 18px;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0); /* Black */
   background-color: white;
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
+
 .btnm7, .btnm8 {
   display: flex;
   justify-content: center;
@@ -164,6 +187,7 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
+
 .btnm9 {
   display: flex;
   justify-content: center;
@@ -177,16 +201,20 @@ body {
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
 }
+
+/* 🌟 EXPIRY + CVV INPUTS */
 #exp, #cvv {
   width: 48%;
 }
+
+/* 🌟 DETAILS SECTION */
 .details {
   background-color: white;
   width: 90%;
   text-align: center;
   padding-top: 30px;
   margin-top: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .pdt {
@@ -195,6 +223,7 @@ body {
   font-weight: bold;
 }
 
+/* Details list layout */
 .details-list {
   display: flex;
   flex-direction: column;
@@ -202,6 +231,7 @@ body {
   gap: 0;
 }
 
+/* Single detail item */
 .detail-item {
   display: flex;
   align-items: center;
@@ -209,12 +239,12 @@ body {
   padding: 16px 0;
 }
 
-/* 🔵 FIXED CIRCLE ICONS */
+/* 🌟 CIRCLE ICONS */
 .music-icon,
 .detail-icon {
   width: 80px;
   height: 80px;
-  background: #f89b1e;
+  background: #f89b1e; /* Orange background */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -229,46 +259,64 @@ body {
   object-fit: contain;
 }
 
+/* Text inside detail */
 .detail-item p {
   margin: 0;
   text-align: left;
   font-size: 1.1rem;
 }
 
+/* Divider line */
 .details-list hr {
   border: none;
   border-top: 2px solid #565656;
   margin: 0 0 0 105px;
 }
 
+/* 🌟 GLOBAL BREAK LINE */
 .break {
   border: none;
   border-top: 2px solid #565656;
   margin: 40px 0;
 }
+
+/* 🌟 FORM TITLE */
 .formtitle {
   color: rgb(255, 162, 0);
 }
+
+/* 🌟 PERSONAL INFO FORM */
 .personalinfo {
-  max-width: 530px; /* Centered box width */
+  max-width: 530px; /* Fixed width box */
 }
 
+/* Labels */
 .personalinfo label {
   display: block;
   margin-top: 12px;
   font-weight: 600;
 }
 
+/* Inputs (text + email) */
 .personalinfo input[type="text"],
 .personalinfo input[type="email"] {
-  width: 100%;       /* Makes all textboxes same width */
+  width: 100%; /* Full width */
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
+  transition: border 0.3s ease;
 }
 
+/* 🌟 ORANGE BORDER ON FOCUS */
+.personalinfo input[type="text"]:focus,
+.personalinfo input[type="email"]:focus {
+  border: 2px solid rgb(255, 162, 0); /* Orange border */
+  outline: none; /* Remove default blue outline */
+}
+
+/* Submit button */
 .personalinfo input[type="submit"] {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -281,17 +329,22 @@ body {
   font-weight: bold;
 }
 
+/* Submit hover */
 .personalinfo input[type="submit"]:hover {
   background: #e68900;
 }
+
+/* Form subsection title */
 .p1form {
   color: rgb(255, 162, 0);
   margin-top: 15px;
   font-weight: 800;
 }
+
+/* 🌟 RADIO BUTTON GROUP */
 .radio-group {
   display: flex;
-  gap: 40px; /* space between Yes and No */
+  gap: 40px;
   margin-top: 5px;
 }
 
@@ -303,18 +356,20 @@ body {
 
 .radio-group input[type="radio"] {
   margin-right: 6px;
-  border:#565656 solid 1px;
+  border: #565656 solid 1px;
   margin-bottom: 20px;
 }
 
+/* 🌟 CUSTOM CHECKBOX */
 .last input[type="checkbox"] {
-  width: 35px;              /* Optional: customize width */
-  height: 35px;             /* Optional: customize height */
-  transform: scale(1.3);    /* Make it about 30% larger */
-  accent-color: #565656;    /* Optional: changes checkbox color */
+  width: 35px;
+  height: 35px;
+  transform: scale(1.3);
+  accent-color: #565656;
   cursor: pointer;
-  border-radius: none;
 }
+
+/* 🌟 FOOTER */
 .footer {
   text-align: center;
   padding: 50px;
@@ -327,6 +382,7 @@ body {
     background-color: white !important;
   }
 
+  /* Donate form simplified */
   .donateform {
     margin: 0;
     padding: 10px 0;
@@ -337,6 +393,7 @@ body {
     border-radius: 0;
   }
 
+  /* Stack buttons vertically */
   .center-btn {
     flex-direction: column;
     gap: 0;
@@ -344,6 +401,7 @@ body {
     margin-bottom: 16px;
   }
 
+  /* Mobile donate buttons */
   .btn1, .btn2 {
     width: 100%;
     max-width: 260px;
@@ -351,7 +409,6 @@ body {
     font-size: 16px;
     margin-bottom: 8px;
     border-radius: 0;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -363,6 +420,7 @@ body {
     border: 2px solid rgb(255, 162, 0);
   }
 
+  /* Mobile note */
   .note {
     width: 100%;
     text-align: center;
@@ -374,14 +432,12 @@ body {
     font-weight: bold;
     border-radius: 4px;
   }
-  
 
-
-
-    .row.row-cols-2 {
+  /* Mobile row fix */
+  .row.row-cols-2 {
     display: flex;
     flex-direction: column;
-    align-items: center; /* center whole content */
+    align-items: center;
   }
 
   .col1 {
@@ -401,12 +457,13 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .col1 .img1 {
     order: 1;
     width: 100%;
@@ -414,14 +471,13 @@ body {
     margin-bottom: 0;
   }
 
-.col1 .title {
-  order: 2;
-  margin: 0;          /* removes any margin */
-  padding: 0 !important;         /* removes any padding */
-  text-align: center;
-  font-size: 28px;
-}
-
+  .col1 .title {
+    order: 2;
+    margin: 0;
+    padding: 0 !important;
+    text-align: center;
+    font-size: 28px;
+  }
 
   .col1 .desc1 {
     order: 3;
@@ -430,7 +486,7 @@ body {
     padding: 0px;
   }
 
-  /* Give Once / Give Monthly side by side but responsive */
+  /* Side-by-side give once/give monthly */
   .col2 .center-btn {
     order: 4;
     flex-direction: row;
@@ -467,34 +523,20 @@ body {
     height: 50px;
     font-size: 15px;
   }
-    .col2 .pay-btn a {
+
+  .col2 .pay-btn a {
     width: 100%;
     max-width: 380px;
     height: 63px;
     font-size: 15px;
   }
 
-  /* 🚫 Hide details on mobile */
+  /* Hide details */
   .details {
-    display: none;
+    display: none !important;
   }
 
-  /* 🔥 MAKE COL2 FULL WIDTH & REMOVE BOX STYLES */
-  .donateform {
-    margin: 0;
-    padding: 20px 0;
-    width: 100%;
-    max-width: 100%;
-    background: transparent;
-    box-shadow: none;
-    border-radius: 0;
-  }
-
-
-
-
-
-  /* ✅ MAKE btnm1–btnm6 into 2 columns */
+  /* ✅ Make btnm1–btnm6 into 2 columns */
   .btn-monthly {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -506,13 +548,13 @@ body {
   .btnm1, .btnm2, .btnm3, 
   .btnm4, .btnm5, .btnm6 {
     width: 250px;
-    max-width:50px;
+    max-width: 50px;
     height: 65px;
     font-size: 16px;
     margin-bottom: 8px;
-    text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .btnm1 {
@@ -521,43 +563,40 @@ body {
     border: 2px solid rgb(255, 162, 0);
   }
 
-  /* Keep btnm7–btnm9 full width */
+  /* Full-width buttons */
   .btnm7, .btnm8, .btnm9 {
     grid-column: span 2;
     max-width: 800px;
   }
 
-  .btnm7{
+  .btnm7 {
     background-color: #f78f1e;
   }
-  .btnm8{
+
+  .btnm8 {
     margin-bottom: -5px;
   }
- .btnm9 {
-  max-width: 380px;        /* Limit button width */
-  text-align: center;      /* Center text inside */
-  display: flex;           /* Use flexbox */
-  align-items: center;     /* Vertically center */
-  justify-content: center; /* Horizontally center content */
-  margin: 0 auto;          /* Center the whole button block */
-}
 
+  .btnm9 {
+    max-width: 380px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
+  /* HR fix */
   .details-list hr {
     border: none;
     border-top: 2px solid #565656;
     margin: 0;
   }
 
-  /* 🚫 Hide details on very small devices too */
-  .details {
-    display: none !important;
-  }
-    .personalinfo{
+  /* Personal info responsive */
+  .personalinfo {
     text-align: left;
-    max-width: 100%;          /* shrink form on tablets */
+    max-width: 100%;
     padding: 15px;
   }
-  
 }
-
