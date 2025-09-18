@@ -53,7 +53,7 @@
     <img src="assets/image/PARC SOG Event-6879 1.png" alt="img1" class="img1">
     <div class="sectitle">
     <p class="p1">STORY</p>
-    <p class="p2">Changing the Tune of Tomorrow</p><hr class>
+    <p class="p2">Changing the Tune of Tomorrow</p><hr class="divider1">
     <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
     </div>
   </div>
@@ -61,7 +61,7 @@
     <img src="assets/image/PARC SOG Event-6879 2.png" alt="img2" class="img2">
     <div class="sectitle">
     <p class="p1">FEATURE</p>
-    <p class="p2">Where Impact comes to Life</p><hr>
+    <p class="p2">Where Impact comes to Life</p><hr class="divider1">
     <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
     </div>
   </div>
@@ -69,7 +69,7 @@
     <img src="assets/image/PARC SOG Event-6879 3.png" alt="img3" class="img3">
     <div class="sectitle">
     <p class="p1">EXPLORE</p>
-    <p class="p2">Changing Lives, One Note at a Time</p><hr>
+    <p class="p2">Changing Lives, One Note at a Time</p><hr class="divider1">
     <p>We partner with communities to<br> uplift lives and build brighter futures<br> through music and education.</p>
     </div>
   </div>
@@ -131,7 +131,7 @@
               <img src="assets/icons/Heart.png" alt="Adopt a Scholar" class="icon-img">
             </div>
             <h5 class="fw-bold text-orange">Adopt a Scholar</h5>
-            <hr class="divider">
+            <hr class="divider2">
             <p class="mb-0">Support a scholar’s journey as their benefactor</p>
           </div>
         </div>
@@ -145,7 +145,7 @@
               <img src="assets/icons/Care.png" alt="Volunteer" class="icon-img">
             </div>
             <h5 class="fw-bold text-orange">Volunteer</h5>
-            <hr class="divider">
+            <hr class="divider2">
             <p class="mb-0">Share your expertise, mentor scholars, or assist in events</p>
           </div>
         </div>
@@ -159,7 +159,7 @@
               <img src="assets/icons/Social.png" alt="Be a PARCner" class="icon-img">
             </div>
             <h5 class="fw-bold text-orange">Be a PARCner</h5>
-            <hr class="divider">
+            <hr class="divider2">
             <p class="mb-0">Collaborate through sponsorships or corporate social responsibility initiatives</p>
           </div>
         </div>
