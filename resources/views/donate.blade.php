@@ -192,7 +192,7 @@
           <!--Payment Method-->
           <h3 class="formtitle">Payment Method</h3>
 
-          <div class="center-btn pay-btn">
+          <div class="centerpay-btn pay-btn">
             <a href="#" class="btnm7"><img src="{{ asset('assets/icons/visa.png') }}" alt="Visa" class="visaicon" /></a>
             <a href="#" class="btnm8"><img src="{{ asset('assets/icons/paypal.png') }}" alt="paypal" class="paypalicon" /></a>
           </div>
@@ -230,7 +230,8 @@
   <!-- Include Footer -->
   @include('layouts.footer')
   
-  <!-- Bootstrap JS -->
+  <!-- JS -->
+  <script src="{{ asset('jsfolder/donate.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
