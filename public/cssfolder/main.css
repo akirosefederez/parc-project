@@ -359,7 +359,8 @@ hr {
   background-color: #fff; /* card bg white */
 }
 
-@media (max-width: 414px), (max-height: 896px) {
+/* ✅ Mobile View (425px and below) */
+@media (max-width: 425px), (max-height: 896px) {
   .parcaralan {
     margin-top: 0px !important;
     border-radius: 0 !important;
