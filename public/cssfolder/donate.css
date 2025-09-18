@@ -376,8 +376,8 @@ body {
   font-size: 16px;
 }
 
-/* 📱 EXTRA SMALL DEVICES (≤400px) */
-@media (max-width: 414px), (max-height: 896px) {
+/* 📱 EXTRA SMALL DEVICES (≤425px) */
+@media (max-width: 425px), (max-height: 896px) {
   body {
     background-color: white !important;
   }
