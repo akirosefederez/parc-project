@@ -12,8 +12,10 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ asset('cssfolder/mainnavbar.css') }}" />
   <link rel="stylesheet" href="{{ asset('cssfolder/donate.css') }}" />
+  
 </head>
 <body>
+  
   <!-- Include Navbar -->
   @include('layouts.navbar')
 

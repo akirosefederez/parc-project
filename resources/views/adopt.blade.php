@@ -12,6 +12,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ asset('cssfolder/mainnavbar.css') }}">
   <link rel="stylesheet" href="{{ asset('cssfolder/adopt.css') }}" />
+  
 </head>
 <body>
   <!-- Include Navbar -->

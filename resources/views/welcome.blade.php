@@ -21,7 +21,6 @@
   
   <!-- Include Carousel -->
   @include('layouts.carousel')
- 
 
   <!-- PARCaralan starts here -->
     <div class="container parcaralan">
