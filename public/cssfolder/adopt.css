@@ -485,7 +485,7 @@ body {
 /* =========================
    📱 MOBILE RESPONSIVE FIXES
    ========================= */
-@media (max-width: 414px), (max-height: 896px) {
+@media (max-width: 425px), (max-height: 896px) {
   /* Mobile body background */
   body {
     background-color: white !important;
