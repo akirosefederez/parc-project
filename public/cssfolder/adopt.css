@@ -1,48 +1,76 @@
-/* 🌟 GLOBAL STYLES */
+/* =========================
+   🌟 GLOBAL STYLES
+   ========================= */
+
+/* Body background and base setup */
 body {
-  background-color: rgb(246, 150, 6); /* Default background color */
+  background-color: rgb(246, 150, 6); /* Orange background by default (desktop) */
 }
 
-/* Title styling */
+/* =========================
+   🌟 TITLE STYLES
+   ========================= */
+
+/* Large white title text (desktop) */
 .title {
   font-size: 50px;
-  color: rgb(255, 255, 255); /* White title text */
+  color: rgb(255, 255, 255); /* White */
 }
 
-/* Image styling (main image) */
+/* =========================
+   🌟 IMAGE STYLING
+   ========================= */
+
+/* Main image (visible on desktop) */
 .img1 {
   margin-top: 8px;
   width: 90%;
 }
+
+/* Alternate image (hidden on desktop, shown on mobile) */
 .img2 {
   width: 100%;
   max-width: 400px;
   visibility: hidden; /* Hidden by default */
 }
 
-/* Intro section (empty for now but reserved) */
+/* =========================
+   🌟 INTRO SECTION
+   ========================= */
+
+/* Empty placeholder for intro content */
 .intro {}
 
-/* Description text */
+/* =========================
+   🌟 DESCRIPTION TEXT
+   ========================= */
+
+/* Description 1 - positioned high for desktop */
 .desc1 {
   font-size: 20px;
   word-spacing: normal;
-  color: rgb(255, 255, 255); /* White by default */
+  color: rgb(255, 255, 255); /* White text */
   margin-top: -250px;
   padding-bottom: 20px;
 }
+
+/* Description 2 - normal flow */
 .desc2 {
   font-size: 20px;
   word-spacing: normal;
-  color: rgb(255, 255, 255); /* White by default */
+  color: rgb(255, 255, 255); /* White text */
 }
 
-/* 🐾 Adopt Section (Desktop defaults) */
+/* =========================
+   🐾 ADOPT SECTION
+   ========================= */
+
+/* Section wrapper */
 .adoptsection {
-  margin-top: 150px; /* More space for desktop */
+  margin-top: 150px; /* Adds space on desktop */
 }
 
-/* Form container (adopt form box) */
+/* Adopt form container (white card) */
 .adoptform {
   background-color: white;
   margin-top: 50px;
@@ -51,20 +79,26 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 
-/* Main title inside forms/sections */
+/* Section or form main title */
 .maintitle {
-  color: rgb(255, 162, 0);
+  color: rgb(255, 162, 0); /* Orange */
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* Button groups (center aligned with spacing) */
+/* =========================
+   🌟 BUTTON GROUPS
+   ========================= */
+
+/* Top row button container */
 .center-btn {
   align-items: center;
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
+
+/* Lower row button container */
 .lowerbtn {
   align-items: center;
   display: flex;
@@ -72,7 +106,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Payment button group */
+/* Payment method button group */
 .pay-btn {
   justify-content: center;
   align-items: center;
@@ -81,7 +115,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Bank card input group */
+/* Bank card input fields group */
 .bankcard {
   justify-content: center;
   align-items: center;
@@ -90,7 +124,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Last row container (checkboxes, etc.) */
+/* Last row of form (checkboxes, etc.) */
 .last {
   justify-content: center;
   align-items: center;
@@ -100,45 +134,75 @@ body {
   margin-bottom: 20px;
 }
 
-/* Primary button styles (Give Once / Give Monthly) */
-.btn1 {
+/* =========================
+   🔘 PRIMARY BUTTON STYLES
+   ========================= */
+
+/* General button base style */
+.btn1, .btn2, .btnm1, .btnm2, .btnm3, .btnm7, .btnm8, .btnm9 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  width: 173px;
-  height: 60px;
   font-size: 18px;
-  color: rgb(255, 162, 0);
   background-color: white;
   border: 2px solid rgb(255, 162, 0);
   text-decoration: none;
-}
-.btn2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 355px;
-  height: 60px;
-  font-size: 18px;
-  color: rgb(149, 149, 149);
-  background-color: white;
-  border: 2px solid rgb(255, 162, 0);
-  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover/click animation */
 }
 
-/* Note blocks (highlighted info) */
+/* Give Once button */
+.btn1 {
+  width: 173px;
+  height: 60px;
+  color: rgb(255, 162, 0);
+}
+
+/* Give Monthly button */
+.btn2 {
+  width: 355px;
+  height: 60px;
+  color: rgb(149, 149, 149);
+}
+
+/* Hover effect for all buttons */
+.btn1:hover, .btn2:hover,
+.btnm1:hover, .btnm2:hover, .btnm3:hover,
+.btnm7:hover, .btnm8:hover, .btnm9:hover {
+  background-color: rgb(255, 162, 0); /* Orange background */
+  color: white;                       /* White text */
+}
+
+/* Active state or .active class */
+.btn1:active, .btn2:active,
+.btnm1:active, .btnm2:active, .btnm3:active,
+.btnm7:active, .btnm8:active, .btnm9:active,
+.btn1.active, .btn2.active,
+.btnm1.active, .btnm2.active, .btnm3.active,
+.btnm7.active, .btnm8.active, .btnm9.active {
+  background-color: rgb(255, 162, 0);
+  color: white;
+  border-color: rgb(255, 162, 0);
+}
+
+/* =========================
+   📄 NOTES (Membership info)
+   ========================= */
+
+/* Note block base */
 .notepatron,
 .notesilver,
 .notegold,
 .noteplatinum {
   text-align: left;
-  margin: 30px -50px 30px -50px;
+  margin: 30px -50px;
   padding: 20px 60px 10px 60px;
   background-color: rgb(234, 232, 232);
   display: none; /* hidden by default */
 }
-/* JS will toggle this class to show the note */
+
+/* JS toggle visibility */
 .notepatron.show,
 .notesilver.show,
 .notegold.show,
@@ -146,21 +210,21 @@ body {
   display: block;
 }
 
-/* Header container for SILVER + badge + price */
+/* Header row inside notes (title + badge + price) */
 .note-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* SILVER title */
+/* Note title text */
 .p1 {
   font-size: 22px;
   font-weight: bold;
   margin: 0;
 }
 
-/* Orange badge */
+/* Badge (duration/month) */
 .badge-duration {
   background-color: #f78f1e;
   color: #fff;
@@ -171,7 +235,7 @@ body {
   margin-left: 10px;
 }
 
-/* Orange price text */
+/* Price inside note */
 .price-tag {
   color: #f78f1e;
   font-size: 25px;
@@ -185,6 +249,7 @@ body {
   font-weight: bold;
 }
 
+/* Gray info block */
 .note2 {
   text-align: center;
   margin: 10px 0 20px 0;
@@ -205,62 +270,62 @@ body {
   color: rgb(0, 0, 0);
 }
 
-/* Text highlights */
+/* Highlights in notes */
 .dollar,
 .privacy {
   color: rgb(255, 162, 0);
 }
 
-/* Monthly buttons (default desktop) */
+/* =========================
+   🌟 MONTHLY BUTTONS
+   ========================= */
+
+/* Monthly buttons default style */
 .btnm1, .btnm2, .btnm3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
   width: 250px;
   height: 60px;
-  font-size: 18px;
   color: rgb(255, 162, 0);
-  background-color: white;
-  border: 2px solid rgb(255, 162, 0);
-  text-decoration: none;
 }
 
-/* Wider monthly buttons */
+/* Tier buttons */
 .btnm7, .btnm8, .btnm9 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
   width: 250px;
   height: 65px;
-  font-size: 18px;
   color: rgb(0, 0, 0);
-  background-color: white;
-  border: 2px solid rgb(255, 162, 0);
-  text-decoration: none;
-  margin: 0 auto; /* Center them */
+  margin: 0 auto;
 }
 
-/* Individual colors */
+/* Patron button special color */
 .btnm7 {
   background-color: #f78f1e;
-  height: 65px;
+  color: white;
 }
+
+/* Minor adjustment */
 .btnm8 {
   margin-bottom: -5px;
 }
+
+/* Wide bottom button */
 .btnm9 {
-  color: rgb(255, 162, 0); /* Orange text for distinction */
+  color: rgb(255, 162, 0);
   width: 530px;
 }
 
-/* Credit card fields */
+/* =========================
+   💳 FORM ELEMENTS
+   ========================= */
+
+/* Credit card expiration + CVV */
 #exp, #cvv {
   width: 48%;
 }
 
-/* Details section (extra info) */
+/* =========================
+   📖 DETAILS SECTION
+   ========================= */
+
+/* Container */
 .details {
   background-color: white;
   width: 90%;
@@ -270,14 +335,14 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Details title */
+/* Title */
 .pdt {
   color: rgb(0, 0, 0);
   font-size: 25px;
   font-weight: bold;
 }
 
-/* Details list container */
+/* List container */
 .details-list {
   display: flex;
   flex-direction: column;
@@ -285,7 +350,7 @@ body {
   gap: 0;
 }
 
-/* Each detail item row */
+/* Each detail row */
 .detail-item {
   display: flex;
   align-items: center;
@@ -293,7 +358,7 @@ body {
   padding: 16px 0;
 }
 
-/* Icons inside circle (music/detail) */
+/* Circle icons */
 .music-icon,
 .detail-icon {
   width: 80px;
@@ -305,6 +370,7 @@ body {
   justify-content: center;
   flex-shrink: 0;
 }
+
 .music-icon img,
 .detail-icon img {
   width: 40px;
@@ -312,45 +378,49 @@ body {
   object-fit: contain;
 }
 
-/* Detail text */
+/* Text inside details */
 .detail-item p {
   margin: 0;
   text-align: left;
   font-size: 1.1rem;
 }
 
-/* Divider between detail items */
+/* Divider line */
 .details-list hr {
   border: none;
   border-top: 2px solid #565656;
   margin: 0 0 0 105px;
 }
 
-/* General section break line */
+/* Section divider */
 .break {
   border: none;
   border-top: 2px solid #565656;
   margin: 40px 0;
 }
 
+/* =========================
+   📝 FORM STYLING
+   ========================= */
+
 /* Form title */
 .formtitle {
   color: rgb(255, 162, 0);
 }
 
-/* Personal info form (center box) */
+/* Personal info form container */
 .personalinfo {
   max-width: 530px;
 }
 
-/* Labels in form */
+/* Labels */
 .personalinfo label {
   display: block;
   margin-top: 12px;
   font-weight: 600;
 }
 
-/* Text & email fields */
+/* Text/email input fields */
 .personalinfo input[type="text"],
 .personalinfo input[type="email"] {
   width: 100%;
@@ -362,7 +432,7 @@ body {
   transition: border-color 0.3s ease;
 }
 
-/* ✅ Orange border when focused */
+/* Focus highlight (orange border) */
 .personalinfo input[type="text"]:focus,
 .personalinfo input[type="email"]:focus {
   border: 2px solid rgb(255, 162, 0);
@@ -385,14 +455,14 @@ body {
   background: #e68900;
 }
 
-/* Form paragraph title */
+/* Paragraph title inside form */
 .p1form {
   color: rgb(255, 162, 0);
   margin-top: 15px;
   font-weight: 800;
 }
 
-/* Large checkboxes in last row */
+/* Large checkboxes */
 .last input[type="checkbox"] {
   width: 35px;
   height: 35px;
@@ -401,6 +471,10 @@ body {
   cursor: pointer;
 }
 
+/* =========================
+   🌟 FOOTER
+   ========================= */
+
 /* Footer text */
 .footer {
   text-align: center;
@@ -408,26 +482,27 @@ body {
   font-size: 16px;
 }
 
-/* ===========================
+/* =========================
    📱 MOBILE RESPONSIVE FIXES
-   =========================== */
+   ========================= */
 @media (max-width: 414px), (max-height: 896px) {
+  /* Mobile body background */
   body {
     background-color: white !important;
   }
 
-  /* 🐾 Adopt section on mobile */
+  /* Adopt section adjustments */
   .adoptsection {
-    margin-top: 233px; /* Less margin on mobile */
+    margin-top: 233px;
     padding: 10px;
     width: 100%;
     display: flex;
-    flex-direction: column; /* Stack vertically */
-    align-items: center;    /* Center content */
-    text-align: center;     /* Center text */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  /* Form box smaller */
+  /* Smaller form box */
   .adoptform {
     margin: 15px auto;
     padding: 10px 0;
@@ -440,29 +515,21 @@ body {
     box-shadow: none;
   }
 
-  /* Buttons (small size) */
+  /* Small buttons (Give Once/Give Monthly) */
   .btn1 {
     width: 0%;
     max-width: 280px;
     height: 45px;
     font-size: 13px;
-    border-radius: 0;
-    text-align: center;
-    display: flex;
-    align-items: center;
   }
   .btn2 {
     width: 100%;
     max-width: 280px;
     height: 45px;
     font-size: 13px;
-    border-radius: 0;
-    text-align: center;
-    display: flex;
-    align-items: center;
   }
 
-  /* Notes on mobile */
+  /* Note blocks */
   .note {
     width: 100%;
     text-align: center;
@@ -480,19 +547,19 @@ body {
     margin: 30px -35px 0 -35px;
   }
 
-  /* Header container for SILVER + badge + price */
+  /* Header inside notes */
   .note-header {
     margin-bottom: 20px;
   }
 
-  /* SILVER title */
+  /* Title text smaller */
   .p1 {
     font-size: 18px;
     font-weight: bold;
     margin: 0;
   }
 
-  /* Orange badge */
+  /* Badge smaller */
   .badge-duration {
     font-size: 8px;
     padding: 4px 9px;
@@ -500,24 +567,24 @@ body {
     margin-left: 10px;
   }
 
-  /* Orange price text */
+  /* Price smaller */
   .price-tag {
-    color: #f78f1e;
     font-size: 15px;
     font-weight: bold;
     margin: 0;
     white-space: nowrap;
   }
-
   .price-tag .small {
     font-size: 15px;
     font-weight: bold;
   }
 
+  /* Note paragraphs smaller */
   .p2, .p3, .p4, .p5 {
     font-size: 12px;
   }
 
+  /* Two-column rows stacked */
   .row.row-cols-2 {
     display: flex;
     flex-direction: column;
@@ -528,7 +595,7 @@ body {
     margin-top: 30px;
   }
 
-  /* Left column content */
+  /* Left col adjustments */
   .col1 {
     order: 1;
     width: 90%;
@@ -539,7 +606,7 @@ body {
     box-shadow: none !important;
   }
 
-  /* Right column content */
+  /* Right col adjustments */
   .col2 {
     order: 2;
     width: 90%;
@@ -549,29 +616,31 @@ body {
     box-shadow: none !important;
   }
 
-  /* Stack items in col1 */
+  /* Stack elements inside col1 */
   .col1 > div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* Image adjustments */
+  /* Hide main image */
   .col1 .img1 {
     order: 1;
     width: 100%;
     max-width: 400px;
-    display: none; /* Hide main img */
+    display: none;
   }
+
+  /* Show alternate image */
   .col1 .img2 {
     order: 1;
     width: 100%;
     max-width: 400px;
     margin-top: -95px;
-    visibility: visible; /* Show alternate img */
+    visibility: visible;
   }
 
-  /* Description under image */
+  /* Description below image */
   .col1 .desc1 {
     order: 2;
     text-align: center;
@@ -581,7 +650,7 @@ body {
     margin-top: 10px;
   }
 
-  /* Hide main title */
+  /* Hide titles */
   .col1 .title {
     display: none;
   }
@@ -589,12 +658,12 @@ body {
     display: none !important;
   }
 
-  /* Remove line breaks in mobile */
+  /* Hide line breaks */
   br {
     display: none;
   }
 
-  /* Keep button rows */
+  /* Keep button rows flexible */
   .col2 .center-btn {
     order: 4;
     flex-direction: row;
@@ -610,7 +679,7 @@ body {
     flex-wrap: wrap;
   }
 
-  /* Small buttons */
+  /* Smaller buttons in col2 */
   .col2 .btn1 {
     width: 80px;
     min-width: 90px;
@@ -624,21 +693,18 @@ body {
     font-size: 14px;
   }
 
-  /* Hide details */
+  /* Hide details section */
   .details {
     display: none !important;
   }
 
-  /* Monthly buttons on mobile */
+  /* Monthly buttons smaller */
   .btnm1, .btnm2, .btnm3 {
     width: 100%;
     max-width: 90px;
     height: 50px;
     font-size: 16px;
     margin-bottom: 8px;
-    text-align: center;
-    display: flex;
-    align-items: center;
   }
   .btnm2 {
     background: rgb(255, 162, 0);
@@ -646,36 +712,35 @@ body {
     border: 2px solid rgb(255, 162, 0);
   }
 
-  /* ✅ Full width alignment for btnm7, btnm8, btnm9 */
+  /* Full-width alignment for lower buttons */
   .btnm7, .btnm8, .btnm9 {
     width: 100%;
-    max-width: 380px;  /* Same width for all */
-    margin: 8px auto;  /* Centered with equal spacing */
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 380px;
+    margin: 8px auto;
   }
 
-  /* Fix divider alignment */
+  /* Divider alignment fix */
   .details-list hr {
     border: none;
     border-top: 2px solid #565656;
     margin: 0;
   }
 
-  /* ✅ Orange border highlight still applies on mobile */
+  /* Input adjustments for mobile */
   .personalinfo input[type="text"],
   .personalinfo input[type="email"] {
     font-size: 14px;
     padding: 8px;
   }
+
+  /* Keep orange border highlight */
   .personalinfo input[type="text"]:focus,
   .personalinfo input[type="email"]:focus {
     border: 2px solid rgb(255, 162, 0);
     outline: none;
   }
 
+  /* Align personal info text left */
   .personalinfo {
     text-align: left;
   }
