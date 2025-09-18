@@ -127,13 +127,65 @@ body {
   text-decoration: none;
 }
 
+
+
 /* Note blocks (highlighted info) */
-.note1 {
+.notepatron {
   text-align: left;
   margin: 30px -50px 30px -50px;
   padding: 20px 60px 10px 60px;
   background-color: rgb(234, 232, 232);
+  display: none; /* ensure the note is hidden by default and can be shown via JS */
 }
+/* JS will toggle this class to show the note */
+.notepatron.show {
+  display: block;
+}
+
+/* Note blocks (highlighted info) */
+.notesilver {
+  text-align: left;
+  margin: 30px -50px 30px -50px;
+  padding: 20px 60px 10px 60px;
+  background-color: rgb(234, 232, 232);
+  display: none; /* ensure the note is hidden by default and can be shown via JS */
+}
+/* JS will toggle this class to show the note */
+.notesilver.show {
+  display: block;
+}
+
+/* Note blocks (highlighted info) */
+.notegold {
+  text-align: left;
+  margin: 30px -50px 30px -50px;
+  padding: 20px 60px 10px 60px;
+  background-color: rgb(234, 232, 232);
+  display: none; /* ensure the note is hidden by default and can be shown via JS */
+}
+/* JS will toggle this class to show the note */
+.notegold.show {
+  display: block;
+}
+
+/* Note blocks (highlighted info) */
+.noteplatinum {
+  text-align: left;
+  margin: 30px -50px 30px -50px;
+  padding: 20px 60px 10px 60px;
+  background-color: rgb(234, 232, 232);
+  display: none; /* ensure the note is hidden by default and can be shown via JS */
+}
+/* JS will toggle this class to show the note */
+.noteplatinum.show {
+  display: block;
+}
+
+
+
+
+
+
 
 /* Header container for SILVER + badge + price */
 .note-header {
@@ -457,9 +509,10 @@ body {
     font-weight: bold;
     border-radius: 4px;
   }
- .note1 {
+ .notesilver {
   text-align: center;
-  padding: 20px 50px 10px 50px;
+  padding: 20px 20px 10px 20px;
+  margin: 30px -35px 0 -35px;
 }
 
 /* Header container for SILVER + badge + price */
@@ -503,6 +556,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .formtitle{
+    margin-top: 30px;
   }
 
   /* Left column content */
