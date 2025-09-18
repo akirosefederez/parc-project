@@ -359,7 +359,8 @@
   background-color: #fff; /* card bg white */
 }
 
-@media (max-width: 414px), (max-height: 896px) {
+/* ✅ Mobile View (425px and below) */
+@media (max-width: 425px), (max-height: 896px) {
   .parcaralan {
     margin-top: 0px !important;
     border-radius: 0 !important;
@@ -438,6 +439,7 @@
     padding: 0 20px 20px 20px;
 
 }
+<<<<<<< HEAD
 .ft2{
   font-size: 20px;
 }
@@ -463,3 +465,6 @@
   margin: 20px 30px 10px 30px;
 }
 }
+=======
+}
+>>>>>>> 86818879382f19c48eb9520d6de922acac4e5978
