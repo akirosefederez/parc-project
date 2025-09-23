@@ -531,7 +531,7 @@ body {
   width: 100%;        /* full width of screen */
   max-width: none;    /* remove 400px restriction */
   height: auto;       /* maintain aspect ratio */
-  margin: 0;          /* remove all margins */
+  margin: 0;
   display: block;     /* block element so it spans entire width */
 }
 
