@@ -598,7 +598,7 @@ body {
   /* Left col adjustments */
   .col1 {
     order: 1;
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin-top: -95px;
     border: none !important;
@@ -635,8 +635,8 @@ body {
   .col1 .img2 {
     order: 1;
     width: 100%;
-    max-width: 400px;
-    margin-top: -95px;
+    max-width: none;
+    margin: -101px 0 0 0;
     visibility: visible;
   }
 
@@ -653,9 +653,6 @@ body {
   /* Hide titles */
   .col1 .title {
     display: none;
-  }
-  .maintitle {
-    display: none !important;
   }
 
   /* Hide line breaks */
