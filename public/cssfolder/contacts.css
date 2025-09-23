@@ -27,6 +27,7 @@
 .footer-links {
   display: flex;
   gap: 60px;              /* Space between columns (desktop) */
+  padding-top: 20px;
 }
 
 /* Each column inside footer */
