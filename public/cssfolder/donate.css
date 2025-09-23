@@ -509,39 +509,51 @@ body {
     text-align: center;
   }
 
-  .col1 > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* 🌟 MOBILE LAYOUT (425x608) */
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* Container inside col1 */
+.col1 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* keep items centered by default */
+}
 
-  .col1 .img1 {
-    order: 1;
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 0;
-  }
+/* Form container (if used) */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .col1 .title {
-    order: 2;
-    margin: 0;
-    padding: 0 !important;
-    text-align: center;
-    font-size: 28px;
-  }
+/* ✅ Image styling */
+.col1 .img1 {
+  order: 1;
+  width: 100%;        /* full width of screen */
+  max-width: none;    /* remove 400px restriction */
+  height: auto;       /* maintain aspect ratio */
+  margin: 0;          /* remove all margins */
+  display: block;     /* block element so it spans entire width */
+}
 
-  .col1 .desc1 {
-    order: 3;
-    text-align: center;
-    font-size: 15px;
-    padding: 0px;
-  }
+/* Title styling */
+.col1 .title {
+  order: 2;
+  margin: 0 0 10px 0 !important;  /* top:10px (closer to image), left:10px (slightly indented) */
+  padding: 0 !important;
+  text-align: left;       /* align text left */
+  font-size: 26px;        /* slightly smaller for mobile readability */
+}
+
+/* Description styling */
+.col1 .desc1 {
+  order: 3;
+  text-align: center;
+  font-size: 15px;
+  padding: 0;
+  margin-top: 10px;   /* space between paragraphs */
+  line-height: 1.5;   /* improve readability */
+}
+
 
   /* Side-by-side give once/give monthly */
   .col2 .center-btn{

@@ -15,7 +15,6 @@
   
 </head>
 <body>
-  
   <!-- Include Navbar -->
   @include('layouts.navbar')
 
