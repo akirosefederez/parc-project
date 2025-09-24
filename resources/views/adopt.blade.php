@@ -214,12 +214,12 @@
           <!-- End of btn-packages -->
 
 
-
+          <!-- Include Parcform -->
+  @include('layouts.parcform')
 
 
         </div>
-          <!-- Include Parcform -->
-  @include('layouts.parcform')
+
       </div>
     </div>
   </div>
