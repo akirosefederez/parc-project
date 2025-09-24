@@ -585,13 +585,35 @@ body {
     font-size: 15px;
   }
 
-  .col2 .pay-btn a {
-    width: 100%;
-    max-width: 380px;
-    height: 63px;
-    font-size: 15px;
+/* ✅ Payment buttons full width stacked */
+.col2 .pay-btn {
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  align-items: center;      /* center horizontally */
+  gap: 15px;                /* space between Visa block & PayPal block */
+  width: 100%;
+}
 
-  }
+.col2 .pay-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;             /* take full container width */
+  max-width: 380px;        /* keep a neat max width (optional) */
+  height: 63px;
+  border: 2px solid rgb(255, 162, 0); /* thin border like your example */
+  background: #fff;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* ✅ Logo images inside buttons */
+.col2 .pay-btn img {
+  max-height: 50px;   /* keep logos proportional */
+  width: auto;
+  object-fit: contain;
+}
+
 
   /* Hide details */
   .details {
