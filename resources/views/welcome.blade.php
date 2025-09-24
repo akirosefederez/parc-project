@@ -106,10 +106,11 @@
 <!-- fourth section starts here -->
 <div class="frsection">
   <img src="assets/image/1 (1) 2.png" alt="img4" class="img4">
+  <img src="assets/image/1 (1) 4.png" alt="img5" class="img5">
 
   <!-- Orange Text Box -->
   <div class="text-overlay">
-    <h2>What you need to know about<br>our scholars  ›</h2>
+    <h2>What you need to know about<br> our scholars  ›</h2>
     <p>A flagship scholarship program offering free training<br>
        in music, dance, and theater.</p>
   </div>
