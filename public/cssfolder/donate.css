@@ -524,16 +524,18 @@ body {
   .col1 .img1 {
     order: 1;
     width: 100%;
-    max-width: 400px;
-    margin-bottom: 0;
-  }
+    max-width: none;
+    height:auto;
+    margin: 0;
+    display: block;  
+}
 
   .col1 .title {
     order: 2;
-    margin: 0;
+    margin: 0 0 10px 0 !important;
     padding: 0 !important;
     text-align: center;
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .col1 .desc1 {
@@ -541,6 +543,8 @@ body {
     text-align: center;
     font-size: 15px;
     padding: 0px;
+    margin-top: 10px;
+    line-height: 1.5;
   }
 
   /* Side-by-side give once/give monthly */
