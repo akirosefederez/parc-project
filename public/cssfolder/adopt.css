@@ -106,40 +106,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* Payment method button group */
-.pay-btn {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 45px;
-  margin-bottom: 20px;
-}
-
-/* Bank card input fields group */
-.bankcard {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-/* Last row of form (checkboxes, etc.) */
-.last {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 30px;
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
-
 /* =========================
    🔘 PRIMARY BUTTON STYLES
    ========================= */
 
 /* General button base style */
-.btn1, .btn2, .btnm1, .btnm2, .btnm3, .btnm7, .btnm8, .btnm9 {
+.btn1, .btn2, .btnm1, .btnm2, .btnm3{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,19 +140,16 @@ body {
 
 /* Hover effect for all buttons */
 .btn1:hover, .btn2:hover,
-.btnm1:hover, .btnm2:hover, .btnm3:hover,
-.btnm7:hover, .btnm8:hover, .btnm9:hover {
+.btnm1:hover, .btnm2:hover, .btnm3:hover{
   background-color: rgb(255, 162, 0); /* Orange background */
   color: white;                       /* White text */
 }
 
 /* Active state or .active class */
 .btn1:active, .btn2:active,
-.btnm1:active, .btnm2:active, .btnm3:active,
-.btnm7:active, .btnm8:active, .btnm9:active,
+.btnm1:active, .btnm2:active, .btnm3:active
 .btn1.active, .btn2.active,
-.btnm1.active, .btnm2.active, .btnm3.active,
-.btnm7.active, .btnm8.active, .btnm9.active {
+.btnm1.active, .btnm2.active, .btnm3.active {
   background-color: rgb(255, 162, 0);
   color: white;
   border-color: rgb(255, 162, 0);
@@ -249,14 +218,6 @@ body {
   font-weight: bold;
 }
 
-/* Gray info block */
-.note2 {
-  text-align: center;
-  margin: 10px 0 20px 0;
-  padding: 20px 20px 10px 20px;
-  background-color: rgb(233, 233, 233);
-}
-
 /* Paragraphs inside notes */
 .p1 {
   text-align: left;
@@ -271,7 +232,6 @@ body {
 }
 
 /* Highlights in notes */
-.dollar,
 .privacy {
   color: rgb(255, 162, 0);
 }
@@ -287,33 +247,6 @@ body {
   color: rgb(255, 162, 0);
 }
 
-/* Tier buttons */
-.btnm7, .btnm8, .btnm9 {
-  width: 250px;
-  height: 65px;
-  color: rgb(0, 0, 0);
-  margin: 0 auto;
-}
-
-/* Minor adjustment */
-.btnm8 {
-  margin-bottom: -5px;
-}
-
-/* Wide bottom button */
-.btnm9 {
-  color: rgb(255, 162, 0);
-  width: 530px;
-}
-
-/* =========================
-   💳 FORM ELEMENTS
-   ========================= */
-
-/* Credit card expiration + CVV */
-#exp, #cvv {
-  width: 48%;
-}
 
 /* =========================
    📖 DETAILS SECTION
@@ -391,89 +324,6 @@ body {
   border: none;
   border-top: 2px solid #565656;
   margin: 40px 0;
-}
-
-/* =========================
-   📝 FORM STYLING
-   ========================= */
-
-/* Form title */
-.formtitle {
-  color: rgb(255, 162, 0);
-}
-
-/* Personal info form container */
-.personalinfo {
-  max-width: 530px;
-}
-
-/* Labels */
-.personalinfo label {
-  display: block;
-  margin-top: 12px;
-  font-weight: 600;
-}
-
-/* Text/email input fields */
-.personalinfo input[type="text"],
-.personalinfo input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
-}
-
-/* Focus highlight (orange border) */
-.personalinfo input[type="text"]:focus,
-.personalinfo input[type="email"]:focus {
-  border: 2px solid rgb(255, 162, 0);
-  outline: none;
-}
-
-/* Submit button */
-.personalinfo input[type="submit"] {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding: 20px;
-  width: 100%;
-  background: #ff9c00;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-.personalinfo input[type="submit"]:hover {
-  background: #e68900;
-}
-
-/* Paragraph title inside form */
-.p1form {
-  color: rgb(255, 162, 0);
-  margin-top: 15px;
-  font-weight: 800;
-}
-
-/* Large checkboxes */
-.last input[type="checkbox"] {
-  width: 35px;
-  height: 35px;
-  transform: scale(1.3);
-  accent-color: #565656;
-  cursor: pointer;
-}
-
-/* =========================
-   🌟 FOOTER
-   ========================= */
-
-/* Footer text */
-.footer {
-  text-align: center;
-  padding: 50px;
-  font-size: 16px;
 }
 
 /* =========================
@@ -577,18 +427,6 @@ body {
   .p2, .p3, .p4, .p5 {
     font-size: 12px;
   }
-
-  /* Two-column rows stacked */
-  .row.row-cols-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .formtitle {
-    margin-top: 30px;
-  }
-
   /* Left col adjustments */
   .col1 {
     order: 1;
@@ -603,7 +441,7 @@ body {
   /* Right col adjustments */
   .col2 {
     order: 2;
-    width: 90%;
+    width: 100%;
     text-align: center;
     border: none !important;
     background: transparent !important;
@@ -698,13 +536,6 @@ body {
     margin-bottom: 8px;
   }
 
-  /* Full-width alignment for lower buttons */
-  .btnm7, .btnm8, .btnm9 {
-    width: 100%;
-    max-width: 380px;
-    margin: 8px auto;
-  }
-
   /* Divider alignment fix */
   .details-list hr {
     border: none;
@@ -712,22 +543,4 @@ body {
     margin: 0;
   }
 
-  /* Input adjustments for mobile */
-  .personalinfo input[type="text"],
-  .personalinfo input[type="email"] {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  /* Keep orange border highlight */
-  .personalinfo input[type="text"]:focus,
-  .personalinfo input[type="email"]:focus {
-    border: 2px solid rgb(255, 162, 0);
-    outline: none;
-  }
-
-  /* Align personal info text left */
-  .personalinfo {
-    text-align: left;
-  }
 }

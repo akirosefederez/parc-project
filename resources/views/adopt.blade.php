@@ -12,6 +12,8 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ asset('cssfolder/mainnavbar.css') }}">
   <link rel="stylesheet" href="{{ asset('cssfolder/adopt.css') }}" />
+  <link rel="stylesheet" href="{{ asset('cssfolder/parcform.css') }}" />
+
   
 </head>
 <body>
@@ -211,81 +213,13 @@
           
           <!-- End of btn-packages -->
 
-          <!-- Personal Info Form -->
-          <div>
-            <h3 class="formtitle">Your Information</h3>
 
-            <form action="/action_page.php" class="personalinfo">
-              <label for="fname">First name</label>
-              <input type="text" id="fname" name="fname" />
 
-              <label for="lname">Last name</label>
-              <input type="text" id="lname" name="lname" />
 
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" />
 
-              <label for="country">Country</label>
-              <input type="text" id="country" name="country" />
-
-              <label for="street">Street Address</label>
-              <input type="text" id="street" name="street" />
-
-              <label for="city">City</label>
-              <input type="text" id="city" name="city" />
-
-              <label for="postal">Postal</label>
-              <input type="text" id="postal" name="postal" />
-
-              <!-- Privacy Note -->
-              <div class="note2">
-                <p class="p3">
-                  We will keep your information safe and secure. Please see our
-                  <b class="privacy">Privacy Policy</b> for details of how we use your information.
-                </p>
-              </div>
-
-              <!-- Payment Method -->
-              <h3 class="formtitle">Payment Method</h3>
-
-              <div class="center-btn pay-btn">
-                <a href="#" class="btnm7">
-                  <img src="{{ asset('assets/icons/visa.png') }}" alt="Visa" class="visaicon" />
-                </a>
-                <a href="#" class="btnm8">
-                  <img src="{{ asset('assets/icons/paypal.png') }}" alt="paypal" class="paypalicon" />
-                </a>
-              </div>
-
-              <a href="#" class="btnm9">Bank Account</a>
-
-              <label for="cardnumber">Card Number</label>
-              <input type="text" id="cardnumber" name="cardnumber" />
-
-              <!-- Expiration + CVV -->
-              <div class="bankcard">
-                <label for="exp-month">Expiration Date</label>
-                <input type="text" id="exp-month" name="exp-month" placeholder="MM" />
-                <span>/</span>
-                <input type="text" id="exp-year" name="exp-year" placeholder="YY" />
-
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" />
-              </div>
-
-              <!-- Checkbox -->
-              <div class="last">
-                <input type="checkbox" id="checkparc" name="checkparc" value="">
-                <label for="checkparc">
-                  I want PARC to receive 100% of my donation. I'll cover processing fees ($0.30).
-                </label>
-              </div>
-
-              <!-- Submit -->
-              <input type="submit" value="DONATE" />
-            </form>
-          </div>
         </div>
+          <!-- Include Parcform -->
+  @include('layouts.parcform')
       </div>
     </div>
   </div>

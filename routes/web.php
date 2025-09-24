@@ -27,6 +27,6 @@ Route::get('/adopt', function () {
 })->name('adopt');
 
 // Simple route returning a view
-Route::get('/contacts', function () {
-    return view('contacts'); // make sure contacts.blade.php exists in resources/views
-})->name('contacts');
+Route::get('/parcform', function () {
+    return view('parcform'); // make sure contacts.blade.php exists in resources/views
+})->name('parcform');
