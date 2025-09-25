@@ -96,6 +96,7 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 /* Lower row button container */
@@ -536,7 +537,7 @@ body {
   /* Monthly buttons smaller */
   .btnm1, .btnm2, .btnm3 {
     width: 100%;
-    max-width: 90px;
+    max-width: 200px;
     height: 50px;
     font-size: 16px;
     margin-bottom: 8px;
@@ -548,5 +549,20 @@ body {
     border-top: 2px solid #565656;
     margin: 0;
   }
+.center-btn {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.center-btn > * {
+  flex: 1;
+}
+
+
+
 
 }

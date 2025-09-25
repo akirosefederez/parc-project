@@ -117,7 +117,7 @@
           <div class="btn-packages">
             
             <!-- Top Buttons -->
-            <div class="center-btn">
+            <div class="center-btn topbtn">
               <a href="#" class="btnm1">Patron</a>
               <a href="#" class="btnm2">Silver</a>
               <a href="#" class="btnm3">Gold</a>
