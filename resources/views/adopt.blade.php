@@ -209,15 +209,12 @@
               <p class="p5">Invitation to the annual scholar showcase event.</p>
             </div> 
 
-            </div> <!--end-->
-          
-          <!-- End of btn-packages -->
+            
+          </div><!-- End of btn-packages -->
+            <hr class="break" />
 
-
-          <!-- Include Parcform -->
+  <!-- Include Parcform -->
   @include('layouts.parcform')
-
-
         </div>
 
       </div>
