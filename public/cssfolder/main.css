@@ -368,6 +368,9 @@
 
 /* ✅ Mobile View (425px and below) */
 @media (max-width: 425px), (max-height: 896px) {
+  .uppertext{
+
+  }
   .parcaralan {
     margin-top: 0px !important;
     border-radius: 0 !important;
