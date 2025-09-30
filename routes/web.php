@@ -27,9 +27,14 @@ Route::get('/adopt', function () {
 })->name('adopt');
 
 // Simple route returning a view
-Route::get('/parcform', function () {
-    return view('parcform'); // make sure contacts.blade.php exists in resources/views
-})->name('parcform');
+Route::get('/donateform', function () {
+    return view('donateform'); // make sure donateform.blade.php exists in resources/views
+})->name('donateform');
+
+// Simple route returning a view
+Route::get('/adoptform', function () {
+    return view('adoptform'); // make sure adoptform.blade.php exists in resources/views
+})->name('adoptform');
 
 use App\Http\Controllers\PaymentController;
 

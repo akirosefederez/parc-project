@@ -214,7 +214,7 @@
             <hr class="break" />
 
   <!-- Include Parcform -->
-  @include('layouts.parcform')
+  @include('layouts.adoptform')
         </div>
 
       </div>

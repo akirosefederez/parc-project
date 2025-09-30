@@ -135,7 +135,7 @@
           <hr class="break" />
 
   <!-- Include Parcform -->
-  @include('layouts.parcform')
+  @include('layouts.donateform')
           
 
         </div>
@@ -155,3 +155,4 @@
   </script> <!-- Stripe JS -->
 </body>
 </html>
+
