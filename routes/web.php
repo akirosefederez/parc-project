@@ -35,7 +35,3 @@ Route::get('/donateform', function () {
 Route::get('/adoptform', function () {
     return view('adoptform'); // make sure adoptform.blade.php exists in resources/views
 })->name('adoptform');
-
-use App\Http\Controllers\PaymentController;
-
-Route::post('/donate', [PaymentController::class, 'donate'])->name('donate');
