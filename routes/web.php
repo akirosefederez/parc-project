@@ -30,3 +30,7 @@ Route::get('/adopt', function () {
 Route::get('/parcform', function () {
     return view('parcform'); // make sure contacts.blade.php exists in resources/views
 })->name('parcform');
+
+use App\Http\Controllers\PaymentController;
+
+Route::post('/donate', [PaymentController::class, 'donate'])->name('donate');
