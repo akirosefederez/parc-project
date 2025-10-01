@@ -35,3 +35,7 @@ Route::get('/donateform', function () {
 Route::get('/adoptform', function () {
     return view('adoptform'); // make sure adoptform.blade.php exists in resources/views
 })->name('adoptform');
+
+use App\Http\Controllers\DonationController;
+
+Route::post('/donations', [DonationController::class, 'store'])->name('donations.store');
