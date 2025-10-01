@@ -7,44 +7,38 @@ use Illuminate\Http\Request;
 
 class DonationController extends Controller
 {
+    /**
+     * Store a new donation in the database.
+     */
     public function store(Request $request)
     {
-        // Validate form
+        // Validate the incoming request
         $validated = $request->validate([
-            'fname'   => 'required|string|max:255',
-            'lname'   => 'required|string|max:255',
+            'fname'   => 'required|string|max:50',
+            'lname'   => 'required|string|max:50',
             'email'   => 'required|email|unique:donations,email',
-            'country' => 'nullable|string|max:255',
-            'street'  => 'nullable|string|max:255',
-            'city'    => 'nullable|string|max:255',
+            'country' => 'nullable|string|max:100',
+            'street'  => 'nullable|string|max:100',
+            'city'    => 'nullable|string|max:50',
             'postal'  => 'nullable|string|max:50',
-            'emailUpdates' => 'nullable|in:yes,no',
-            'textUpdates'  => 'nullable|in:yes,no',
-            'card_number'  => 'nullable|string|max:255',
-            'expiration_month' => 'nullable|string|max:10',
-            'expiration_year'  => 'nullable|string|max:10',
-            'cvv' => 'nullable|string|max:10',
-            'cover_processing_fee' => 'nullable|boolean',
+            'emailUpdates' => 'in:yes,no',
+            'textUpdates'  => 'in:yes,no',
+            'card_number'  => 'nullable|string|max:19',
+            'expiration_month' => 'nullable|string|max:5',
+            'expiration_year'  => 'nullable|string|max:5',
+            'cvv' => 'nullable|string|max:5',
+            'cover_processing_fee' => 'boolean',
         ]);
 
-        // Save donation
-        Donation::create([
-            'fname' => $request->input('fname'),
-            'lname' => $request->input('lname'),
-            'email' => $request->input('email'),
-            'country' => $request->input('country'),
-            'street' => $request->input('street'),
-            'city' => $request->input('city'),
-            'postal' => $request->input('postal'),
-            'emailUpdates' => $request->input('emailUpdates', 'no'),
-            'textUpdates' => $request->input('textUpdates', 'no'),
-            'card_number' => $request->input('card_number'),
-            'expiration_month' => $request->input('expiration_month'),
-            'expiration_year' => $request->input('expiration_year'),
-            'cvv' => $request->input('cvv'),
-            'cover_processing_fee' => $request->has('cover_processing_fee'),
-        ]);
+        // Handle defaults for checkboxes and optional fields
+        $validated['emailUpdates'] = $request->input('emailUpdates', 'no');
+        $validated['textUpdates']  = $request->input('textUpdates', 'no');
+        $validated['cover_processing_fee'] = $request->has('cover_processing_fee');
 
-        return redirect()->back()->with('success', 'Thank you for your donation!');
+        // Save the donation into DB
+        Donation::create($validated);
+
+        // Redirect back with success message
+        return redirect()->back()->with('success', '✅ Thank you for your donation!');
     }
 }

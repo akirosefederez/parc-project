@@ -9,8 +9,6 @@ class Donation extends Model
 {
     use HasFactory;
 
-    protected $table = 'donations';
-
     protected $fillable = [
         'fname',
         'lname',
@@ -28,3 +26,4 @@ class Donation extends Model
         'cover_processing_fee',
     ];
 }
+
