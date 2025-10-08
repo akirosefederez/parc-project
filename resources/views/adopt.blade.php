@@ -27,7 +27,7 @@
       <!-- Left Column -->
       <div class="col col1">
         <div class="intro">
-          <h1 class="text-left my-5 title">Testing Changes</h1>
+          <h1 class="text-left my-5 title">Adopt a Scholar</h1>
           
           <img src="{{ asset('./assets/image/groupsing.png') }}" 
                alt="Donate Image" 
