@@ -7,8 +7,9 @@
   </div>
 
   <!-- Logo  -->
+   <a href="{{ url('/welcome') }}">
             <img class="logo" src="./assets/logo/logo2.png" alt="" />
-
+   </a>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg shadow-sm">
     <div class="container-fluid">
