@@ -88,7 +88,7 @@
       with education and career development.</p>
 
       <div class="center-btn">
-        <a href="#" class="btn1">Donate now&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<p class="arrow">›</p></a>
+        <a href="{{ url('/donate') }}" class="btn1">Donate now&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<p class="arrow">›</p></a>
         <a href="#" class="btn2">More ways you can help</a>
       </div>
     </div>
