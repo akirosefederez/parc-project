@@ -34,14 +34,14 @@
 
       <!-- Social Icons -->
       <div class="social-icons d-none d-lg-block me-3">
-      <a href="https://www.facebook.com/parcph">
+      <a href="https://www.facebook.com/parcph" class="text-decoration-none">
         <i class="bi bi-facebook"></i>
       </a>
         <i class="bi bi-linkedin"></i>
-      <a href="https://www.youtube.com/@ThePARCFoundation">
+      <a href="https://www.youtube.com/@ThePARCFoundation" class="text-decoration-none">
         <i class="bi bi-youtube"></i>
       </a>
-      <a href="https://www.instagram.com/theparcfoundation.ph?igsh=N3dteGZ5c242NnEz">
+      <a href="https://www.instagram.com/theparcfoundation.ph?igsh=N3dteGZ5c242NnEz" class="text-decoration-none">
         <i class="bi bi-instagram"></i>
       </a>
       </div>
