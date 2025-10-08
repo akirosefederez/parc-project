@@ -34,10 +34,16 @@
 
       <!-- Social Icons -->
       <div class="social-icons d-none d-lg-block me-3">
+      <a href="https://www.facebook.com/parcph">
         <i class="bi bi-facebook"></i>
+      </a>
         <i class="bi bi-linkedin"></i>
+      <a href="https://www.youtube.com/@ThePARCFoundation">
         <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/theparcfoundation.ph?igsh=N3dteGZ5c242NnEz">
         <i class="bi bi-instagram"></i>
+      </a>
       </div>
     </div>
   </nav>
