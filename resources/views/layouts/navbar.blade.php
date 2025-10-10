@@ -26,7 +26,7 @@
           <li class="nav-item active"><a href="{{ url('/welcome') }}" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">About</a></li>
           <li class="nav-item"><a href="{{ url('/parcform') }}" class="nav-link">Causes</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Pages</a></li> 
           <li class="nav-item"><a href="#" class="nav-link">News</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
         </ul>
@@ -37,7 +37,9 @@
       <a href="https://www.facebook.com/parcph" class="text-decoration-none">
         <i class="bi bi-facebook"></i>
       </a>
+      <a href="https://www.linkedin.com/company/globaltronicsphl/" class="text-decoration-none">
         <i class="bi bi-linkedin"></i>
+      </a>
       <a href="https://www.youtube.com/@ThePARCFoundation" class="text-decoration-none">
         <i class="bi bi-youtube"></i>
       </a>
