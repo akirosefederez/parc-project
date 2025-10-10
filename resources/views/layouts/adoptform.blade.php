@@ -1,8 +1,9 @@
 <!-- Personal Info Form -->
           <div>
             <h3 class="formtitle">Your Information</h3>
-            <form action="/action_page.php" class="personalinfo">
-              <label for="fname">First name</label>
+            <form action="{{ route('adoptions.store') }}" method="POST" class="personalinfo">
+               @csrf
+            <label for="fname">First name</label>
               <input type="text" id="fname" name="fname" />
 
               <label for="lname">Last name</label>

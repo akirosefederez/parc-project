@@ -38,4 +38,10 @@ Route::get('/adoptform', function () {
 
 use App\Http\Controllers\DonationController;
 
+Route::get('/donations', [DonationController::class, 'create'])->name('donations.create');
 Route::post('/donations', [DonationController::class, 'store'])->name('donations.store');
+
+use App\Http\Controllers\AdoptionController;
+
+Route::get('/adoptions', [AdoptionController::class, 'create'])->name('adoptions.create');
+Route::post('/adoptions', [AdoptionController::class, 'store'])->name('adoptions.store');
