@@ -27,6 +27,11 @@ Route::get('/adopt', function () {
 })->name('adopt');
 
 // Simple route returning a view
+Route::get('/news', function () {
+    return view('news'); // make sure news.blade.php exists in resources/views
+})->name('news');
+
+// Simple route returning a view
 Route::get('/donateform', function () {
     return view('donateform'); // make sure donateform.blade.php exists in resources/views
 })->name('donateform');
