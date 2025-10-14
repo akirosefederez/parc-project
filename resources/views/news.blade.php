@@ -30,6 +30,7 @@
       <p class="subtitle">latest posts</p>
     </div>
 
+
     <!-- News Card -->
     <div class="news-card shadow-sm">
       <div class="row align-items-center g-0">
@@ -61,7 +62,46 @@
           <a href="#" class="btn btn-learn">LEARN MORE</a>
         </div>
       </div>
+
+
+
+
+      
     </div>
+
+    <!--add the new 9 cards section here-->
+<div class="section-container">
+    <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('./assets/image/card1.webp') }}">
+        </div>
+        <div class="card-content">
+            <h3>Corey Koh - A Night of Melodies</h3>
+            <p>Get ready for an enchanting evening as Corey Koh brings his incredible voice to the stage at the upcoming "A Night of Melodies" concert on 15th February 2025.</p>
+            <span class="event-date">February 15, 2025</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('./assets/image/card2.webp') }}">
+        </div>
+        <div class="card-content">
+            <h3>Corey Koh's Latest Release - "Heartstrings"</h3>
+            <p>Corey Koh has just released his newest single, "Heartstrings". Available for streaming on all platforms. Don't miss out on this soulful track!</p>
+            <span class="release-date">January 30, 2025</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('./assets/image/card3.webp') }}">
+        </div>
+        <div class="card-content">
+            <h3>Corey Koh: Spreading Joy at the Community Event</h3>
+            <p>Join Corey Koh as he spreads warmth and joy with his music at the annual community charity event. This is a wonderful opportunity to give back and enjoy his live performance!</p>
+            <span class="event-date">December 20, 2024</span>
+        </div>
+    </div>
+</div>
   </div>
 </section>
 
