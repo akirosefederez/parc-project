@@ -22,14 +22,16 @@
   margin-bottom: 50px;
 }
 
-/* 📦 News Card */
+/* 📦 News Card — widened to align with second section */
 .news-card {
   background-color: #fff;
   border-radius: 18px;
   overflow: hidden;
-  max-width: 1150px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1350px; /* 🔹 made wider */
+  margin: 0 auto 50px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
 /* 🖼️ Image */
@@ -80,75 +82,80 @@
   color: #fff;
 }
 
-
-
-/*9 cards*/
-/* Container for the section */
+/* 🧩 Section for 3 Bottom Cards — now same width as news card */
 .section-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  max-width: 1350px; /* 🔹 widened to match news card */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Style for each card */
+/* 💳 Individual Cards */
 .card {
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    overflow: hidden;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
-/* Image in each card */
+/* 🖼️ Card Images */
 .card-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #eaeaea;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #eaeaea;
 }
 
-/* Card content */
+/* 💬 Card Text */
 .card-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .card-content h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .card-content p {
-    font-size: 0.9rem;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
-.card-content .event-date, .card-content .release-date {
-    display: block;
-    font-size: 0.85rem;
-    color: #d46a6a;
-    margin-top: 10px;
+.card-content .event-date,
+.card-content .release-date {
+  display: block;
+  font-size: 0.85rem;
+  color: #d46a6a;
+  margin-top: 10px;
 }
 
-
-
-
+/* 📐 Container for both sections */
+.latest-news-section .container {
+  max-width: 1350px; /* 🔹 wider container for alignment */
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 /* 📱 Responsive Design */
 @media (max-width: 991px) {
   .news-card {
     border-radius: 14px;
+    max-width: 95%;
   }
 
   .news-image img {
@@ -162,10 +169,26 @@
   .latest-news-section {
     padding: 60px 0;
   }
+
+  .card {
+    width: 48%;
+  }
+
+  .section-container {
+    max-width: 95%;
+  }
 }
 
 @media (max-width: 767px) {
   .news-card {
+    max-width: 95%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .section-container {
     max-width: 95%;
   }
 }
