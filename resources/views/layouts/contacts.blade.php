@@ -1,4 +1,4 @@
-  <footer class="footercon">
+  <footer class="footercon" id="contact-section">
     <div class="footer-container">
       <!-- Left Links Section -->
       <div class="footer-links">

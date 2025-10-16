@@ -14,6 +14,22 @@
 
 
 </head>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const hash = window.location.hash;
+  if (hash) {
+    const target = document.querySelector(hash);
+    const offset = document.querySelector('.navbar')?.offsetHeight || 0;
+    if (target) {
+      const topPosition = target.offsetTop - offset;
+      window.scrollTo({ top: topPosition, behavior: 'smooth' });
+    }
+  }
+});
+</script>
+
+
 <body>
 
   <!-- Include Navbar -->
@@ -169,7 +185,7 @@
   </div>
 </div>
 
-  <!-- Include Navbar -->
+  <!-- Include Contacts -->
   @include('layouts.contacts')
 
     <!-- Include Footer -->
