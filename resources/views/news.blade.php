@@ -69,9 +69,9 @@
             <img src="{{ asset('./assets/image/card1.webp') }}">
           </div>
           <div class="card-content">
-            <h3>Corey Koh - A Night of Melodies</h3>
-            <p>Get ready for an enchanting evening as Corey Koh brings his incredible voice to the stage at the upcoming "A Night of Melodies" concert on 15th February 2025.</p>
-            <span class="event-date">February 15, 2025</span>
+            <h3>Experience the Spirit of Giving at the Corey Koh – Incurably Romantic Concert</h3>
+            <p>Get ready to be swept off your feet as homegrown talent Corey Koh brings his mesmerizing voice to the Singtel Waterfront Theatre on 10 December 2024.</p>
+            <span class="event-date">November 13, 2024</span>
           </div>
         </div>
 
@@ -80,9 +80,9 @@
             <img src="{{ asset('./assets/image/card2.webp') }}">
           </div>
           <div class="card-content">
-            <h3>Corey Koh's Latest Release - "Heartstrings"</h3>
-            <p>Corey Koh has just released his newest single, "Heartstrings". Available for streaming on all platforms. Don't miss out on this soulful track!</p>
-            <span class="release-date">January 30, 2025</span>
+            <h3>Coreh Koh's latest release on Spotify</h3>
+            <p>Corey has graciously pledged all proceeds from this song to The PARC Foundation's PARCaralan Program. Accompanied by the PARCaralan Scholars, Corey breathes life to the song "Wind Beneath My Wings"</p>
+            <span class="release-date">January 3, 2023</span>
           </div>
         </div>
 
@@ -91,11 +91,45 @@
             <img src="{{ asset('./assets/image/card3.webp') }}">
           </div>
           <div class="card-content">
-            <h3>Corey Koh: Spreading Joy at the Community Event</h3>
-            <p>Join Corey Koh as he spreads warmth and joy with his music at the annual community charity event. This is a wonderful opportunity to give back and enjoy his live performance!</p>
-            <span class="event-date">December 20, 2024</span>
+            <h3>The young and talented Mr. Corey Kho, a “Singaporean Tenor”</h3>
+            <p>The young and talented Mr. Corey Kho, a “Singaporean Tenor”, brought the holiday cheer early this year, much to the delight of our Scholars.</p>
+            <span class="event-date">December 22, 2022</span>
           </div>
         </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('./assets/image/card4.webp') }}">
+          </div>
+          <div class="card-content">
+            <h3>What do love, hope, and music have in common?</h3>
+            <p>Last December 3, 2022, our very own PARCaralan Scholars and "Singaporean Tenor" Corey Koh, along with some of the most amazing talents from Lyric Opera of the Philippines.</p>
+            <span class="event-date">December 15, 2022</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('./assets/image/card5.webp') }}">
+          </div>
+          <div class="card-content">
+            <h3>Spirit of Giving 2022: A Celebration of Love, Hope, and Music</h3>
+            <p>More than just a concert, an opportunity to transform lives through performing arts is close to reaching. Show your support!</p>
+            <span class="event-date">December 8, 2022</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('./assets/image/card6.webp') }}">
+          </div>
+          <div class="card-content">
+            <h3>Spirit of Giving 2021: Smile behind the Mask | 1 Day To Go</h3>
+            <p>1 DAY TO GO… and we will soon celebrate love and generosity with Spirit of Giving 2021: Smile Behind The Mask, a charity online concert for the benefit of Philippine General Hospital ...</p>
+            <span class="event-date">December 3, 2021</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
