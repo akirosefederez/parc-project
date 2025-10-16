@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* ✅ Parcaralan */
 .parcaralan {
   position: relative;
