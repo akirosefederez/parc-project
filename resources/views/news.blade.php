@@ -32,12 +32,21 @@
       <!-- News Card -->
       <div class="news-card shadow-sm">
         <div class="row align-items-center g-0">
-          <!-- Image -->
-          <div class="col-md-5 news-image">
-            <img src="{{ asset('./assets/image/WTG2.webp') }}" 
-                 alt="Globaltronics Award" 
-                 class="img-fluid rounded-start">
-          </div>
+
+        <!-- Video Embed (Square Format) -->
+<div class="col-md-5 news-video">
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.instagram.com/reel/C2HROEVyDl9/embed"
+      frameborder="0"
+      allowfullscreen
+      allowtransparency="true"
+      scrolling="no">
+    </iframe>
+  </div>
+</div>
+
+
 
           <!-- Content -->
           <div class="col-md-7 p-4 text-start">
@@ -59,6 +68,8 @@
 
             <a href="#" class="btn btn-learn">LEARN MORE</a>
           </div>
+
+          
         </div>
       </div>
 
@@ -184,6 +195,7 @@
 
   <!-- JS -->
   <script src="{{ asset('jsfolder/packages.js') }}"></script>
+  <script async src="https://www.instagram.com/embed.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
