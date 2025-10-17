@@ -130,6 +130,39 @@
           </div>
         </div>
 
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('./assets/image/card7.webp') }}">
+          </div>
+          <div class="card-content">
+            <h3>Spirit of Giving 2021: Smile Behind The Mask | Dr. Raul M. Sunico</h3>
+            <p>Dr. Raul M. Sunico, multi-awarded international concert pianist and music author, former president of the Cultural Center of the Philippines, dean of the College of Music and the Performing Arts of ...</p>
+            <span class="event-date">November 26, 2021</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('./assets/image/card8.webp') }}">
+          </div>
+          <div class="card-content">
+            <h3>Spirit of Giving 2021: Smile behind the Mask | Mary Grace Khu</h3>
+            <p>Mary Grace Khu will be joining as our main host in Spirit of Giving 2021: Smile Behind The Mask, a charity online concert for the benefit of Philippine General Hospital (PGH) ...</p>
+            <span class="event-date">November 26, 2021</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('./assets/image/card9.webp') }}">
+          </div>
+          <div class="card-content">
+            <h3>Spirit of Giving 2021: Smile Behind The Mask | PARCaralan Scholars</h3>
+            <p>When COVID-19 hit, the PARCaralan Scholars had to rely on meager resources raised through previous fundraising activities of The PARC Foundation to be able to continue getting free educational ...</p>
+            <span class="event-date">November 24, 2021</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
