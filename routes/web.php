@@ -54,3 +54,4 @@ Route::post('/adoptions', [AdoptionController::class, 'store'])->name('adoptions
 Route::get('/', function () {
     return view('welcome');
 });
+

@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   @include('layouts.carousel')
 
   <!-- PARCaralan starts here -->
-    <div class="container parcaralan">
+    <div class="container parcaralan" id="about-section">
         <h1 class="title partitle">PARCaralan</h1>
         <p class="paragraph parcdetails">
             We harness the power of performing arts to transform the lives of
