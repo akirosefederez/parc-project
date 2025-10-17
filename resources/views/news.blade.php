@@ -62,6 +62,18 @@
         </div>
       </div>
 
+
+<!-- place it here-->
+
+      <!-- News and Updates Header Section -->
+<section class="news-updates-header d-flex align-items-center justify-content-center text-center">
+  <div class="overlay"></div>
+  <div class="content">
+    <img src="{{ asset('./assets/logo/logoparc.webp') }}" alt="The PARC Foundation Logo" class="parc-logo mb-3">
+    <h1 class="fw-bold">News and Updates</h1>
+  </div>
+</section>
+
       <!-- 3 News Cards Section -->
       <div class="section-container">
         <div class="card">
