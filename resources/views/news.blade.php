@@ -21,6 +21,7 @@
   <!-- Latest News Section -->
   <section class="latest-news-section">
     <div class="container text-center">
+      
       <!-- Section Header -->
       <div class="news-header text-center">
         <h2 class="fw-bold">
@@ -33,20 +34,18 @@
       <div class="news-card shadow-sm">
         <div class="row align-items-center g-0">
 
-        <!-- Video Embed (Square Format) -->
-<div class="col-md-5 news-video">
-  <div class="video-wrapper">
-    <iframe
-      src="https://www.instagram.com/reel/C2HROEVyDl9/embed"
-      frameborder="0"
-      allowfullscreen
-      allowtransparency="true"
-      scrolling="no">
-    </iframe>
-  </div>
-</div>
-
-
+          <!-- Video Embed (Square Format) -->
+          <div class="col-md-5 news-video">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.instagram.com/reel/C2HROEVyDl9/embed"
+                frameborder="0"
+                allowfullscreen
+                allowtransparency="true"
+                scrolling="no">
+              </iframe>
+            </div>
+          </div>
 
           <!-- Content -->
           <div class="col-md-7 p-4 text-start">
@@ -66,148 +65,151 @@
               The 9th Wish Music Awards happened on January 14, 2024 at the Araneta Coliseum.
             </p>
 
-            <a href="#" class="btn btn-learn">LEARN MORE</a>
+            <a href="https://globaltronics.net/the-parc-fondation-kicked-off-the-year-in-style-as-wish-107-5/" class="btn btn-learn">LEARN MORE</a>
           </div>
-
-          
         </div>
       </div>
 
-
-<!-- place it here-->
-
       <!-- News and Updates Header Section -->
-<section class="news-updates-header d-flex align-items-center justify-content-center text-center">
-  <div class="overlay"></div>
-  <div class="content">
-    <img src="{{ asset('./assets/logo/logoparc.webp') }}" alt="The PARC Foundation Logo" class="parc-logo mb-3">
-    <h1 class="fw-bold">News and Updates</h1>
-  </div>
-</section>
+      <section class="news-updates-header d-flex align-items-center justify-content-center text-center">
+        <div class="overlay"></div>
+        <div class="content">
+          <img src="{{ asset('./assets/logo/logoparc.webp') }}" alt="The PARC Foundation Logo" class="parc-logo mb-3">
+          <h1 class="fw-bold">News and Updates</h1>
+        </div>
+      </section>
 
       <!-- 3 News Cards Section -->
       <div class="section-container">
 
+        <!-- Card 1 -->
         <div class="card"> 
           <a href="https://www.portfoliomagsg.com/article/experience-the-spirit-of-giving-at-the-corey-koh-incurably-romantic-concert.html" class="cardlink">
-          <div class="card-image">
-            <img src="{{ asset('./assets/image/card1.webp') }} ">
-          </div>
-          <div class="card-content">
-            <h3>Experience the Spirit of Giving at the Corey Koh – Incurably Romantic Concert</h3></a>
-            <p>Get ready to be swept off your feet as homegrown talent Corey Koh brings his mesmerizing voice to the Singtel Waterfront Theatre on 10 December 2024.</p>
-            <span class="event-date">November 13, 2024</span>
-          </div>
+            <div class="card-image">
+              <img src="{{ asset('./assets/image/card1.webp') }}">
+            </div>
+            <div class="card-content">
+              <h3>Experience the Spirit of Giving at the Corey Koh – Incurably Romantic Concert</h3>
+              <p>Get ready to be swept off your feet as homegrown talent Corey Koh brings his mesmerizing voice to the Singtel Waterfront Theatre on 10 December 2024.</p>
+              <span class="event-date">November 13, 2024</span>
+            </div>
           </a>
         </div>
-        
 
+        <!-- Card 2 -->
         <div class="card">
           <a href="https://www.facebook.com/parcph/photos/a.464451167090905/2082030698666269/" class="cardlink">
-          <div class="card-image">
-            <img src="{{ asset('./assets/image/card2.webp') }}">
-          </div>
-          <div class="card-content">
-            <h3>Coreh Koh's latest release on Spotify</h3>
-            <p>Corey has graciously pledged all proceeds from this song to The PARC Foundation's PARCaralan Program. Accompanied by the PARCaralan Scholars, Corey breathes life to the song "Wind Beneath My Wings"</p>
-            <span class="release-date">January 3, 2023</span>
-          </div>
+            <div class="card-image">
+              <img src="{{ asset('./assets/image/card2.webp') }}">
+            </div>
+            <div class="card-content">
+              <h3>Coreh Koh's latest release on Spotify</h3>
+              <p>Corey has graciously pledged all proceeds from this song to The PARC Foundation's PARCaralan Program. Accompanied by the PARCaralan Scholars, Corey breathes life to the song "Wind Beneath My Wings"</p>
+              <span class="release-date">January 3, 2023</span>
+            </div>
           </a>
         </div>
 
+        <!-- Card 3 -->
         <div class="card">
           <a href="https://www.facebook.com/watch/?v=5717499948365006" class="cardlink">
-          <div class="card-image">
-            <img src="{{ asset('./assets/image/card3.webp') }}">
-          </div>
-          <div class="card-content">
-            <h3>The young and talented Mr. Corey Kho, a “Singaporean Tenor”</h3>
-            <p>The young and talented Mr. Corey Kho, a “Singaporean Tenor”, brought the holiday cheer early this year, much to the delight of our Scholars.</p>
-            <span class="event-date">December 22, 2022</span>
-          </div>
+            <div class="card-image">
+              <img src="{{ asset('./assets/image/card3.webp') }}">
+            </div>
+            <div class="card-content">
+              <h3>The young and talented Mr. Corey Kho, a “Singaporean Tenor”</h3>
+              <p>The young and talented Mr. Corey Kho, a “Singaporean Tenor”, brought the holiday cheer early this year, much to the delight of our Scholars.</p>
+              <span class="event-date">December 22, 2022</span>
+            </div>
           </a>
         </div>
 
+        <!-- Card 4 -->
         <div class="card">
           <a href="https://www.facebook.com/parcph" class="cardlink">
-          <div class="card-image">
-            <img src="{{ asset('./assets/image/card4.webp') }}">
-          </div>
-          <div class="card-content">
-            <h3>What do love, hope, and music have in common?</h3>
-            <p>Last December 3, 2022, our very own PARCaralan Scholars and "Singaporean Tenor" Corey Koh, along with some of the most amazing talents from Lyric Opera of the Philippines.</p>
-            <span class="event-date">December 15, 2022</span>
-          </div>
+            <div class="card-image">
+              <img src="{{ asset('./assets/image/card4.webp') }}">
+            </div>
+            <div class="card-content">
+              <h3>What do love, hope, and music have in common?</h3>
+              <p>Last December 3, 2022, our very own PARCaralan Scholars and "Singaporean Tenor" Corey Koh, along with some of the most amazing talents from Lyric Opera of the Philippines.</p>
+              <span class="event-date">December 15, 2022</span>
+            </div>
           </a>
         </div>
 
+        <!-- Card 5 -->
         <div class="card">
           <a href="https://www.facebook.com/watch/?v=679887993506870" class="cardlink">
-          <div class="card-image">
-            <img src="{{ asset('./assets/image/card5.webp') }}">
-          </div>
-          <div class="card-content">
-            <h3>Spirit of Giving 2022: A Celebration of Love, Hope, and Music</h3>
-            <p>More than just a concert, an opportunity to transform lives through performing arts is close to reaching. Show your support!</p>
-            <span class="event-date">December 8, 2022</span>
-          </div>
+            <div class="card-image">
+              <img src="{{ asset('./assets/image/card5.webp') }}">
+            </div>
+            <div class="card-content">
+              <h3>Spirit of Giving 2022: A Celebration of Love, Hope, and Music</h3>
+              <p>More than just a concert, an opportunity to transform lives through performing arts is close to reaching. Show your support!</p>
+              <span class="event-date">December 8, 2022</span>
+            </div>
           </a>
         </div>
 
+        <!-- Card 6 -->
         <div class="card">
           <a href="https://www.facebook.com/GlobaltronicsPH/posts/4553384538048467" class="cardlink">
-          <div class="card-image">
-            <img src="{{ asset('./assets/image/card6.webp') }}">
-          </div>
-          <div class="card-content">
-            <h3>Spirit of Giving 2021: Smile behind the Mask | 1 Day To Go</h3>
-            <p>1 DAY TO GO… and we will soon celebrate love and generosity with Spirit of Giving 2021: Smile Behind The Mask, a charity online concert for the benefit of Philippine General Hospital ...</p>
-            <span class="event-date">December 3, 2021</span>
-          </div>
+            <div class="card-image">
+              <img src="{{ asset('./assets/image/card6.webp') }}">
+            </div>
+            <div class="card-content">
+              <h3>Spirit of Giving 2021: Smile behind the Mask | 1 Day To Go</h3>
+              <p>1 DAY TO GO… and we will soon celebrate love and generosity with Spirit of Giving 2021: Smile Behind The Mask, a charity online concert for the benefit of Philippine General Hospital ...</p>
+              <span class="event-date">December 3, 2021</span>
+            </div>
           </a>
         </div>
 
+        <!-- Card 7 -->
         <div class="card">
           <a href="https://www.facebook.com/watch/?v=322659799690096&ref=sharing" class="cardlink">
-          <div class="card-image">
-            <img src="{{ asset('./assets/image/card7.webp') }}">
-          </div>
-          <div class="card-content">
-            <h3>Spirit of Giving 2021: Smile Behind The Mask | Dr. Raul M. Sunico</h3>
-            <p>Dr. Raul M. Sunico, multi-awarded international concert pianist and music author, former president of the Cultural Center of the Philippines, dean of the College of Music and the Performing Arts of ...</p>
-            <span class="event-date">November 26, 2021</span>
-          </div>
+            <div class="card-image">
+              <img src="{{ asset('./assets/image/card7.webp') }}">
+            </div>
+            <div class="card-content">
+              <h3>Spirit of Giving 2021: Smile Behind The Mask | Dr. Raul M. Sunico</h3>
+              <p>Dr. Raul M. Sunico, multi-awarded international concert pianist and music author, former president of the Cultural Center of the Philippines, dean of the College of Music and the Performing Arts of ...</p>
+              <span class="event-date">November 26, 2021</span>
+            </div>
           </a>
         </div>
 
+        <!-- Card 8 -->
         <div class="card">
           <a href="https://www.facebook.com/watch/?v=581011489674201" class="cardlink">
-          <div class="card-image">
-            <img src="{{ asset('./assets/image/card8.webp') }}">
-          </div>
-          <div class="card-content">
-            <h3>Spirit of Giving 2021: Smile behind the Mask | Mary Grace Khu</h3>
-            <p>Mary Grace Khu will be joining as our main host in Spirit of Giving 2021: Smile Behind The Mask, a charity online concert for the benefit of Philippine General Hospital (PGH) ...</p>
-            <span class="event-date">November 26, 2021</span>
-          </div>
+            <div class="card-image">
+              <img src="{{ asset('./assets/image/card8.webp') }}">
+            </div>
+            <div class="card-content">
+              <h3>Spirit of Giving 2021: Smile behind the Mask | Mary Grace Khu</h3>
+              <p>Mary Grace Khu will be joining as our main host in Spirit of Giving 2021: Smile Behind The Mask, a charity online concert for the benefit of Philippine General Hospital (PGH) ...</p>
+              <span class="event-date">November 26, 2021</span>
+            </div>
           </a>
         </div>
 
+        <!-- Card 9 -->
         <div class="card">
           <a href="https://www.facebook.com/parcph/videos/325351385704569/" class="cardlink">
-          <div class="card-image">
-            <img src="{{ asset('./assets/image/card9.webp') }}">
-          </div>
-          <div class="card-content">
-            <h3>Spirit of Giving 2021: Smile Behind The Mask | PARCaralan Scholars</h3>
-            <p>When COVID-19 hit, the PARCaralan Scholars had to rely on meager resources raised through previous fundraising activities of The PARC Foundation to be able to continue getting free educational ...</p>
-            <span class="event-date">November 24, 2021</span>
-          </div>
+            <div class="card-image">
+              <img src="{{ asset('./assets/image/card9.webp') }}">
+            </div>
+            <div class="card-content">
+              <h3>Spirit of Giving 2021: Smile Behind The Mask | PARCaralan Scholars</h3>
+              <p>When COVID-19 hit, the PARCaralan Scholars had to rely on meager resources raised through previous fundraising activities of The PARC Foundation to be able to continue getting free educational ...</p>
+              <span class="event-date">November 24, 2021</span>
+            </div>
           </a>
         </div>
 
-      </div>
-    </div>
+      </div> <!-- end .section-container -->
+    </div> <!-- end .container -->
   </section>
 
   <!-- Include Footer -->
