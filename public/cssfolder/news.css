@@ -237,6 +237,29 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+.cardlink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  color: #000; /* default title color */
+  transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+  color: orange; /* title color when hovered */
+}
+
 
 /* 📱 Responsive Design */
 @media (max-width: 991px) {
