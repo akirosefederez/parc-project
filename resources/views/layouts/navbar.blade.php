@@ -27,7 +27,7 @@
           <li class="nav-item active"><a href="{{ url('/welcome') }}" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="{{ url('/') }}#about-section" class="nav-link">About</a></li>
           <li class="nav-item"><a href="{{ url('/parcform') }}" class="nav-link">Causes</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Pages</a></li> 
+          <li class="nav-item"><a href="{{ url('/pages') }}" class="nav-link">Pages</a></li> 
           <li class="nav-item"><a href="{{ url('/news') }}" class="nav-link">News</a></li>
           <li class="nav-item"><a href="{{ url('/') }}#contact-section" class="nav-link">Contact</a></li>
         </ul>

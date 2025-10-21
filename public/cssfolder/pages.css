@@ -1,0 +1,86 @@
+.pages-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+/* 📰 Header Styles */
+.pages-header h2 {
+  font-size: 4rem;
+  color: #000;
+  margin-top: 110px;
+  margin-bottom: 5px;
+}
+
+.pages-header .highlight {
+  color: #f6a506;
+}
+
+.pages-header .subtitle {
+  color: #9c9c9c;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.events-section h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+/* Filter Buttons */
+.filter-buttons label {
+  margin: 0 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-buttons input[type="radio"] {
+  appearance: none;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.filter-buttons input[type="radio"]:checked {
+  border-color: orange;
+  background-color: orange;
+}
+
+.filter-buttons label {
+  transition: color 0.3s;
+}
+
+.filter-buttons input[type="radio"]:checked + label,
+.filter-buttons label:hover {
+  color: orange;
+}
+
+/* Event Cards */
+.event-card {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.event-card:hover img {
+  transform: scale(1.1);
+}
