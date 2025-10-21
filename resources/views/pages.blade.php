@@ -44,67 +44,67 @@
     <div class="row g-4" id="eventGrid">
       <!-- Example Event Cards -->
       <div class="col-md-3 col-sm-6 event-card" data-year="2022">
-        <img src="{{ asset('assets/image/page1.webp') }}" class="img-fluid" alt="Spirit of Giving 2022">
+        <img src="{{ asset('assets/image/page1.webp') }}" class="img-fluid">
       </div>
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2022">
-        <img src="{{ asset('assets/image/page2.webp') }}" class="img-fluid" alt="ARTiPARC">
+        <img src="{{ asset('assets/image/page2.webp') }}" class="img-fluid">
       </div>
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2022">
-        <img src="{{ asset('assets/image/page3.webp') }}" class="img-fluid" alt="Balik-JAM sa PARCaralan">
+        <img src="{{ asset('assets/image/page3.webp') }}" class="img-fluid">
       </div>
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2021">
-        <img src="{{ asset('assets/image/page4.webp') }}" class="img-fluid" alt="Spirit of Giving 2021">
+        <img src="{{ asset('assets/image/page4.webp') }}" class="img-fluid">
       </div>
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2020">
-        <img src="{{ asset('assets/image/page5.webp') }}" class="img-fluid" alt="Spirit of Giving 2020">
+        <img src="{{ asset('assets/image/page5.webp') }}" class="img-fluid">
       </div>
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2020">
-        <img src="{{ asset('assets/image/page6.webp') }}" class="img-fluid" alt="PARCners Night">
+        <img src="{{ asset('assets/image/page6.webp') }}" class="img-fluid">
       </div>
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page7.webp') }}" class="img-fluid" alt="Tambayan Festival">
+        <img src="{{ asset('assets/image/page7.webp') }}" class="img-fluid">
       </div>
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page8.webp') }}" class="img-fluid" alt="Reise Mixed Voices">
+        <img src="{{ asset('assets/image/page8.webp') }}" class="img-fluid">
       </div>
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page9.webp') }}" class="img-fluid" alt="Reise Mixed Voices">
+        <img src="{{ asset('assets/image/page9.webp') }}" class="img-fluid">
       </div>     
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page10.webp') }}" class="img-fluid" alt="Reise Mixed Voices">
+        <img src="{{ asset('assets/image/page10.webp') }}" class="img-fluid">
       </div>
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page11.webp') }}" class="img-fluid" alt="Reise Mixed Voices">
+        <img src="{{ asset('assets/image/page11.webp') }}" class="img-fluid">
       </div>  
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page12.webp') }}" class="img-fluid" alt="Reise Mixed Voices">
+        <img src="{{ asset('assets/image/page12.webp') }}" class="img-fluid">
       </div>  
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page13.webp') }}" class="img-fluid" alt="Reise Mixed Voices">
+        <img src="{{ asset('assets/image/page13.webp') }}" class="img-fluid">
       </div>  
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page14.webp') }}" class="img-fluid" alt="Reise Mixed Voices">
+        <img src="{{ asset('assets/image/page14.webp') }}" class="img-fluid">
       </div>  
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page15.webp') }}" class="img-fluid" alt="Reise Mixed Voices">
+        <img src="{{ asset('assets/image/page15.webp') }}" class="img-fluid">
       </div>  
 
       <div class="col-md-3 col-sm-6 event-card" data-year="2019">
-        <img src="{{ asset('assets/image/page16.webp') }}" class="img-fluid" alt="Reise Mixed Voices">
+        <img src="{{ asset('assets/image/page16.webp') }}" class="img-fluid">
       </div>  
 
     </div>
