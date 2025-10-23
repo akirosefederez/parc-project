@@ -23,9 +23,9 @@
       <!-- Section Header -->
       <div class="pages-header text-center">
         <h2 class="fw-bold">
-          Latest <span class="highlight">News</span>
+          Our <span class="highlight">Events</span>
         </h2>
-        <p class="subtitle">latest posts</p>
+        <p class="subtitle">Check it out!</p>
       </div>
 
     <!-- Filter Buttons -->
