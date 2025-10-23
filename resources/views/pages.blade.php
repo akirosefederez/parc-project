@@ -324,15 +324,42 @@
       btn.addEventListener('change', () => {
         const year = btn.value;
         cards.forEach(card => {
-          if (year === 'all' || card.dataset.year === year) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
+          card.style.display =
+            year === 'all' || card.dataset.year === year ? 'block' : 'none';
         });
       });
     });
+
+    // Image Preview Modal Script
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.createElement('div');
+      modal.id = 'imageModal';
+      modal.innerHTML = `
+        <div class="modal-overlay"></div>
+        <img class="modal-content" id="previewImage">
+        <span class="close">&times;</span>
+      `;
+      document.body.appendChild(modal);
+
+      const previewImage = document.getElementById('previewImage');
+      const closeBtn = modal.querySelector('.close');
+      const overlay = modal.querySelector('.modal-overlay');
+
+      // Show modal when image clicked
+      document.querySelectorAll('.event-card img').forEach(img => {
+        img.addEventListener('click', () => {
+          previewImage.src = img.src;
+          modal.style.display = 'flex';
+        });
+      });
+
+      // Close modal on click
+      [closeBtn, overlay].forEach(el => {
+        el.addEventListener('click', () => (modal.style.display = 'none'));
+      });
+    });
   </script>
+
 
   <!-- Include Footer -->
   @include('layouts.footer')
