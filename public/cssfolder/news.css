@@ -165,20 +165,7 @@
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .news-updates-header {
-    height: 260px;
-  }
 
-  .news-updates-header .parc-logo {
-    width: 130px;
-  }
-
-  .news-updates-header h1 {
-    font-size: 2rem;
-  }
-}
 
 
 /* 💳 Individual Cards */
@@ -261,33 +248,34 @@
 }
 
 
+/* Responsive */
+@media (max-width: 768px) {
+  .news-updates-header {
+    height: 260px;
+  }
 
+  .news-updates-header .parc-logo {
+    width: 130px;
+  }
+
+  .news-updates-header h1 {
+    font-size: 2rem;
+  }
+}
 
 /* 📱 Responsive Design */
 @media (max-width: 991px) {
   .news-card {
     border-radius: 14px;
-    max-width: 95%;
   }
 
   .news-image img {
     border-radius: 14px 14px 0 0;
   }
 
-  .news-header h2 {
-    font-size: 2rem;
-  }
-
-  .latest-news-section {
-    padding: 60px 0;
-  }
 
   .card {
     width: 48%;
-  }
-
-  .section-container {
-    max-width: 95%;
   }
 }
 
