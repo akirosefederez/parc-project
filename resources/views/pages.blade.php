@@ -28,7 +28,6 @@
         <p class="subtitle">Check it out!</p>
       </div>
 
-    <!-- Filter Buttons -->
     <div class="filter-buttons text-center mb-4">
       <label><input type="radio" name="year" value="all" checked> ALL EVENTS</label>
       <label><input type="radio" name="year" value="2022"> 2022</label>
@@ -39,6 +38,16 @@
       <label><input type="radio" name="year" value="2017"> 2017</label>
       <label><input type="radio" name="year" value="2016"> 2016</label>
     </div>
+
+    <!-- Filter Buttons -->
+<div class="mobile-filter">
+  <button class="mobile-filter-btn">
+    <span class="arrow left">&lt;</span>
+    <span class="filter-label">ALL EVENTS</span>
+    <span class="arrow right">&gt;</span>
+  </button>
+</div>
+
 
     <!-- Events Grid -->
     <div class="row g-4" id="eventGrid">
@@ -358,6 +367,42 @@
         el.addEventListener('click', () => (modal.style.display = 'none'));
       });
     });
+
+
+    // Mobile Filter Scroll Logic
+document.addEventListener('DOMContentLoaded', () => {
+  const filterLabel = document.querySelector('.filter-label');
+  const leftArrow = document.querySelector('.arrow.left');
+  const rightArrow = document.querySelector('.arrow.right');
+
+  const filters = ["ALL EVENTS", "2022", "2021", "2020", "2019", "2018", "2017", "2016"];
+  let currentIndex = 0;
+
+  function updateFilterLabel() {
+    filterLabel.textContent = filters[currentIndex];
+    // Optional: trigger your event filter logic here
+    console.log("Selected Filter:", filters[currentIndex]);
+  }
+
+  leftArrow.addEventListener('click', (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + filters.length) % filters.length;
+    updateFilterLabel();
+  });
+
+  rightArrow.addEventListener('click', (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % filters.length;
+    updateFilterLabel();
+  });
+
+  // optional: clicking the center also cycles right
+  filterLabel.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % filters.length;
+    updateFilterLabel();
+  });
+});
+
   </script>
 
 

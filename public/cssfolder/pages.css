@@ -164,3 +164,52 @@ footer {
     height: 120px;
   }
 }
+
+
+/* ===== MOBILE FILTER STYLE ===== */
+.mobile-filter {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.mobile-filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 28px;
+  width: 80%;
+  max-width: 350px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mobile-filter-btn .arrow {
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 25px;
+  text-align: center;
+}
+
+.mobile-filter-btn:hover {
+  background: #222;
+}
+
+/* ===== SHOW ONLY ON MOBILE ===== */
+@media (max-width: 425px) {
+  .filter-buttons-wrapper {
+    display: none; /* hide desktop scroll filter */
+  }
+  .mobile-filter {
+    display: flex;
+  }
+}
