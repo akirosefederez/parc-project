@@ -65,20 +65,22 @@
           <a href="#" class="btnm9">Bank Account</a>
 
               <label for="postal">Card Number</label>
-              <input type="text" id="postal" name="postal" />
+              <input type="text" id="card_number" name="card_number" />
 
-            <div class="bankcard">
-              <label for="postal">Expiration Date</label>
-              <input type="text" id="exp" name="exp" />
-              <label for="postal">/</label>
-              <input type="text" id="exp" name="exp" />
-              <label for="postal">CVV</label>
-              <input type="text" id="cvv" name="cvv" />
-            </div>
+<div class="bankcard">
+  <label for="expiration_month">Expiration Date</label>
+  <input type="text" id="expiration_month" name="expiration_month" placeholder="MM" />
+  <label>/</label>
+  <input type="text" id="expiration_year" name="expiration_year" placeholder="YY" />
+  
+  <label for="cvv">CVV</label>
+  <input type="text" id="cvv" name="cvv" />
+</div>
 
             <div class="last">
-              <input type="checkbox" id="checkparc" name="checkparc" value="">
-              <label for="vehicle1">I want PARC to receive 100% of my donation. I'll cover processing fees ($0.30).</label><br>
+              <input type="checkbox" id="checkparc" name="cover_processing_fee" value="1">
+<label for="checkparc">I want PARC to receive 100%...</label>
+
             </div>
               <input type="submit" value="DONATE" />
 
