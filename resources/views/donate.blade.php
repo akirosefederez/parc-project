@@ -148,6 +148,7 @@
   @include('layouts.footer')
   
   <!-- JS -->
+  <script src="{{ asset('jsfolder/donatepayment.js') }}"></script>
   <script src="{{ asset('jsfolder/donate.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>

@@ -19,6 +19,7 @@ class Donation extends Model
         'postal',
         'emailUpdates',
         'textUpdates',
+        'payment_method',
         'card_number',
         'expiration_month',
         'expiration_year',

@@ -23,6 +23,7 @@ class DonationController extends Controller
             'postal'  => 'nullable|string|max:50',
             'emailUpdates' => 'in:yes,no',
             'textUpdates'  => 'in:yes,no',
+            'payment_method' => 'nullable|string|max:50',
             'card_number'  => 'nullable|string|max:19',
             'expiration_month' => 'nullable|string|max:5',
             'expiration_year'  => 'nullable|string|max:5',

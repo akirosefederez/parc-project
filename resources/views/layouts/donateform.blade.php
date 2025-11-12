@@ -63,6 +63,8 @@
           </div>
 
           <a href="#" class="btnm9">Bank Account</a>
+          <input type="hidden" name="payment_method" id="payment_method" value="">
+
 
 <label for="card_number">Card Number</label>
 <input type="text" id="card_number" name="card_number" />
