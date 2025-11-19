@@ -58,5 +58,11 @@ Route::post('/adoptions', [AdoptionController::class, 'store'])->name('adoptions
 
 Route::get('/', function () {
     return view('welcome');
+
+Route::get('stripe',[StripeController::class,'index']);
+Route::post('stripe',[StripeController::class,'charge'])->name('stripe.charge');
+
+
+
 });
 
