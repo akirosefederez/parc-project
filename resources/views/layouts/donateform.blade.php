@@ -1,3 +1,5 @@
+<form action="{{ route('donations.store') }}" method="POST" class="personalinfo">
+               @csrf
           <!-- One-time / Monthly -->
           <div class="center-btn">
             <a href="#" class="btn1">Give Once</a>
@@ -33,8 +35,7 @@
 <!-- Personal Info Form -->
           <div>
             <h3 class="formtitle">Your Information</h3>
-              <form action="{{ route('donations.store') }}" method="POST" class="personalinfo">
-               @csrf
+
               <label for="fname">First name</label>
               <input type="text" id="fname" name="fname" />
 

@@ -130,6 +130,17 @@
   
 <!--For Monthly and Mount-->
   <script>
+
+document.querySelector('.btn1').onclick = (e) => {
+    e.preventDefault();
+    document.getElementById('frequency').value = 'once';
+};
+
+document.querySelector('.btn2').onclick = (e) => {
+    e.preventDefault();
+    document.getElementById('frequency').value = 'monthly';
+};
+
 document.querySelector('.btnm1').onclick = (e) => {
     e.preventDefault();
     document.getElementById('monthly_amount').value = 10;
