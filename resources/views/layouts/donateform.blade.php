@@ -23,7 +23,11 @@
               <a href="#" class="btnm6"><b class="dollar">$</b>Other/mo</a>
             </div>
           </div>
-          
+
+          <input type="hidden" name="frequency" id="frequency">
+          <input type="hidden" name="monthly_amount" id="monthly_amount">
+
+
           <hr class="break" />
 
 <!-- Personal Info Form -->
