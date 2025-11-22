@@ -1,3 +1,31 @@
+          <!-- One-time / Monthly -->
+          <div class="center-btn">
+            <a href="#" class="btn1">Give Once</a>
+            <a href="#" class="btn2">Give Monthly</a>
+          </div>
+
+          <!-- Note -->
+          <div class="note1">
+            <p class="p1">Thank you for making a difference.</p>
+            <p class="p2">
+              Monthly giving is a simple, impactful way to support PARCaralan Scholars
+            </p>
+          </div>
+
+          <!-- Monthly Options -->
+          <div class="btn-monthly">
+            <div class="center-btn">
+              <a href="#" class="btnm1">$10/mo</a>
+              <a href="#" class="btnm2">$15/mo</a>
+              <a href="#" class="btnm3">$20/mo</a>
+              <a href="#" class="btnm4">$25/mo</a>
+              <a href="#" class="btnm5">$50/mo</a>
+              <a href="#" class="btnm6"><b class="dollar">$</b>Other/mo</a>
+            </div>
+          </div>
+          
+          <hr class="break" />
+
 <!-- Personal Info Form -->
           <div>
             <h3 class="formtitle">Your Information</h3>
