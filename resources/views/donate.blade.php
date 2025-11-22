@@ -128,6 +128,41 @@
   var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
   </script> <!-- Stripe JS -->
   
+<!--For Monthly and Mount-->
+  <script>
+document.querySelector('.btnm1').onclick = (e) => {
+    e.preventDefault();
+    document.getElementById('monthly_amount').value = 10;
+};
+
+document.querySelector('.btnm2').onclick = (e) => {
+    e.preventDefault();
+    document.getElementById('monthly_amount').value = 15;
+};
+
+document.querySelector('.btnm3').onclick = (e) => {
+    e.preventDefault();
+    document.getElementById('monthly_amount').value = 20;
+};
+
+document.querySelector('.btnm4').onclick = (e) => {
+    e.preventDefault();
+    document.getElementById('monthly_amount').value = 25;
+};
+
+document.querySelector('.btnm5').onclick = (e) => {
+    e.preventDefault();
+    document.getElementById('monthly_amount').value = 50;
+};
+
+document.querySelector('.btnm6').onclick = (e) => {
+    e.preventDefault();
+    let other = prompt("Enter monthly amount:");
+    if(other) document.getElementById('monthly_amount').value = other;
+};
+
+
+  </script>
 </body>
 </html>
 
