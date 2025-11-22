@@ -123,14 +123,15 @@
   <script src="{{ asset('jsfolder/donatepayment.js') }}"></script>
   <script src="{{ asset('jsfolder/donate.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Stripe JS -->
   <script src="https://js.stripe.com/clover/stripe.js"></script>
   <script>
   var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
-  </script> <!-- Stripe JS -->
+  </script>
   
 <!--For Monthly and Mount-->
   <script>
-
 document.querySelector('.btn1').onclick = (e) => {
     e.preventDefault();
     document.getElementById('frequency').value = 'once';
