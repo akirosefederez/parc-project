@@ -1,68 +1,88 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use App\Http\Controllers\DonationController;
+use App\Http\Controllers\AdoptionController;
+use Stripe\Stripe;
+use Stripe\PaymentIntent;
 
+// =====================
+// Frontend Pages
+// =====================
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-// Welcome Page
 Route::get('/welcome', function () {
-    return view('welcome'); // resources/views/welcome.blade.php
+    return view('welcome');
 })->name('welcome');
 
-// New route for original.blade.php
 Route::get('/home', function () {
     return view('original');
 })->name('home');
 
-// Simple route returning a view
 Route::get('/donate', function () {
-    return view('donate'); // make sure donate.blade.php exists in resources/views
+    return view('donate');
 })->name('donate');
 
-// Simple route returning a view
 Route::get('/adopt', function () {
-    return view('adopt'); // make sure adopt.blade.php exists in resources/views
+    return view('adopt');
 })->name('adopt');
 
-// Simple route returning a view
 Route::get('/news', function () {
-    return view('news'); // make sure news.blade.php exists in resources/views
+    return view('news');
 })->name('news');
 
-// Simple route returning a view
 Route::get('/pages', function () {
-    return view('pages'); // make sure pages.blade.php exists in resources/views
+    return view('pages');
 })->name('pages');
 
-// Simple route returning a view
 Route::get('/donateform', function () {
-    return view('donateform'); // make sure donateform.blade.php exists in resources/views
+    return view('donateform');
 })->name('donateform');
 
-// Simple route returning a view
 Route::get('/adoptform', function () {
-    return view('adoptform'); // make sure adoptform.blade.php exists in resources/views
+    return view('adoptform');
 })->name('adoptform');
 
-use App\Http\Controllers\DonationController;
-
+// =====================
+// Donation Controller
+// =====================
 Route::get('/donations', [DonationController::class, 'create'])->name('donations.create');
 Route::post('/donations', [DonationController::class, 'store'])->name('donations.store');
 
-use App\Http\Controllers\AdoptionController;
-
+// =====================
+// Adoption Controller
+// =====================
 Route::get('/adoptions', [AdoptionController::class, 'create'])->name('adoptions.create');
 Route::post('/adoptions', [AdoptionController::class, 'store'])->name('adoptions.store');
 
-Route::get('/', function () {
-    return view('welcome');
+// =====================
+// Stripe Payment Route
+// =====================
+Route::post('/stripe-payment', function (Request $request) {
+    Stripe::setApiKey(env('STRIPE_SECRET'));
 
-Route::get('stripe',[StripeController::class,'index']);
-Route::post('stripe',[StripeController::class,'charge'])->name('stripe.charge');
+    try {
+        $paymentIntent = PaymentIntent::create([
+            'amount' => 1000, // $10 in cents
+            'currency' => 'usd',
+            'payment_method' => $request->payment_method_id,
+            'confirmation_method' => 'manual',
+            'confirm' => true,
+            'automatic_payment_methods' => [
+                'enabled' => true,
+                'allow_redirects' => 'never', // prevents redirect-based errors
+            ],
+        ]);
 
-
-
+        return response()->json(['success' => true]);
+    } catch (\Exception $e) {
+        return response()->json([
+            'success' => false,
+            'message' => $e->getMessage()
+        ]);
+    }
 });
 

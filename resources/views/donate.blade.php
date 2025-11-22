@@ -124,14 +124,8 @@
   <script src="{{ asset('jsfolder/donate.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Stripe JS -->
-  <script src="https://js.stripe.com/clover/stripe.js"></script>
-  <script>
-  var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
-  </script>
-  
-<!--For Monthly and Mount-->
-  <script>
+<!-- JQuery -->
+ <script>
 document.querySelector('.btn1').onclick = (e) => {
     e.preventDefault();
     document.getElementById('frequency').value = 'once';
@@ -141,8 +135,7 @@ document.querySelector('.btn2').onclick = (e) => {
     e.preventDefault();
     document.getElementById('frequency').value = 'monthly';
 };
-
-document.querySelector('.btnm1').onclick = (e) => {
+  document.querySelector('.btnm1').onclick = (e) => {
     e.preventDefault();
     document.getElementById('monthly_amount').value = 10;
 };
@@ -173,8 +166,80 @@ document.querySelector('.btnm6').onclick = (e) => {
     if(other) document.getElementById('monthly_amount').value = other;
 };
 
+</script>
 
-  </script>
+
+
+  
+  <!-- Stripe JS -->
+  <script src="https://js.stripe.com/clover/stripe.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+<script>
+const stripe = Stripe('{{ env("STRIPE_KEY") }}'); // your publishable key
+const elements = stripe.elements();
+
+// Stripe Elements style
+const style = {
+  base: {
+    fontSize: '16px',
+    color: '#32325d',
+    fontFamily: 'Arial, sans-serif',
+    '::placeholder': { color: '#a0aec0' },
+  },
+  invalid: {
+    color: '#f87171',
+  }
+};
+
+// Create Elements with placeholders
+const cardNumber = elements.create('cardNumber', { style, placeholder: '1234 1234 1234 1234' });
+cardNumber.mount('#card-number');
+
+const cardExpiry = elements.create('cardExpiry', { style, placeholder: 'MM / YY' });
+cardExpiry.mount('#card-expiry');
+
+const cardCvc = elements.create('cardCvc', { style, placeholder: 'CVV' });
+cardCvc.mount('#card-cvc');
+
+// Handle form submission
+const form = document.getElementById('payment-form');
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const { paymentMethod, error } = await stripe.createPaymentMethod({
+    type: 'card',
+    card: cardNumber,
+  });
+
+  if (error) {
+    document.getElementById('card-errors').textContent = error.message;
+  } else {
+    const res = await fetch('/stripe-payment', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-TOKEN': '{{ csrf_token() }}' // Laravel CSRF token
+      },
+      body: JSON.stringify({ payment_method_id: paymentMethod.id })
+    });
+
+    const data = await res.json();
+    if (data.success) {
+      alert('Payment successful!');
+      form.reset();
+      cardNumber.clear();
+      cardExpiry.clear();
+      cardCvc.clear();
+    } else {
+      alert('Payment failed: ' + data.message);
+    }
+  }
+});
+</script>
+
+
+
+
 </body>
 </html>
 

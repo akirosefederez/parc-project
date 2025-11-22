@@ -99,26 +99,30 @@
           <input type="hidden" name="payment_method" id="payment_method" value="">
 
 
-<label for="card_number">Card Number</label>
-<input type="text" id="card_number" name="card_number" />
+<form id="payment-form">
+  <label for="card_number" >Card Number</label>
+  <input type="hidden" id="card_number" name="card_number" value="">
+  <div id="card-number" class="form-control"></div>
 
-<div class="bankcard">
-  <label for="expiration_month">Expiration Date</label>
-  <input type="text" id="expiration_month" name="expiration_month" placeholder="MM" />
-  <label>/</label>
-  <input type="text" id="expiration_year" name="expiration_year" placeholder="YY" />
-  
-  <label for="cvv">CVV</label>
-  <input type="text" id="cvv" name="cvv" />
-</div>
+  <div class="bankcard">
+    <label for="expiration_month">Expiration Date</label>
+    <input type="hidden" id="expiration_month" name="expiration_month" value="">
+    <div id="card-expiry" class="form-control"></div>
 
-            <div class="last">
-              <input type="checkbox" id="checkparc" name="cover_processing_fee" value="1">
-<label for="checkparc">I want PARC to receive 100%...</label>
+    <label for="cvv" >CVV</label>
+    <input type="hidden" id="cvv" name="cvv" value="">
+    <div id="card-cvc" class="form-control"></div>
+  </div>
 
-            </div>
-              <input type="submit" value="DONATE" />
+  <div class="last">
+    <input type="checkbox" id="checkparc" name="cover_processing_fee" value="1">
+    <label for="checkparc">I want PARC to receive 100% of my donation</label>
+  </div>
 
+  <button type="submit">DONATE</button>
+  <div id="card-errors" role="alert" style="color:red; margin-top:10px;"></div>
+</form>
               
             </form>
           </div>
+
