@@ -8,6 +8,13 @@ use Stripe\Stripe;
 use Stripe\PaymentIntent;
 
 // =====================
+// Login Page
+// =====================
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+// =====================
 // Frontend Pages
 // =====================
 Route::get('/', function () {
