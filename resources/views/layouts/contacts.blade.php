@@ -34,15 +34,16 @@
       <!-- Right Sign-up Form -->
       <div class="footer-form">
         <h4 class="highlight">GET THE LATEST UPDATES</h4>
-        <form>
+        <form action="{{ route('contact-letter.store') }}" method="POST">
+          @csrf
           <label>First Name <span class="required">*required</span></label>
-          <input type="text" required>
+          <input type="text" name="first_name" required>
 
           <label>Last Name <span class="required">*required</span></label>
-          <input type="text" required>
+          <input type="text" name="last_name" required>
 
           <label>Email Address <span class="required">*required</span></label>
-          <input type="email" required>
+          <input type="email" name="email" required>
 
           <h4 class="highlight">BE A PART OF OUR COMMUNITY</h4>
           <p>
@@ -51,14 +52,14 @@
 
           <p>I would like to get email updates:</p>
           <div class="radio-group">
-            <label><input type="radio" name="email-updates" value="yes"> Yes</label>
-            <label><input type="radio" name="email-updates" value="no"> No</label>
+            <label><input type="radio" name="email_updates" value="yes"> Yes</label>
+            <label><input type="radio" name="email_updates" value="no"> No</label>
           </div>
 
           <p>I would like to get PARC text messages:</p>
           <div class="radio-group">
-            <label><input type="radio" name="text-updates" value="yes"> Yes</label>
-            <label><input type="radio" name="text-updates" value="no"> No</label>
+            <label><input type="radio" name="text_updates" value="yes"> Yes</label>
+            <label><input type="radio" name="text_updates" value="no"> No</label>
           </div>
 
         <p class="small-text">

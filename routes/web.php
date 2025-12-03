@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\DonationController;
 use App\Http\Controllers\AdoptionController;
+use App\Http\Controllers\ContactLetterController;
+use App\Http\Controllers\Admin\ContactLetterAdminController;
 use Stripe\Stripe;
 use Stripe\PaymentIntent;
 
@@ -64,6 +66,23 @@ Route::post('/donations', [DonationController::class, 'store'])->name('donations
 // =====================
 Route::get('/adoptions', [AdoptionController::class, 'create'])->name('adoptions.create');
 Route::post('/adoptions', [AdoptionController::class, 'store'])->name('adoptions.store');
+
+// =====================
+// Contact Letter Controller
+// =====================
+Route::post('/contact-letter', [ContactLetterController::class, 'store'])->name('contact-letter.store');
+
+// =====================
+// Admin Routes - Contact Letters
+// =====================
+Route::prefix('admin/contact-letters')->name('admin.contact-letters.')->group(function () {
+    Route::get('/', [ContactLetterAdminController::class, 'index'])->name('index');
+    Route::get('{contactLetter}', [ContactLetterAdminController::class, 'show'])->name('show');
+    Route::get('{contactLetter}/edit', [ContactLetterAdminController::class, 'edit'])->name('edit');
+    Route::put('{contactLetter}', [ContactLetterAdminController::class, 'update'])->name('update');
+    Route::delete('{contactLetter}', [ContactLetterAdminController::class, 'destroy'])->name('destroy');
+    Route::get('export/csv', [ContactLetterAdminController::class, 'export'])->name('export');
+});
 
 // =====================
 // Stripe Payment Route
