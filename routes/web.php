@@ -6,6 +6,7 @@ use App\Http\Controllers\DonationController;
 use App\Http\Controllers\AdoptionController;
 use App\Http\Controllers\ContactLetterController;
 use App\Http\Controllers\Admin\ContactLetterAdminController;
+use App\Http\Controllers\Auth\LoginController;
 use Stripe\Stripe;
 use Stripe\PaymentIntent;
 
@@ -15,6 +16,17 @@ use Stripe\PaymentIntent;
 Route::get('/login', function () {
     return view('login');
 })->name('login');
+
+// Handle POST login
+Route::post('/login', [LoginController::class, 'login'])->name('login.post');
+
+// Logout
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+// Dashboard (protected)
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware('auth')->name('dashboard');
 
 // =====================
 // Frontend Pages
