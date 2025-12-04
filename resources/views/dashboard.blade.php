@@ -1,7 +1,12 @@
-@extends('layouts.app')
-
-@section('content')
-<div style="max-width:900px;margin:40px auto;padding:20px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div style="max-width:900px;margin:40px auto;padding:20px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
         <h1 style="margin:0;font-size:24px;">Dashboard</h1>
         <form method="POST" action="{{ route('logout') }}">
@@ -20,4 +25,7 @@
         </div>
     </div>
 </div>
-@endsection
+   
+</body>
+</html>
+
