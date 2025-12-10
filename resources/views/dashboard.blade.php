@@ -28,7 +28,7 @@
         <div style="background:#fff;padding:25px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);border-left:4px solid #28a745;">
             <p style="margin:0 0 10px 0;color:#666;font-size:14px;text-transform:uppercase;">Donations</p>
             <h3 style="margin:0;font-size:36px;font-weight:bold;color:#28a745;">{{ $donationCount }}</h3>
-            <a href="#" style="display:inline-block;margin-top:15px;padding:8px 12px;background:#28a745;color:#fff;text-decoration:none;border-radius:4px;font-size:14px;">View All</a>
+            <a href="{{ route('admin.donations.index') }}" style="display:inline-block;margin-top:15px;padding:8px 12px;background:#28a745;color:#fff;text-decoration:none;border-radius:4px;font-size:14px;">View All</a>
         </div>
 
         <!-- Contact Letters Card -->

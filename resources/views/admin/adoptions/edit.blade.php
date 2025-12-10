@@ -89,26 +89,6 @@
             </div>
 
             <div style="margin-bottom:20px;">
-                <label for="card_number" style="display:block;font-weight:600;color:#495057;margin-bottom:8px;font-size:14px;">Card Number</label>
-                <input type="text" id="card_number" name="card_number" value="{{ old('card_number', $adoption->card_number) }}" maxlength="19" style="width:100%;padding:10px;border:1px solid #ced4da;border-radius:4px;font-size:14px;font-family:inherit;">
-            </div>
-
-            <div style="display:flex;gap:10px;margin-bottom:20px;">
-                <div style="flex:1;">
-                    <label for="expiration_month" style="display:block;font-weight:600;color:#495057;margin-bottom:8px;font-size:14px;">Exp Month</label>
-                    <input type="text" id="expiration_month" name="expiration_month" value="{{ old('expiration_month', $adoption->expiration_month) }}" maxlength="2" style="width:100%;padding:10px;border:1px solid #ced4da;border-radius:4px;font-size:14px;font-family:inherit;">
-                </div>
-                <div style="flex:1;">
-                    <label for="expiration_year" style="display:block;font-weight:600;color:#495057;margin-bottom:8px;font-size:14px;">Exp Year</label>
-                    <input type="text" id="expiration_year" name="expiration_year" value="{{ old('expiration_year', $adoption->expiration_year) }}" maxlength="4" style="width:100%;padding:10px;border:1px solid #ced4da;border-radius:4px;font-size:14px;font-family:inherit;">
-                </div>
-                <div style="flex:1;">
-                    <label for="cvv" style="display:block;font-weight:600;color:#495057;margin-bottom:8px;font-size:14px;">CVV</label>
-                    <input type="text" id="cvv" name="cvv" value="{{ old('cvv', $adoption->cvv) }}" maxlength="4" style="width:100%;padding:10px;border:1px solid #ced4da;border-radius:4px;font-size:14px;font-family:inherit;">
-                </div>
-            </div>
-
-            <div style="margin-bottom:20px;">
                 <label style="display:flex;align-items:center;font-weight:400;">
                     <input type="checkbox" name="cover_processing_fee" value="1" {{ $adoption->cover_processing_fee ? 'checked' : '' }} style="margin-right:8px;"> Cover Processing Fee
                 </label>
