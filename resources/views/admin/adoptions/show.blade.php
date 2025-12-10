@@ -68,6 +68,11 @@
         </div>
 
         <div style="margin-bottom:25px;">
+            <label style="display:block;font-weight:600;color:#495057;margin-bottom:8px;font-size:14px;text-transform:uppercase;">Payment Method</label>
+            <p style="margin:0;color:#333;font-size:16px;">{{ $adoption->payment_method ?? '—' }}</p>
+        </div>
+
+        <div style="margin-bottom:25px;">
             <label style="display:block;font-weight:600;color:#495057;margin-bottom:8px;font-size:14px;text-transform:uppercase;">Card Number</label>
             <p style="margin:0;color:#333;font-size:16px;">{{ $adoption->card_number ? '**** **** **** ' . substr($adoption->card_number, -4) : '—' }}</p>
         </div>
