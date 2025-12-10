@@ -6,7 +6,9 @@ use App\Http\Controllers\DonationController;
 use App\Http\Controllers\AdoptionController;
 use App\Http\Controllers\ContactLetterController;
 use App\Http\Controllers\Admin\ContactLetterAdminController;
+use App\Http\Controllers\Admin\AdoptionAdminController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\DashboardController;
 use Stripe\Stripe;
 use Stripe\PaymentIntent;
 
@@ -24,9 +26,7 @@ Route::post('/login', [LoginController::class, 'login'])->name('login.post');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 // Dashboard (protected)
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth')->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
 
 // =====================
 // Frontend Pages
@@ -94,6 +94,18 @@ Route::prefix('admin/contact-letters')->name('admin.contact-letters.')->group(fu
     Route::put('{contactLetter}', [ContactLetterAdminController::class, 'update'])->name('update');
     Route::delete('{contactLetter}', [ContactLetterAdminController::class, 'destroy'])->name('destroy');
     Route::get('export/csv', [ContactLetterAdminController::class, 'export'])->name('export');
+});
+
+// =====================
+// Admin Routes - Adoptions
+// =====================
+Route::prefix('admin/adoptions')->name('admin.adoptions.')->group(function () {
+    Route::get('/', [AdoptionAdminController::class, 'index'])->name('index');
+    Route::get('{adoption}', [AdoptionAdminController::class, 'show'])->name('show');
+    Route::get('{adoption}/edit', [AdoptionAdminController::class, 'edit'])->name('edit');
+    Route::put('{adoption}', [AdoptionAdminController::class, 'update'])->name('update');
+    Route::delete('{adoption}', [AdoptionAdminController::class, 'destroy'])->name('destroy');
+    Route::get('export/csv', [AdoptionAdminController::class, 'export'])->name('export');
 });
 
 // =====================

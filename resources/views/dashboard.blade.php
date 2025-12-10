@@ -3,56 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard - PARC Admin</title>
 </head>
-<body>
+<body style="margin:0;padding:0;background:#f5f5f5;font-family:Arial,sans-serif;">
 
-
-<div style="max-width:1100px;margin:40px auto;padding:20px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
-        <h1 style="margin:0;font-size:24px;">Admin Dashboard</h1>
-        <form method="POST" action="{{ route('logout') }}">
+<div style="max-width:1200px;margin:40px auto;padding:20px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;">
+        <h1 style="margin:0;font-size:32px;color:#333;">Dashboard</h1>
+        <form method="POST" action="{{ route('logout') }}" style="display:inline;">
             @csrf
-            <button type="submit" style="background:#dc3545;color:#fff;padding:8px 12px;border-radius:6px;border:none;cursor:pointer;">Logout</button>
+            <button type="submit" style="background:#dc3545;color:#fff;padding:10px 20px;border-radius:6px;border:none;cursor:pointer;font-weight:600;">Logout</button>
         </form>
     </div>
-      <div style="background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);">
-        <p style="margin:0;font-size:16px;">Welcome back, <strong>{{ auth()->user()?->name ?? auth()->user()?->email }}</strong>!</p>
-        <p style="color:#666;margin-top:8px;">Use the admin links to manage data or visit the site.</p>
 
-        <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="/" style="display:inline-block;padding:8px 12px;background:#6c757d;color:#fff;border-radius:6px;text-decoration:none;">Visit Site</a>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-bottom:40px;">
+        <!-- Adoptions Card -->
+        <div style="background:#fff;padding:25px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);border-left:4px solid #007bff;">
+            <p style="margin:0 0 10px 0;color:#666;font-size:14px;text-transform:uppercase;">Adoptions</p>
+            <h3 style="margin:0;font-size:36px;font-weight:bold;color:#007bff;">{{ $adoptionCount }}</h3>
+            <a href="{{ route('admin.adoptions.index') }}" style="display:inline-block;margin-top:15px;padding:8px 12px;background:#007bff;color:#fff;text-decoration:none;border-radius:4px;font-size:14px;">View All</a>
         </div>
-      </div>
 
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
-        <a href="{{ route('admin.donations.index') }}" style="background:#fff;padding:18px;border-radius:8px;display:block;text-decoration:none;color:inherit;box-shadow:0 2px 6px rgba(0,0,0,0.06);">
-            <div style="font-size:14px;color:#6b7280;margin-bottom:8px;">Donations</div>
-        </a>
+        <!-- Donations Card -->
+        <div style="background:#fff;padding:25px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);border-left:4px solid #28a745;">
+            <p style="margin:0 0 10px 0;color:#666;font-size:14px;text-transform:uppercase;">Donations</p>
+            <h3 style="margin:0;font-size:36px;font-weight:bold;color:#28a745;">{{ $donationCount }}</h3>
+            <a href="#" style="display:inline-block;margin-top:15px;padding:8px 12px;background:#28a745;color:#fff;text-decoration:none;border-radius:4px;font-size:14px;">View All</a>
+        </div>
 
-        <a href="{{ route('admin.adoptions.index') }}" style="background:#fff;padding:18px;border-radius:8px;display:block;text-decoration:none;color:inherit;box-shadow:0 2px 6px rgba(0,0,0,0.06);">
-            <div style="font-size:14px;color:#6b7280;margin-bottom:8px;">Adoptions</div>
-        </a>
+        <!-- Contact Letters Card -->
+        <div style="background:#fff;padding:25px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);border-left:4px solid #ffc107;">
+            <p style="margin:0 0 10px 0;color:#666;font-size:14px;text-transform:uppercase;">Contact Letters</p>
+            <h3 style="margin:0;font-size:36px;font-weight:bold;color:#ffc107;">{{ $contactLetterCount }}</h3>
+            <a href="{{ route('admin.contact-letters.index') }}" style="display:inline-block;margin-top:15px;padding:8px 12px;background:#ffc107;color:#000;text-decoration:none;border-radius:4px;font-size:14px;">View All</a>
+        </div>
 
-        <a href="{{ route('admin.contact-letters.index') }}" style="background:#fff;padding:18px;border-radius:8px;display:block;text-decoration:none;color:inherit;box-shadow:0 2px 6px rgba(0,0,0,0.06);">
-            <div style="font-size:14px;color:#6b7280;margin-bottom:8px;">Contact Letters</div>
-        </a>
-
-        <a href="{{ route('admin.users.index') }}" style="background:#fff;padding:18px;border-radius:8px;display:block;text-decoration:none;color:inherit;box-shadow:0 2px 6px rgba(0,0,0,0.06);">
-            <div style="font-size:14px;color:#6b7280;margin-bottom:8px;">Users</div>
-        </a>
+        <!-- Users Card -->
+        <div style="background:#fff;padding:25px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);border-left:4px solid #17a2b8;">
+            <p style="margin:0 0 10px 0;color:#666;font-size:14px;text-transform:uppercase;">Users</p>
+            <h3 style="margin:0;font-size:36px;font-weight:bold;color:#17a2b8;">{{ $userCount }}</h3>
+            <a href="#" style="display:inline-block;margin-top:15px;padding:8px 12px;background:#17a2b8;color:#fff;text-decoration:none;border-radius:4px;font-size:14px;">View All</a>
+        </div>
     </div>
 
-    <div style="margin-top:24px;">
-        <p style="color:#6b7280">Quick Links</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
-            <a href="{{ route('admin.donations.index') }}" style="padding:8px 12px;background:#007bff;color:#fff;border-radius:6px;text-decoration:none;">Manage Donations</a>
-            <a href="{{ route('admin.adoptions.index') }}" style="padding:8px 12px;background:#17a2b8;color:#fff;border-radius:6px;text-decoration:none;">Manage Adoptions</a>
-            <a href="{{ route('admin.contact-letters.index') }}" style="padding:8px 12px;background:#6f42c1;color:#fff;border-radius:6px;text-decoration:none;">Manage Contact Letters</a>
-            <a href="{{ route('admin.users.index') }}" style="padding:8px 12px;background:#6c757d;color:#fff;border-radius:6px;text-decoration:none;">Manage Users</a>
+    <div style="background:#fff;padding:25px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+        <h2 style="margin-top:0;margin-bottom:20px;font-size:22px;color:#333;">Quick Actions</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;">
+            <a href="{{ route('admin.adoptions.index') }}" style="display:block;padding:15px;background:#f8f9fa;border:1px solid #dee2e6;border-radius:4px;text-decoration:none;color:#333;text-align:center;font-weight:600;transition:all 0.3s;">📋 Manage Adoptions</a>
+            <a href="{{ route('admin.contact-letters.index') }}" style="display:block;padding:15px;background:#f8f9fa;border:1px solid #dee2e6;border-radius:4px;text-decoration:none;color:#333;text-align:center;font-weight:600;transition:all 0.3s;">📧 Manage Contact Letters</a>
+            <a href="/" style="display:block;padding:15px;background:#f8f9fa;border:1px solid #dee2e6;border-radius:4px;text-decoration:none;color:#333;text-align:center;font-weight:600;transition:all 0.3s;">🏠 Visit Site</a>
         </div>
     </div>
 </div>
+
 </body>
 </html>
 
