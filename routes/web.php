@@ -121,6 +121,18 @@ Route::prefix('admin/donations')->name('admin.donations.')->group(function () {
 });
 
 // =====================
+// Admin Routes - Users
+// =====================
+Route::prefix('admin/users')->name('admin.users.')->group(function () {
+    Route::get('/', [App\Http\Controllers\Admin\UserAdminController::class, 'index'])->name('index');
+    Route::get('{user}', [App\Http\Controllers\Admin\UserAdminController::class, 'show'])->name('show');
+    Route::get('{user}/edit', [App\Http\Controllers\Admin\UserAdminController::class, 'edit'])->name('edit');
+    Route::put('{user}', [App\Http\Controllers\Admin\UserAdminController::class, 'update'])->name('update');
+    Route::delete('{user}', [App\Http\Controllers\Admin\UserAdminController::class, 'destroy'])->name('destroy');
+    Route::get('export/csv', [App\Http\Controllers\Admin\UserAdminController::class, 'export'])->name('export');
+});
+
+// =====================
 // Stripe Payment Route
 // =====================
 Route::post('/stripe-payment', function (Request $request) {
